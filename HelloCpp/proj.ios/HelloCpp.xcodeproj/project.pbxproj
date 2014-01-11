@@ -236,6 +236,30 @@
 		1839B5AD1802B681005EA308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B51547F06B00633F88 /* AVFoundation.framework */; };
 		1839B5AE1802B68D005EA308 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B31547F06B00633F88 /* AudioToolbox.framework */; };
 		1839B5AF1802B6CA005EA308 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B11547F06B00633F88 /* OpenAL.framework */; };
+		187153151881563500062B5B /* c3dCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152E41881563500062B5B /* c3dCamera.cpp */; };
+		187153161881563500062B5B /* c3dCommonFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152E61881563500062B5B /* c3dCommonFunc.cpp */; };
+		187153171881563500062B5B /* c3dDefaultMeshes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152E81881563500062B5B /* c3dDefaultMeshes.cpp */; };
+		187153181881563500062B5B /* c3dDefaultPassUniformCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152EA1881563500062B5B /* c3dDefaultPassUniformCallback.cpp */; };
+		187153191881563500062B5B /* c3dDefaultPrograms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152EC1881563500062B5B /* c3dDefaultPrograms.cpp */; };
+		1871531A1881563500062B5B /* c3dDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152EE1881563500062B5B /* c3dDefine.cpp */; };
+		1871531B1881563500062B5B /* c3dGLMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152F01881563500062B5B /* c3dGLMath.cpp */; };
+		1871531C1881563500062B5B /* c3dIDTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152F21881563500062B5B /* c3dIDTriangle.cpp */; };
+		1871531D1881563500062B5B /* c3dIndexVBO3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152F41881563500062B5B /* c3dIndexVBO3d.cpp */; };
+		1871531E1881563500062B5B /* c3dLightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152F61881563500062B5B /* c3dLightSource.cpp */; };
+		1871531F1881563500062B5B /* c3dLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152F81881563500062B5B /* c3dLog.cpp */; };
+		187153201881563500062B5B /* c3dMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152FA1881563500062B5B /* c3dMaterial.cpp */; };
+		187153211881563500062B5B /* c3dMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152FC1881563500062B5B /* c3dMath.cpp */; };
+		187153221881563500062B5B /* c3dMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152FE1881563500062B5B /* c3dMatrix.cpp */; };
+		187153231881563500062B5B /* c3dMatrixStackInfoGetor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187153001881563500062B5B /* c3dMatrixStackInfoGetor.cpp */; };
+		187153241881563500062B5B /* c3dMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187153021881563500062B5B /* c3dMesh.cpp */; };
+		187153251881563500062B5B /* c3dNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187153041881563500062B5B /* c3dNode.cpp */; };
+		187153261881563500062B5B /* c3dProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187153061881563500062B5B /* c3dProgram.cpp */; };
+		187153271881563500062B5B /* c3dScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187153081881563500062B5B /* c3dScene.cpp */; };
+		187153281881563500062B5B /* c3dSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1871530A1881563500062B5B /* c3dSprite.cpp */; };
+		187153291881563500062B5B /* c3dUniformPassor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1871530D1881563500062B5B /* c3dUniformPassor.cpp */; };
+		1871532A1881563500062B5B /* c3dValueCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1871530F1881563500062B5B /* c3dValueCache.cpp */; };
+		1871532B1881563500062B5B /* c3dVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187153111881563500062B5B /* c3dVector.cpp */; };
+		1871535218815FE100062B5B /* c3dDefaultResource in Resources */ = {isa = PBXBuildFile; fileRef = 1871535118815FE100062B5B /* c3dDefaultResource */; };
 		189B0C1118169DFE003CDFEE /* button_dn.png in Resources */ = {isa = PBXBuildFile; fileRef = 189B0C0A18169DFE003CDFEE /* button_dn.png */; };
 		189B0C1218169DFE003CDFEE /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 189B0C0B18169DFE003CDFEE /* button.png */; };
 		189B0C211816A280003CDFEE /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189B0C181816A21F003CDFEE /* AppDelegate.cpp */; };
@@ -255,38 +279,6 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		570B6D5E187D035B009A58BE /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 570B6D5D187D035B009A58BE /* white.png */; };
 		570B6D60187D217D009A58BE /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 570B6D5F187D217D009A58BE /* logo2.png */; };
-		570B6DB9187D424F009A58BE /* c3dCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D6B187D424F009A58BE /* c3dCamera.cpp */; };
-		570B6DBA187D424F009A58BE /* c3dCommonFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D6E187D424F009A58BE /* c3dCommonFunc.cpp */; };
-		570B6DBB187D424F009A58BE /* c3dDefaultMeshes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D71187D424F009A58BE /* c3dDefaultMeshes.cpp */; };
-		570B6DBC187D424F009A58BE /* c3dDefaultPassUniformCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D74187D424F009A58BE /* c3dDefaultPassUniformCallback.cpp */; };
-		570B6DBD187D424F009A58BE /* c3dDefaultPrograms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D77187D424F009A58BE /* c3dDefaultPrograms.cpp */; };
-		570B6DBE187D424F009A58BE /* c3dClassicLighting.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D7A187D424F009A58BE /* c3dClassicLighting.fsh */; };
-		570B6DBF187D424F009A58BE /* c3dClassicLighting.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D7B187D424F009A58BE /* c3dClassicLighting.vsh */; };
-		570B6DC0187D424F009A58BE /* c3dTexOnly.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D7C187D424F009A58BE /* c3dTexOnly.fsh */; };
-		570B6DC1187D424F009A58BE /* c3dTexOnly.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D7D187D424F009A58BE /* c3dTexOnly.vsh */; };
-		570B6DC2187D424F009A58BE /* defaultTexPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 570B6D7F187D424F009A58BE /* defaultTexPic.png */; };
-		570B6DC3187D424F009A58BE /* c3dDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D81187D424F009A58BE /* c3dDefine.cpp */; };
-		570B6DC4187D424F009A58BE /* c3dGLMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D84187D424F009A58BE /* c3dGLMath.cpp */; };
-		570B6DC5187D424F009A58BE /* c3dIDTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D87187D424F009A58BE /* c3dIDTriangle.cpp */; };
-		570B6DC6187D424F009A58BE /* c3dIndexVBO3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D8A187D424F009A58BE /* c3dIndexVBO3d.cpp */; };
-		570B6DC7187D424F009A58BE /* c3dLightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D8D187D424F009A58BE /* c3dLightSource.cpp */; };
-		570B6DC8187D424F009A58BE /* c3dLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D90187D424F009A58BE /* c3dLog.cpp */; };
-		570B6DC9187D424F009A58BE /* c3dMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D93187D424F009A58BE /* c3dMaterial.cpp */; };
-		570B6DCA187D424F009A58BE /* c3dMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D96187D424F009A58BE /* c3dMath.cpp */; };
-		570B6DCB187D424F009A58BE /* c3dMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D99187D424F009A58BE /* c3dMatrix.cpp */; };
-		570B6DCC187D424F009A58BE /* c3dMatrixStackInfoGetor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D9C187D424F009A58BE /* c3dMatrixStackInfoGetor.cpp */; };
-		570B6DCD187D424F009A58BE /* c3dMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6D9F187D424F009A58BE /* c3dMesh.cpp */; };
-		570B6DCE187D424F009A58BE /* c3dNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6DA2187D424F009A58BE /* c3dNode.cpp */; };
-		570B6DCF187D424F009A58BE /* c3dProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6DA5187D424F009A58BE /* c3dProgram.cpp */; };
-		570B6DD0187D424F009A58BE /* c3dScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6DA8187D424F009A58BE /* c3dScene.cpp */; };
-		570B6DD1187D424F009A58BE /* c3dSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6DAB187D424F009A58BE /* c3dSprite.cpp */; };
-		570B6DD2187D424F009A58BE /* c3dUniformPassor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6DAF187D424F009A58BE /* c3dUniformPassor.cpp */; };
-		570B6DD3187D424F009A58BE /* c3dValueCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6DB2187D424F009A58BE /* c3dValueCache.cpp */; };
-		570B6DD4187D424F009A58BE /* c3dVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570B6DB5187D424F009A58BE /* c3dVector.cpp */; };
-		5710B8B3187E444100FA066B /* c3dClassicLighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 570B6D7A187D424F009A58BE /* c3dClassicLighting.fsh */; };
-		5710B8B4187E444100FA066B /* c3dClassicLighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 570B6D7B187D424F009A58BE /* c3dClassicLighting.vsh */; };
-		5710B8B5187E444100FA066B /* c3dTexOnly.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 570B6D7C187D424F009A58BE /* c3dTexOnly.fsh */; };
-		5710B8B6187E444100FA066B /* c3dTexOnly.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 570B6D7D187D424F009A58BE /* c3dTexOnly.vsh */; };
 		5710B8BB187E4A9600FA066B /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710B8B9187E4A9600FA066B /* CloseNormal.png */; };
 		5710B8BC187E4A9600FA066B /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710B8BA187E4A9600FA066B /* CloseSelected.png */; };
 		57FF89241829DD24001B5248 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FF89231829DD24001B5248 /* logo.png */; };
@@ -780,6 +772,56 @@
 		1839B4F118029AC8005EA308 /* spine-cocos2dx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "spine-cocos2dx.h"; sourceTree = "<group>"; };
 		1839B4F218029AC8005EA308 /* spine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spine.h; sourceTree = "<group>"; };
 		1839B5A51802B1B1005EA308 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
+		187152E41881563500062B5B /* c3dCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCamera.cpp; sourceTree = "<group>"; };
+		187152E51881563500062B5B /* c3dCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCamera.h; sourceTree = "<group>"; };
+		187152E61881563500062B5B /* c3dCommonFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCommonFunc.cpp; sourceTree = "<group>"; };
+		187152E71881563500062B5B /* c3dCommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCommonFunc.h; sourceTree = "<group>"; };
+		187152E81881563500062B5B /* c3dDefaultMeshes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultMeshes.cpp; sourceTree = "<group>"; };
+		187152E91881563500062B5B /* c3dDefaultMeshes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultMeshes.h; sourceTree = "<group>"; };
+		187152EA1881563500062B5B /* c3dDefaultPassUniformCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultPassUniformCallback.cpp; sourceTree = "<group>"; };
+		187152EB1881563500062B5B /* c3dDefaultPassUniformCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultPassUniformCallback.h; sourceTree = "<group>"; };
+		187152EC1881563500062B5B /* c3dDefaultPrograms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultPrograms.cpp; sourceTree = "<group>"; };
+		187152ED1881563500062B5B /* c3dDefaultPrograms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultPrograms.h; sourceTree = "<group>"; };
+		187152EE1881563500062B5B /* c3dDefine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefine.cpp; sourceTree = "<group>"; };
+		187152EF1881563500062B5B /* c3dDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefine.h; sourceTree = "<group>"; };
+		187152F01881563500062B5B /* c3dGLMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dGLMath.cpp; sourceTree = "<group>"; };
+		187152F11881563500062B5B /* c3dGLMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dGLMath.h; sourceTree = "<group>"; };
+		187152F21881563500062B5B /* c3dIDTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dIDTriangle.cpp; sourceTree = "<group>"; };
+		187152F31881563500062B5B /* c3dIDTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dIDTriangle.h; sourceTree = "<group>"; };
+		187152F41881563500062B5B /* c3dIndexVBO3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dIndexVBO3d.cpp; sourceTree = "<group>"; };
+		187152F51881563500062B5B /* c3dIndexVBO3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dIndexVBO3d.h; sourceTree = "<group>"; };
+		187152F61881563500062B5B /* c3dLightSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dLightSource.cpp; sourceTree = "<group>"; };
+		187152F71881563500062B5B /* c3dLightSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dLightSource.h; sourceTree = "<group>"; };
+		187152F81881563500062B5B /* c3dLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dLog.cpp; sourceTree = "<group>"; };
+		187152F91881563500062B5B /* c3dLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dLog.h; sourceTree = "<group>"; };
+		187152FA1881563500062B5B /* c3dMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMaterial.cpp; sourceTree = "<group>"; };
+		187152FB1881563500062B5B /* c3dMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMaterial.h; sourceTree = "<group>"; };
+		187152FC1881563500062B5B /* c3dMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMath.cpp; sourceTree = "<group>"; };
+		187152FD1881563500062B5B /* c3dMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMath.h; sourceTree = "<group>"; };
+		187152FE1881563500062B5B /* c3dMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMatrix.cpp; sourceTree = "<group>"; };
+		187152FF1881563500062B5B /* c3dMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMatrix.h; sourceTree = "<group>"; };
+		187153001881563500062B5B /* c3dMatrixStackInfoGetor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMatrixStackInfoGetor.cpp; sourceTree = "<group>"; };
+		187153011881563500062B5B /* c3dMatrixStackInfoGetor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMatrixStackInfoGetor.h; sourceTree = "<group>"; };
+		187153021881563500062B5B /* c3dMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMesh.cpp; sourceTree = "<group>"; };
+		187153031881563500062B5B /* c3dMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMesh.h; sourceTree = "<group>"; };
+		187153041881563500062B5B /* c3dNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dNode.cpp; sourceTree = "<group>"; };
+		187153051881563500062B5B /* c3dNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dNode.h; sourceTree = "<group>"; };
+		187153061881563500062B5B /* c3dProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dProgram.cpp; sourceTree = "<group>"; };
+		187153071881563500062B5B /* c3dProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dProgram.h; sourceTree = "<group>"; };
+		187153081881563500062B5B /* c3dScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dScene.cpp; sourceTree = "<group>"; };
+		187153091881563500062B5B /* c3dScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dScene.h; sourceTree = "<group>"; };
+		1871530A1881563500062B5B /* c3dSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dSprite.cpp; sourceTree = "<group>"; };
+		1871530B1881563500062B5B /* c3dSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dSprite.h; sourceTree = "<group>"; };
+		1871530C1881563500062B5B /* c3dToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dToolKit.h; sourceTree = "<group>"; };
+		1871530D1881563500062B5B /* c3dUniformPassor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dUniformPassor.cpp; sourceTree = "<group>"; };
+		1871530E1881563500062B5B /* c3dUniformPassor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dUniformPassor.h; sourceTree = "<group>"; };
+		1871530F1881563500062B5B /* c3dValueCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dValueCache.cpp; sourceTree = "<group>"; };
+		187153101881563500062B5B /* c3dValueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dValueCache.h; sourceTree = "<group>"; };
+		187153111881563500062B5B /* c3dVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dVector.cpp; sourceTree = "<group>"; };
+		187153121881563500062B5B /* c3dVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dVector.h; sourceTree = "<group>"; };
+		187153131881563500062B5B /* principles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = principles.h; sourceTree = "<group>"; };
+		187153141881563500062B5B /* wantList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wantList.h; sourceTree = "<group>"; };
+		1871535118815FE100062B5B /* c3dDefaultResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = c3dDefaultResource; sourceTree = "<group>"; };
 		189B0C0A18169DFE003CDFEE /* button_dn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_dn.png; sourceTree = "<group>"; };
 		189B0C0B18169DFE003CDFEE /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		189B0C181816A21F003CDFEE /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -800,60 +842,6 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		570B6D5D187D035B009A58BE /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		570B6D5F187D217D009A58BE /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
-		570B6D6B187D424F009A58BE /* c3dCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCamera.cpp; sourceTree = "<group>"; };
-		570B6D6C187D424F009A58BE /* c3dCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCamera.h; sourceTree = "<group>"; };
-		570B6D6E187D424F009A58BE /* c3dCommonFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCommonFunc.cpp; sourceTree = "<group>"; };
-		570B6D6F187D424F009A58BE /* c3dCommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCommonFunc.h; sourceTree = "<group>"; };
-		570B6D71187D424F009A58BE /* c3dDefaultMeshes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultMeshes.cpp; sourceTree = "<group>"; };
-		570B6D72187D424F009A58BE /* c3dDefaultMeshes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultMeshes.h; sourceTree = "<group>"; };
-		570B6D74187D424F009A58BE /* c3dDefaultPassUniformCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultPassUniformCallback.cpp; sourceTree = "<group>"; };
-		570B6D75187D424F009A58BE /* c3dDefaultPassUniformCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultPassUniformCallback.h; sourceTree = "<group>"; };
-		570B6D77187D424F009A58BE /* c3dDefaultPrograms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultPrograms.cpp; sourceTree = "<group>"; };
-		570B6D78187D424F009A58BE /* c3dDefaultPrograms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultPrograms.h; sourceTree = "<group>"; };
-		570B6D7A187D424F009A58BE /* c3dClassicLighting.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = c3dClassicLighting.fsh; sourceTree = "<group>"; };
-		570B6D7B187D424F009A58BE /* c3dClassicLighting.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = c3dClassicLighting.vsh; sourceTree = "<group>"; };
-		570B6D7C187D424F009A58BE /* c3dTexOnly.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = c3dTexOnly.fsh; sourceTree = "<group>"; };
-		570B6D7D187D424F009A58BE /* c3dTexOnly.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = c3dTexOnly.vsh; sourceTree = "<group>"; };
-		570B6D7F187D424F009A58BE /* defaultTexPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultTexPic.png; sourceTree = "<group>"; };
-		570B6D81187D424F009A58BE /* c3dDefine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefine.cpp; sourceTree = "<group>"; };
-		570B6D82187D424F009A58BE /* c3dDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefine.h; sourceTree = "<group>"; };
-		570B6D84187D424F009A58BE /* c3dGLMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dGLMath.cpp; sourceTree = "<group>"; };
-		570B6D85187D424F009A58BE /* c3dGLMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dGLMath.h; sourceTree = "<group>"; };
-		570B6D87187D424F009A58BE /* c3dIDTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dIDTriangle.cpp; sourceTree = "<group>"; };
-		570B6D88187D424F009A58BE /* c3dIDTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dIDTriangle.h; sourceTree = "<group>"; };
-		570B6D8A187D424F009A58BE /* c3dIndexVBO3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dIndexVBO3d.cpp; sourceTree = "<group>"; };
-		570B6D8B187D424F009A58BE /* c3dIndexVBO3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dIndexVBO3d.h; sourceTree = "<group>"; };
-		570B6D8D187D424F009A58BE /* c3dLightSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dLightSource.cpp; sourceTree = "<group>"; };
-		570B6D8E187D424F009A58BE /* c3dLightSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dLightSource.h; sourceTree = "<group>"; };
-		570B6D90187D424F009A58BE /* c3dLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dLog.cpp; sourceTree = "<group>"; };
-		570B6D91187D424F009A58BE /* c3dLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dLog.h; sourceTree = "<group>"; };
-		570B6D93187D424F009A58BE /* c3dMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMaterial.cpp; sourceTree = "<group>"; };
-		570B6D94187D424F009A58BE /* c3dMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMaterial.h; sourceTree = "<group>"; };
-		570B6D96187D424F009A58BE /* c3dMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMath.cpp; sourceTree = "<group>"; };
-		570B6D97187D424F009A58BE /* c3dMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMath.h; sourceTree = "<group>"; };
-		570B6D99187D424F009A58BE /* c3dMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMatrix.cpp; sourceTree = "<group>"; };
-		570B6D9A187D424F009A58BE /* c3dMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMatrix.h; sourceTree = "<group>"; };
-		570B6D9C187D424F009A58BE /* c3dMatrixStackInfoGetor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMatrixStackInfoGetor.cpp; sourceTree = "<group>"; };
-		570B6D9D187D424F009A58BE /* c3dMatrixStackInfoGetor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMatrixStackInfoGetor.h; sourceTree = "<group>"; };
-		570B6D9F187D424F009A58BE /* c3dMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMesh.cpp; sourceTree = "<group>"; };
-		570B6DA0187D424F009A58BE /* c3dMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMesh.h; sourceTree = "<group>"; };
-		570B6DA2187D424F009A58BE /* c3dNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dNode.cpp; sourceTree = "<group>"; };
-		570B6DA3187D424F009A58BE /* c3dNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dNode.h; sourceTree = "<group>"; };
-		570B6DA5187D424F009A58BE /* c3dProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dProgram.cpp; sourceTree = "<group>"; };
-		570B6DA6187D424F009A58BE /* c3dProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dProgram.h; sourceTree = "<group>"; };
-		570B6DA8187D424F009A58BE /* c3dScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dScene.cpp; sourceTree = "<group>"; };
-		570B6DA9187D424F009A58BE /* c3dScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dScene.h; sourceTree = "<group>"; };
-		570B6DAB187D424F009A58BE /* c3dSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dSprite.cpp; sourceTree = "<group>"; };
-		570B6DAC187D424F009A58BE /* c3dSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dSprite.h; sourceTree = "<group>"; };
-		570B6DAD187D424F009A58BE /* c3dToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dToolKit.h; sourceTree = "<group>"; };
-		570B6DAF187D424F009A58BE /* c3dUniformPassor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dUniformPassor.cpp; sourceTree = "<group>"; };
-		570B6DB0187D424F009A58BE /* c3dUniformPassor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dUniformPassor.h; sourceTree = "<group>"; };
-		570B6DB2187D424F009A58BE /* c3dValueCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dValueCache.cpp; sourceTree = "<group>"; };
-		570B6DB3187D424F009A58BE /* c3dValueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dValueCache.h; sourceTree = "<group>"; };
-		570B6DB5187D424F009A58BE /* c3dVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dVector.cpp; sourceTree = "<group>"; };
-		570B6DB6187D424F009A58BE /* c3dVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dVector.h; sourceTree = "<group>"; };
-		570B6DB7187D424F009A58BE /* principles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = principles.h; sourceTree = "<group>"; };
-		570B6DB8187D424F009A58BE /* wantList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wantList.h; sourceTree = "<group>"; };
 		5710B8B9187E4A9600FA066B /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
 		5710B8BA187E4A9600FA066B /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
 		57FF89231829DD24001B5248 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -1891,6 +1879,213 @@
 			path = spine;
 			sourceTree = "<group>";
 		};
+		1871532C1881568B00062B5B /* c3dCamera */ = {
+			isa = PBXGroup;
+			children = (
+				187152E41881563500062B5B /* c3dCamera.cpp */,
+				187152E51881563500062B5B /* c3dCamera.h */,
+			);
+			name = c3dCamera;
+			sourceTree = "<group>";
+		};
+		1871532E188156B100062B5B /* c3dCommonFunc */ = {
+			isa = PBXGroup;
+			children = (
+				187152E61881563500062B5B /* c3dCommonFunc.cpp */,
+				187152E71881563500062B5B /* c3dCommonFunc.h */,
+			);
+			name = c3dCommonFunc;
+			sourceTree = "<group>";
+		};
+		1871532F188156C400062B5B /* c3dDefaultMeshes */ = {
+			isa = PBXGroup;
+			children = (
+				187152E81881563500062B5B /* c3dDefaultMeshes.cpp */,
+				187152E91881563500062B5B /* c3dDefaultMeshes.h */,
+			);
+			name = c3dDefaultMeshes;
+			sourceTree = "<group>";
+		};
+		18715330188156E600062B5B /* c3dDefaultPassUniformCallback */ = {
+			isa = PBXGroup;
+			children = (
+				187152EA1881563500062B5B /* c3dDefaultPassUniformCallback.cpp */,
+				187152EB1881563500062B5B /* c3dDefaultPassUniformCallback.h */,
+			);
+			name = c3dDefaultPassUniformCallback;
+			sourceTree = "<group>";
+		};
+		187153311881570E00062B5B /* c3dDefaultPrograms */ = {
+			isa = PBXGroup;
+			children = (
+				187152EC1881563500062B5B /* c3dDefaultPrograms.cpp */,
+				187152ED1881563500062B5B /* c3dDefaultPrograms.h */,
+			);
+			name = c3dDefaultPrograms;
+			sourceTree = "<group>";
+		};
+		187153321881572500062B5B /* c3dDefine */ = {
+			isa = PBXGroup;
+			children = (
+				187152EE1881563500062B5B /* c3dDefine.cpp */,
+				187152EF1881563500062B5B /* c3dDefine.h */,
+			);
+			name = c3dDefine;
+			sourceTree = "<group>";
+		};
+		187153331881573500062B5B /* c3dGLMath */ = {
+			isa = PBXGroup;
+			children = (
+				187152F01881563500062B5B /* c3dGLMath.cpp */,
+				187152F11881563500062B5B /* c3dGLMath.h */,
+			);
+			name = c3dGLMath;
+			sourceTree = "<group>";
+		};
+		187153341881574700062B5B /* c3dIndexShape */ = {
+			isa = PBXGroup;
+			children = (
+				187152F21881563500062B5B /* c3dIDTriangle.cpp */,
+				187152F31881563500062B5B /* c3dIDTriangle.h */,
+			);
+			name = c3dIndexShape;
+			sourceTree = "<group>";
+		};
+		187153351881576300062B5B /* c3dIndexVBO */ = {
+			isa = PBXGroup;
+			children = (
+				187152F41881563500062B5B /* c3dIndexVBO3d.cpp */,
+				187152F51881563500062B5B /* c3dIndexVBO3d.h */,
+			);
+			name = c3dIndexVBO;
+			sourceTree = "<group>";
+		};
+		187153361881577400062B5B /* c3dLightSource */ = {
+			isa = PBXGroup;
+			children = (
+				187152F61881563500062B5B /* c3dLightSource.cpp */,
+				187152F71881563500062B5B /* c3dLightSource.h */,
+			);
+			name = c3dLightSource;
+			sourceTree = "<group>";
+		};
+		187153371881578900062B5B /* c3dLog */ = {
+			isa = PBXGroup;
+			children = (
+				187152F81881563500062B5B /* c3dLog.cpp */,
+				187152F91881563500062B5B /* c3dLog.h */,
+			);
+			name = c3dLog;
+			sourceTree = "<group>";
+		};
+		187153381881579700062B5B /* c3dMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				187152FA1881563500062B5B /* c3dMaterial.cpp */,
+				187152FB1881563500062B5B /* c3dMaterial.h */,
+			);
+			name = c3dMaterial;
+			sourceTree = "<group>";
+		};
+		18715339188157A900062B5B /* c3dMath */ = {
+			isa = PBXGroup;
+			children = (
+				187152FC1881563500062B5B /* c3dMath.cpp */,
+				187152FD1881563500062B5B /* c3dMath.h */,
+			);
+			name = c3dMath;
+			sourceTree = "<group>";
+		};
+		1871533A188157F600062B5B /* c3dMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				187152FE1881563500062B5B /* c3dMatrix.cpp */,
+				187152FF1881563500062B5B /* c3dMatrix.h */,
+			);
+			name = c3dMatrix;
+			sourceTree = "<group>";
+		};
+		1871533B1881580A00062B5B /* c3dMatrixStackInfoGetor */ = {
+			isa = PBXGroup;
+			children = (
+				187153001881563500062B5B /* c3dMatrixStackInfoGetor.cpp */,
+				187153011881563500062B5B /* c3dMatrixStackInfoGetor.h */,
+			);
+			name = c3dMatrixStackInfoGetor;
+			sourceTree = "<group>";
+		};
+		1871533C1881582400062B5B /* c3dMesh */ = {
+			isa = PBXGroup;
+			children = (
+				187153021881563500062B5B /* c3dMesh.cpp */,
+				187153031881563500062B5B /* c3dMesh.h */,
+			);
+			name = c3dMesh;
+			sourceTree = "<group>";
+		};
+		1871533D1881583500062B5B /* c3dNode */ = {
+			isa = PBXGroup;
+			children = (
+				187153041881563500062B5B /* c3dNode.cpp */,
+				187153051881563500062B5B /* c3dNode.h */,
+			);
+			name = c3dNode;
+			sourceTree = "<group>";
+		};
+		1871533E1881584D00062B5B /* c3dProgram */ = {
+			isa = PBXGroup;
+			children = (
+				187153061881563500062B5B /* c3dProgram.cpp */,
+				187153071881563500062B5B /* c3dProgram.h */,
+			);
+			name = c3dProgram;
+			sourceTree = "<group>";
+		};
+		1871533F1881586B00062B5B /* c3dScene */ = {
+			isa = PBXGroup;
+			children = (
+				187153081881563500062B5B /* c3dScene.cpp */,
+				187153091881563500062B5B /* c3dScene.h */,
+			);
+			name = c3dScene;
+			sourceTree = "<group>";
+		};
+		18715340188158B900062B5B /* c3dSprite */ = {
+			isa = PBXGroup;
+			children = (
+				1871530A1881563500062B5B /* c3dSprite.cpp */,
+				1871530B1881563500062B5B /* c3dSprite.h */,
+			);
+			name = c3dSprite;
+			sourceTree = "<group>";
+		};
+		18715341188158D500062B5B /* c3dUniformPassor */ = {
+			isa = PBXGroup;
+			children = (
+				1871530D1881563500062B5B /* c3dUniformPassor.cpp */,
+				1871530E1881563500062B5B /* c3dUniformPassor.h */,
+			);
+			name = c3dUniformPassor;
+			sourceTree = "<group>";
+		};
+		18715342188158EF00062B5B /* c3dValueCache */ = {
+			isa = PBXGroup;
+			children = (
+				1871530F1881563500062B5B /* c3dValueCache.cpp */,
+				187153101881563500062B5B /* c3dValueCache.h */,
+			);
+			name = c3dValueCache;
+			sourceTree = "<group>";
+		};
+		187153431881590700062B5B /* c3dVector */ = {
+			isa = PBXGroup;
+			children = (
+				187153111881563500062B5B /* c3dVector.cpp */,
+				187153121881563500062B5B /* c3dVector.h */,
+			);
+			name = c3dVector;
+			sourceTree = "<group>";
+		};
 		18B41E4B1802FBB7007B8CDD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1909,6 +2104,7 @@
 		18B41E781802FC1E007B8CDD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1871535118815FE100062B5B /* c3dDefaultResource */,
 				18B41E971802FEAA007B8CDD /* Default-568h@2x.png */,
 				18B41E981802FEAA007B8CDD /* Default.png */,
 				18B41E991802FEAA007B8CDD /* Default@2x.png */,
@@ -1976,263 +2172,35 @@
 		570B6D69187D424F009A58BE /* c3dToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				570B6D6A187D424F009A58BE /* c3dCamera */,
-				570B6D6D187D424F009A58BE /* c3dCommonFunc */,
-				570B6D70187D424F009A58BE /* c3dDefaultMeshes */,
-				570B6D73187D424F009A58BE /* c3dDefaultPassUniformCallback */,
-				570B6D76187D424F009A58BE /* c3dDefaultPrograms */,
-				570B6D7E187D424F009A58BE /* c3dDefaultResource */,
-				570B6D80187D424F009A58BE /* c3dDefine */,
-				570B6D83187D424F009A58BE /* c3dGLMath */,
-				570B6D86187D424F009A58BE /* c3dIndexShape */,
-				570B6D89187D424F009A58BE /* c3dIndexVBO */,
-				570B6D8C187D424F009A58BE /* c3dLightSource */,
-				570B6D8F187D424F009A58BE /* c3dLog */,
-				570B6D92187D424F009A58BE /* c3dMaterial */,
-				570B6D95187D424F009A58BE /* c3dMath */,
-				570B6D98187D424F009A58BE /* c3dMatrix */,
-				570B6D9B187D424F009A58BE /* c3dMatrixStackInfoGetor */,
-				570B6D9E187D424F009A58BE /* c3dMesh */,
-				570B6DA1187D424F009A58BE /* c3dNode */,
-				570B6DA4187D424F009A58BE /* c3dProgram */,
-				570B6DA7187D424F009A58BE /* c3dScene */,
-				570B6DAA187D424F009A58BE /* c3dSprite */,
-				570B6DAD187D424F009A58BE /* c3dToolKit.h */,
-				570B6DAE187D424F009A58BE /* c3dUniformPassor */,
-				570B6DB1187D424F009A58BE /* c3dValueCache */,
-				570B6DB4187D424F009A58BE /* c3dVector */,
-				570B6DB7187D424F009A58BE /* principles.h */,
-				570B6DB8187D424F009A58BE /* wantList.h */,
+				1871532C1881568B00062B5B /* c3dCamera */,
+				1871532E188156B100062B5B /* c3dCommonFunc */,
+				1871532F188156C400062B5B /* c3dDefaultMeshes */,
+				18715330188156E600062B5B /* c3dDefaultPassUniformCallback */,
+				187153311881570E00062B5B /* c3dDefaultPrograms */,
+				187153321881572500062B5B /* c3dDefine */,
+				187153331881573500062B5B /* c3dGLMath */,
+				187153341881574700062B5B /* c3dIndexShape */,
+				187153351881576300062B5B /* c3dIndexVBO */,
+				187153361881577400062B5B /* c3dLightSource */,
+				187153371881578900062B5B /* c3dLog */,
+				187153381881579700062B5B /* c3dMaterial */,
+				18715339188157A900062B5B /* c3dMath */,
+				1871533A188157F600062B5B /* c3dMatrix */,
+				1871533B1881580A00062B5B /* c3dMatrixStackInfoGetor */,
+				1871533C1881582400062B5B /* c3dMesh */,
+				1871533D1881583500062B5B /* c3dNode */,
+				1871533E1881584D00062B5B /* c3dProgram */,
+				1871533F1881586B00062B5B /* c3dScene */,
+				18715340188158B900062B5B /* c3dSprite */,
+				1871530C1881563500062B5B /* c3dToolKit.h */,
+				18715341188158D500062B5B /* c3dUniformPassor */,
+				18715342188158EF00062B5B /* c3dValueCache */,
+				187153431881590700062B5B /* c3dVector */,
+				187153131881563500062B5B /* principles.h */,
+				187153141881563500062B5B /* wantList.h */,
 			);
 			name = c3dToolKit;
 			path = ../c3dToolKit;
-			sourceTree = "<group>";
-		};
-		570B6D6A187D424F009A58BE /* c3dCamera */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D6B187D424F009A58BE /* c3dCamera.cpp */,
-				570B6D6C187D424F009A58BE /* c3dCamera.h */,
-			);
-			path = c3dCamera;
-			sourceTree = "<group>";
-		};
-		570B6D6D187D424F009A58BE /* c3dCommonFunc */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D6E187D424F009A58BE /* c3dCommonFunc.cpp */,
-				570B6D6F187D424F009A58BE /* c3dCommonFunc.h */,
-			);
-			path = c3dCommonFunc;
-			sourceTree = "<group>";
-		};
-		570B6D70187D424F009A58BE /* c3dDefaultMeshes */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D71187D424F009A58BE /* c3dDefaultMeshes.cpp */,
-				570B6D72187D424F009A58BE /* c3dDefaultMeshes.h */,
-			);
-			path = c3dDefaultMeshes;
-			sourceTree = "<group>";
-		};
-		570B6D73187D424F009A58BE /* c3dDefaultPassUniformCallback */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D74187D424F009A58BE /* c3dDefaultPassUniformCallback.cpp */,
-				570B6D75187D424F009A58BE /* c3dDefaultPassUniformCallback.h */,
-			);
-			path = c3dDefaultPassUniformCallback;
-			sourceTree = "<group>";
-		};
-		570B6D76187D424F009A58BE /* c3dDefaultPrograms */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D77187D424F009A58BE /* c3dDefaultPrograms.cpp */,
-				570B6D78187D424F009A58BE /* c3dDefaultPrograms.h */,
-				570B6D79187D424F009A58BE /* programs */,
-			);
-			path = c3dDefaultPrograms;
-			sourceTree = "<group>";
-		};
-		570B6D79187D424F009A58BE /* programs */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D7A187D424F009A58BE /* c3dClassicLighting.fsh */,
-				570B6D7B187D424F009A58BE /* c3dClassicLighting.vsh */,
-				570B6D7C187D424F009A58BE /* c3dTexOnly.fsh */,
-				570B6D7D187D424F009A58BE /* c3dTexOnly.vsh */,
-			);
-			path = programs;
-			sourceTree = "<group>";
-		};
-		570B6D7E187D424F009A58BE /* c3dDefaultResource */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D7F187D424F009A58BE /* defaultTexPic.png */,
-			);
-			path = c3dDefaultResource;
-			sourceTree = "<group>";
-		};
-		570B6D80187D424F009A58BE /* c3dDefine */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D81187D424F009A58BE /* c3dDefine.cpp */,
-				570B6D82187D424F009A58BE /* c3dDefine.h */,
-			);
-			path = c3dDefine;
-			sourceTree = "<group>";
-		};
-		570B6D83187D424F009A58BE /* c3dGLMath */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D84187D424F009A58BE /* c3dGLMath.cpp */,
-				570B6D85187D424F009A58BE /* c3dGLMath.h */,
-			);
-			path = c3dGLMath;
-			sourceTree = "<group>";
-		};
-		570B6D86187D424F009A58BE /* c3dIndexShape */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D87187D424F009A58BE /* c3dIDTriangle.cpp */,
-				570B6D88187D424F009A58BE /* c3dIDTriangle.h */,
-			);
-			path = c3dIndexShape;
-			sourceTree = "<group>";
-		};
-		570B6D89187D424F009A58BE /* c3dIndexVBO */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D8A187D424F009A58BE /* c3dIndexVBO3d.cpp */,
-				570B6D8B187D424F009A58BE /* c3dIndexVBO3d.h */,
-			);
-			path = c3dIndexVBO;
-			sourceTree = "<group>";
-		};
-		570B6D8C187D424F009A58BE /* c3dLightSource */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D8D187D424F009A58BE /* c3dLightSource.cpp */,
-				570B6D8E187D424F009A58BE /* c3dLightSource.h */,
-			);
-			path = c3dLightSource;
-			sourceTree = "<group>";
-		};
-		570B6D8F187D424F009A58BE /* c3dLog */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D90187D424F009A58BE /* c3dLog.cpp */,
-				570B6D91187D424F009A58BE /* c3dLog.h */,
-			);
-			path = c3dLog;
-			sourceTree = "<group>";
-		};
-		570B6D92187D424F009A58BE /* c3dMaterial */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D93187D424F009A58BE /* c3dMaterial.cpp */,
-				570B6D94187D424F009A58BE /* c3dMaterial.h */,
-			);
-			path = c3dMaterial;
-			sourceTree = "<group>";
-		};
-		570B6D95187D424F009A58BE /* c3dMath */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D96187D424F009A58BE /* c3dMath.cpp */,
-				570B6D97187D424F009A58BE /* c3dMath.h */,
-			);
-			path = c3dMath;
-			sourceTree = "<group>";
-		};
-		570B6D98187D424F009A58BE /* c3dMatrix */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D99187D424F009A58BE /* c3dMatrix.cpp */,
-				570B6D9A187D424F009A58BE /* c3dMatrix.h */,
-			);
-			path = c3dMatrix;
-			sourceTree = "<group>";
-		};
-		570B6D9B187D424F009A58BE /* c3dMatrixStackInfoGetor */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D9C187D424F009A58BE /* c3dMatrixStackInfoGetor.cpp */,
-				570B6D9D187D424F009A58BE /* c3dMatrixStackInfoGetor.h */,
-			);
-			path = c3dMatrixStackInfoGetor;
-			sourceTree = "<group>";
-		};
-		570B6D9E187D424F009A58BE /* c3dMesh */ = {
-			isa = PBXGroup;
-			children = (
-				570B6D9F187D424F009A58BE /* c3dMesh.cpp */,
-				570B6DA0187D424F009A58BE /* c3dMesh.h */,
-			);
-			path = c3dMesh;
-			sourceTree = "<group>";
-		};
-		570B6DA1187D424F009A58BE /* c3dNode */ = {
-			isa = PBXGroup;
-			children = (
-				570B6DA2187D424F009A58BE /* c3dNode.cpp */,
-				570B6DA3187D424F009A58BE /* c3dNode.h */,
-			);
-			path = c3dNode;
-			sourceTree = "<group>";
-		};
-		570B6DA4187D424F009A58BE /* c3dProgram */ = {
-			isa = PBXGroup;
-			children = (
-				570B6DA5187D424F009A58BE /* c3dProgram.cpp */,
-				570B6DA6187D424F009A58BE /* c3dProgram.h */,
-			);
-			path = c3dProgram;
-			sourceTree = "<group>";
-		};
-		570B6DA7187D424F009A58BE /* c3dScene */ = {
-			isa = PBXGroup;
-			children = (
-				570B6DA8187D424F009A58BE /* c3dScene.cpp */,
-				570B6DA9187D424F009A58BE /* c3dScene.h */,
-			);
-			path = c3dScene;
-			sourceTree = "<group>";
-		};
-		570B6DAA187D424F009A58BE /* c3dSprite */ = {
-			isa = PBXGroup;
-			children = (
-				570B6DAB187D424F009A58BE /* c3dSprite.cpp */,
-				570B6DAC187D424F009A58BE /* c3dSprite.h */,
-			);
-			path = c3dSprite;
-			sourceTree = "<group>";
-		};
-		570B6DAE187D424F009A58BE /* c3dUniformPassor */ = {
-			isa = PBXGroup;
-			children = (
-				570B6DAF187D424F009A58BE /* c3dUniformPassor.cpp */,
-				570B6DB0187D424F009A58BE /* c3dUniformPassor.h */,
-			);
-			path = c3dUniformPassor;
-			sourceTree = "<group>";
-		};
-		570B6DB1187D424F009A58BE /* c3dValueCache */ = {
-			isa = PBXGroup;
-			children = (
-				570B6DB2187D424F009A58BE /* c3dValueCache.cpp */,
-				570B6DB3187D424F009A58BE /* c3dValueCache.h */,
-			);
-			path = c3dValueCache;
-			sourceTree = "<group>";
-		};
-		570B6DB4187D424F009A58BE /* c3dVector */ = {
-			isa = PBXGroup;
-			children = (
-				570B6DB5187D424F009A58BE /* c3dVector.cpp */,
-				570B6DB6187D424F009A58BE /* c3dVector.h */,
-			);
-			path = c3dVector;
 			sourceTree = "<group>";
 		};
 		BF5681CC1313A84D0055EEAC /* ios */ = {
@@ -2316,11 +2284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5710B8B3187E444100FA066B /* c3dClassicLighting.fsh in Resources */,
-				5710B8B4187E444100FA066B /* c3dClassicLighting.vsh in Resources */,
-				5710B8B5187E444100FA066B /* c3dTexOnly.fsh in Resources */,
-				5710B8B6187E444100FA066B /* c3dTexOnly.vsh in Resources */,
-				570B6DC2187D424F009A58BE /* defaultTexPic.png in Resources */,
 				57FF89241829DD24001B5248 /* logo.png in Resources */,
 				1839B25B18029A9C005EA308 /* CMakeLists.txt in Resources */,
 				1839B38618029AB8005EA308 /* Android.mk in Resources */,
@@ -2342,6 +2305,7 @@
 				18B41EA41802FEAA007B8CDD /* Icon-144.png in Resources */,
 				189B0C1118169DFE003CDFEE /* button_dn.png in Resources */,
 				189B0C1218169DFE003CDFEE /* button.png in Resources */,
+				1871535218815FE100062B5B /* c3dDefaultResource in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2353,20 +2317,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				189B0C211816A280003CDFEE /* AppDelegate.cpp in Sources */,
-				570B6DCF187D424F009A58BE /* c3dProgram.cpp in Sources */,
 				189B0C221816A280003CDFEE /* AppDelegate.h in Sources */,
 				189B0C231816A280003CDFEE /* AppMacros.h in Sources */,
 				189B0C241816A280003CDFEE /* HelloWorldScene.cpp in Sources */,
 				189B0C251816A280003CDFEE /* HelloWorldScene.h in Sources */,
 				BF365AA812A103F70050DCF4 /* AppController.mm in Sources */,
-				570B6DD1187D424F009A58BE /* c3dSprite.cpp in Sources */,
 				BF4DE6AD138BB89600CF907D /* RootViewController.mm in Sources */,
 				D4ABB4B313B4395300552E6E /* main.m in Sources */,
 				1839B1A018029A77005EA308 /* b2BroadPhase.cpp in Sources */,
 				1839B1A118029A77005EA308 /* b2CollideCircle.cpp in Sources */,
+				187153261881563500062B5B /* c3dProgram.cpp in Sources */,
 				1839B1A218029A77005EA308 /* b2CollideEdge.cpp in Sources */,
 				1839B1A318029A77005EA308 /* b2CollidePolygon.cpp in Sources */,
-				570B6DCE187D424F009A58BE /* c3dNode.cpp in Sources */,
 				1839B1A418029A77005EA308 /* b2Collision.cpp in Sources */,
 				1839B1A518029A77005EA308 /* b2Distance.cpp in Sources */,
 				1839B1A618029A77005EA308 /* b2DynamicTree.cpp in Sources */,
@@ -2375,8 +2337,6 @@
 				1839B1A918029A77005EA308 /* b2CircleShape.cpp in Sources */,
 				1839B1AA18029A77005EA308 /* b2EdgeShape.cpp in Sources */,
 				1839B1AB18029A77005EA308 /* b2PolygonShape.cpp in Sources */,
-				570B6DB9187D424F009A58BE /* c3dCamera.cpp in Sources */,
-				570B6DC9187D424F009A58BE /* c3dMaterial.cpp in Sources */,
 				1839B1AC18029A77005EA308 /* b2BlockAllocator.cpp in Sources */,
 				1839B1AD18029A77005EA308 /* b2Draw.cpp in Sources */,
 				1839B1AE18029A77005EA308 /* b2Math.cpp in Sources */,
@@ -2386,9 +2346,13 @@
 				1839B1B218029A77005EA308 /* b2Body.cpp in Sources */,
 				1839B1B318029A77005EA308 /* b2ContactManager.cpp in Sources */,
 				1839B1B418029A77005EA308 /* b2Fixture.cpp in Sources */,
+				187153171881563500062B5B /* c3dDefaultMeshes.cpp in Sources */,
 				1839B1B518029A77005EA308 /* b2Island.cpp in Sources */,
+				187153221881563500062B5B /* c3dMatrix.cpp in Sources */,
+				187153251881563500062B5B /* c3dNode.cpp in Sources */,
 				1839B1B618029A77005EA308 /* b2World.cpp in Sources */,
 				1839B1B718029A77005EA308 /* b2WorldCallbacks.cpp in Sources */,
+				1871531E1881563500062B5B /* c3dLightSource.cpp in Sources */,
 				1839B1B818029A77005EA308 /* b2ChainAndCircleContact.cpp in Sources */,
 				1839B1B918029A77005EA308 /* b2ChainAndPolygonContact.cpp in Sources */,
 				1839B1BA18029A77005EA308 /* b2CircleContact.cpp in Sources */,
@@ -2403,27 +2367,24 @@
 				1839B1C318029A77005EA308 /* b2GearJoint.cpp in Sources */,
 				1839B1C418029A77005EA308 /* b2Joint.cpp in Sources */,
 				1839B1C518029A77005EA308 /* b2MouseJoint.cpp in Sources */,
-				570B6DD2187D424F009A58BE /* c3dUniformPassor.cpp in Sources */,
-				570B6DC5187D424F009A58BE /* c3dIDTriangle.cpp in Sources */,
 				1839B1C618029A77005EA308 /* b2PrismaticJoint.cpp in Sources */,
 				1839B1C718029A77005EA308 /* b2PulleyJoint.cpp in Sources */,
+				187153191881563500062B5B /* c3dDefaultPrograms.cpp in Sources */,
 				1839B1C818029A77005EA308 /* b2RevoluteJoint.cpp in Sources */,
 				1839B1C918029A77005EA308 /* b2RopeJoint.cpp in Sources */,
 				1839B1CA18029A77005EA308 /* b2WeldJoint.cpp in Sources */,
 				1839B1CB18029A77005EA308 /* b2WheelJoint.cpp in Sources */,
-				570B6DCB187D424F009A58BE /* c3dMatrix.cpp in Sources */,
 				1839B1E418029A77005EA308 /* b2Rope.cpp in Sources */,
 				1839B25A18029A9C005EA308 /* chipmunk.c in Sources */,
-				570B6DBA187D424F009A58BE /* c3dCommonFunc.cpp in Sources */,
 				1839B25C18029A9C005EA308 /* cpConstraint.c in Sources */,
 				1839B25D18029A9C005EA308 /* cpDampedRotarySpring.c in Sources */,
 				1839B25E18029A9C005EA308 /* cpDampedSpring.c in Sources */,
 				1839B25F18029A9C005EA308 /* cpGearJoint.c in Sources */,
 				1839B26018029A9C005EA308 /* cpGrooveJoint.c in Sources */,
 				1839B26118029A9C005EA308 /* cpPinJoint.c in Sources */,
+				187153281881563500062B5B /* c3dSprite.cpp in Sources */,
 				1839B26218029A9C005EA308 /* cpPivotJoint.c in Sources */,
 				1839B26318029A9C005EA308 /* cpRatchetJoint.c in Sources */,
-				570B6DCD187D424F009A58BE /* c3dMesh.cpp in Sources */,
 				1839B26418029A9C005EA308 /* cpRotaryLimitJoint.c in Sources */,
 				1839B26518029A9C005EA308 /* cpSimpleMotor.c in Sources */,
 				1839B26618029A9C005EA308 /* cpSlideJoint.c in Sources */,
@@ -2431,11 +2392,12 @@
 				1839B26818029A9C005EA308 /* cpArray.c in Sources */,
 				1839B26918029A9C005EA308 /* cpBB.c in Sources */,
 				1839B26A18029A9C005EA308 /* cpBBTree.c in Sources */,
-				570B6DBE187D424F009A58BE /* c3dClassicLighting.fsh in Sources */,
 				1839B26B18029A9C005EA308 /* cpBody.c in Sources */,
 				1839B26C18029A9C005EA308 /* cpCollision.c in Sources */,
 				1839B26D18029A9C005EA308 /* cpHashSet.c in Sources */,
+				187153181881563500062B5B /* c3dDefaultPassUniformCallback.cpp in Sources */,
 				1839B26E18029A9C005EA308 /* cpPolyShape.c in Sources */,
+				1871531F1881563500062B5B /* c3dLog.cpp in Sources */,
 				1839B26F18029A9C005EA308 /* cpShape.c in Sources */,
 				1839B27018029A9C005EA308 /* cpSpace.c in Sources */,
 				1839B27118029A9C005EA308 /* cpSpaceComponent.c in Sources */,
@@ -2443,7 +2405,6 @@
 				1839B27318029A9C005EA308 /* cpSpaceQuery.c in Sources */,
 				1839B27418029A9C005EA308 /* cpSpaceStep.c in Sources */,
 				1839B27518029A9C005EA308 /* cpSpatialIndex.c in Sources */,
-				570B6DC1187D424F009A58BE /* c3dTexOnly.vsh in Sources */,
 				1839B27618029A9C005EA308 /* cpSweep1D.c in Sources */,
 				1839B27718029A9C005EA308 /* cpVect.c in Sources */,
 				1839B32618029AA8005EA308 /* CDAudioManager.m in Sources */,
@@ -2454,9 +2415,7 @@
 				1839B4F518029AC8005EA308 /* CCBAnimationManager.cpp in Sources */,
 				1839B4F618029AC8005EA308 /* CCBFileLoader.cpp in Sources */,
 				1839B4F718029AC8005EA308 /* CCBKeyframe.cpp in Sources */,
-				570B6DCC187D424F009A58BE /* c3dMatrixStackInfoGetor.cpp in Sources */,
 				1839B4F818029AC8005EA308 /* CCBReader.cpp in Sources */,
-				570B6DC3187D424F009A58BE /* c3dDefine.cpp in Sources */,
 				1839B4F918029AC8005EA308 /* CCBSequence.cpp in Sources */,
 				1839B4FA18029AC8005EA308 /* CCBSequenceProperty.cpp in Sources */,
 				1839B4FB18029AC8005EA308 /* CCBValue.cpp in Sources */,
@@ -2467,9 +2426,10 @@
 				1839B50018029AC8005EA308 /* CCLabelTTFLoader.cpp in Sources */,
 				1839B50118029AC8005EA308 /* CCLayerColorLoader.cpp in Sources */,
 				1839B50218029AC8005EA308 /* CCLayerGradientLoader.cpp in Sources */,
-				570B6DC8187D424F009A58BE /* c3dLog.cpp in Sources */,
 				57FF89271829ECB1001B5248 /* scene3DLayer.cpp in Sources */,
+				1871531A1881563500062B5B /* c3dDefine.cpp in Sources */,
 				1839B50318029AC8005EA308 /* CCLayerLoader.cpp in Sources */,
+				1871531B1881563500062B5B /* c3dGLMath.cpp in Sources */,
 				1839B50418029AC8005EA308 /* CCMenuItemImageLoader.cpp in Sources */,
 				1839B50518029AC8005EA308 /* CCMenuItemLoader.cpp in Sources */,
 				1839B50618029AC8005EA308 /* CCNode+CCBRelativePositioning.cpp in Sources */,
@@ -2480,18 +2440,24 @@
 				1839B50B18029AC8005EA308 /* CCScrollViewLoader.cpp in Sources */,
 				1839B50C18029AC8005EA308 /* CCSpriteLoader.cpp in Sources */,
 				1839B50D18029AC8005EA308 /* CCActionFrame.cpp in Sources */,
+				187153151881563500062B5B /* c3dCamera.cpp in Sources */,
 				1839B50E18029AC8005EA308 /* CCActionFrameEasing.cpp in Sources */,
 				1839B50F18029AC8005EA308 /* CCActionManager.cpp in Sources */,
 				1839B51018029AC8005EA308 /* CCActionNode.cpp in Sources */,
+				1871531D1881563500062B5B /* c3dIndexVBO3d.cpp in Sources */,
 				1839B51118029AC8005EA308 /* CCActionObject.cpp in Sources */,
+				1871531C1881563500062B5B /* c3dIDTriangle.cpp in Sources */,
 				1839B51218029AC8005EA308 /* CCArmatureAnimation.cpp in Sources */,
+				187153211881563500062B5B /* c3dMath.cpp in Sources */,
 				1839B51318029AC8005EA308 /* CCProcessBase.cpp in Sources */,
 				1839B51418029AC8005EA308 /* CCTween.cpp in Sources */,
 				1839B51518029AC8005EA308 /* CCArmature.cpp in Sources */,
 				1839B51618029AC8005EA308 /* CCBone.cpp in Sources */,
+				187153201881563500062B5B /* c3dMaterial.cpp in Sources */,
 				1839B51718029AC8005EA308 /* CCDatas.cpp in Sources */,
+				187153231881563500062B5B /* c3dMatrixStackInfoGetor.cpp in Sources */,
 				1839B51818029AC8005EA308 /* CCBatchNode.cpp in Sources */,
-				570B6DD4187D424F009A58BE /* c3dVector.cpp in Sources */,
+				187153161881563500062B5B /* c3dCommonFunc.cpp in Sources */,
 				1839B51918029AC8005EA308 /* CCDecorativeDisplay.cpp in Sources */,
 				1839B51A18029AC8005EA308 /* CCDisplayFactory.cpp in Sources */,
 				1839B51B18029AC8005EA308 /* CCDisplayManager.cpp in Sources */,
@@ -2499,9 +2465,9 @@
 				1839B51D18029AC8005EA308 /* CCColliderDetector.cpp in Sources */,
 				1839B51E18029AC8005EA308 /* CCArmatureDataManager.cpp in Sources */,
 				1839B51F18029AC8005EA308 /* CCArmatureDefine.cpp in Sources */,
-				570B6DC0187D424F009A58BE /* c3dTexOnly.fsh in Sources */,
 				1839B52018029AC8005EA308 /* CCDataReaderHelper.cpp in Sources */,
 				1839B52118029AC8005EA308 /* CCSpriteFrameCacheHelper.cpp in Sources */,
+				187153291881563500062B5B /* c3dUniformPassor.cpp in Sources */,
 				1839B52218029AC8005EA308 /* CCTransformHelp.cpp in Sources */,
 				1839B52318029AC8005EA308 /* CCTweenFunction.cpp in Sources */,
 				1839B52418029AC8005EA308 /* CCUtilMath.cpp in Sources */,
@@ -2510,49 +2476,43 @@
 				1839B52718029AC8005EA308 /* CCComController.cpp in Sources */,
 				1839B52818029AC8005EA308 /* CCComRender.cpp in Sources */,
 				1839B52918029AC8005EA308 /* CCInputDelegate.cpp in Sources */,
-				570B6DBB187D424F009A58BE /* c3dDefaultMeshes.cpp in Sources */,
-				570B6DBD187D424F009A58BE /* c3dDefaultPrograms.cpp in Sources */,
 				1839B52A18029AC8005EA308 /* UIRootWidget.cpp in Sources */,
 				1839B52B18029AC8005EA308 /* UIWidget.cpp in Sources */,
 				1839B52C18029AC8005EA308 /* Layout.cpp in Sources */,
 				1839B52D18029AC8005EA308 /* LayoutParameter.cpp in Sources */,
-				570B6DD3187D424F009A58BE /* c3dValueCache.cpp in Sources */,
 				1839B52E18029AC8005EA308 /* UILayoutDefine.cpp in Sources */,
 				1839B52F18029AC8005EA308 /* CocosGUI.cpp in Sources */,
 				1839B53018029AC8005EA308 /* UIHelper.cpp in Sources */,
 				1839B53118029AC8005EA308 /* UIInputManager.cpp in Sources */,
 				1839B53218029AC8005EA308 /* UILayer.cpp in Sources */,
 				1839B53318029AC8005EA308 /* UIDragPanel.cpp in Sources */,
-				570B6DC7187D424F009A58BE /* c3dLightSource.cpp in Sources */,
 				1839B53418029AC8005EA308 /* UIListView.cpp in Sources */,
 				1839B53518029AC8005EA308 /* UIPageView.cpp in Sources */,
 				1839B53618029AC8005EA308 /* UIScrollView.cpp in Sources */,
-				570B6DCA187D424F009A58BE /* c3dMath.cpp in Sources */,
+				1871532B1881563500062B5B /* c3dVector.cpp in Sources */,
 				1839B53718029AC8005EA308 /* UIButton.cpp in Sources */,
 				1839B53818029AC8005EA308 /* UICheckBox.cpp in Sources */,
 				1839B53918029AC8005EA308 /* UIImageView.cpp in Sources */,
+				187153241881563500062B5B /* c3dMesh.cpp in Sources */,
 				1839B53A18029AC8005EA308 /* UILabel.cpp in Sources */,
 				1839B53B18029AC8005EA308 /* UILabelAtlas.cpp in Sources */,
 				1839B53C18029AC8005EA308 /* UILabelBMFont.cpp in Sources */,
 				1839B53D18029AC8005EA308 /* UILoadingBar.cpp in Sources */,
 				1839B53E18029AC8005EA308 /* UISlider.cpp in Sources */,
 				1839B53F18029AC8005EA308 /* UISwitch.cpp in Sources */,
-				570B6DC4187D424F009A58BE /* c3dGLMath.cpp in Sources */,
 				1839B54018029AC8005EA308 /* UITextField.cpp in Sources */,
 				1839B54118029AC8005EA308 /* CSContentJsonDictionary.cpp in Sources */,
 				1839B54218029AC8005EA308 /* DictionaryHelper.cpp in Sources */,
 				1839B54518029AC8005EA308 /* json_reader.cpp in Sources */,
+				1871532A1881563500062B5B /* c3dValueCache.cpp in Sources */,
 				1839B54618029AC8005EA308 /* json_value.cpp in Sources */,
-				570B6DD0187D424F009A58BE /* c3dScene.cpp in Sources */,
 				1839B54818029AC8005EA308 /* json_writer.cpp in Sources */,
 				1839B54A18029AC8005EA308 /* CCSGUIReader.cpp in Sources */,
 				1839B54B18029AC8005EA308 /* CCSSceneReader.cpp in Sources */,
 				1839B54C18029AC8005EA308 /* CCControl.cpp in Sources */,
-				570B6DBF187D424F009A58BE /* c3dClassicLighting.vsh in Sources */,
 				1839B54D18029AC8005EA308 /* CCControlButton.cpp in Sources */,
 				1839B54E18029AC8005EA308 /* CCControlColourPicker.cpp in Sources */,
 				1839B54F18029AC9005EA308 /* CCControlHuePicker.cpp in Sources */,
-				570B6DC6187D424F009A58BE /* c3dIndexVBO3d.cpp in Sources */,
 				1839B55018029AC9005EA308 /* CCControlPotentiometer.cpp in Sources */,
 				1839B55118029AC9005EA308 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				1839B55218029AC9005EA308 /* CCControlSlider.cpp in Sources */,
@@ -2581,6 +2541,7 @@
 				1839B58118029AC9005EA308 /* AnimationStateData.cpp in Sources */,
 				1839B58218029AC9005EA308 /* Atlas.cpp in Sources */,
 				1839B58318029AC9005EA308 /* AtlasAttachmentLoader.cpp in Sources */,
+				187153271881563500062B5B /* c3dScene.cpp in Sources */,
 				1839B58418029AC9005EA308 /* Attachment.cpp in Sources */,
 				1839B58518029AC9005EA308 /* AttachmentLoader.cpp in Sources */,
 				1839B58618029AC9005EA308 /* Bone.cpp in Sources */,
@@ -2597,7 +2558,6 @@
 				1839B59118029AC9005EA308 /* Slot.cpp in Sources */,
 				1839B59218029AC9005EA308 /* SlotData.cpp in Sources */,
 				1839B59318029AC9005EA308 /* spine-cocos2dx.cpp in Sources */,
-				570B6DBC187D424F009A58BE /* c3dDefaultPassUniformCallback.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

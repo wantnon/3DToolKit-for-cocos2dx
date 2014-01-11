@@ -9,66 +9,186 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="c3dToolKit">
+      <UniqueIdentifier>{448869e1-95c8-4a1a-87f4-701ca5caa217}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>win32</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\myFunc.cpp">
-      <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\myDef.cpp">
-      <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\obj3D.cpp">
-      <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\scene2DLayer.cpp">
-      <Filter>Classes</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\scene3DLayer.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\indexVBO3d.cpp">
-      <Filter>Classes</Filter>
+    <ClCompile Include="..\c3dToolKit\c3dSprite.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dUniformPassor.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dValueCache.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dVector.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dCamera.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dCommonFunc.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dDefaultMeshes.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dDefaultPassUniformCallback.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dDefaultPrograms.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dDefine.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dGLMath.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dIDTriangle.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dIndexVBO3d.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dLightSource.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dLog.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dMaterial.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dMath.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dMatrix.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dMatrixStackInfoGetor.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dMesh.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dNode.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dProgram.cpp">
+      <Filter>c3dToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c3dToolKit\c3dScene.cpp">
+      <Filter>c3dToolKit</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="main.h">
-      <Filter>win32</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\AppMacros.h">
-      <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\myFunc.h">
-      <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\myDef.h">
-      <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\obj3D.h">
-      <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\scene2DLayer.h">
-      <Filter>Classes</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\scene3DLayer.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\indexVBO3d.h">
-      <Filter>Classes</Filter>
+    <ClInclude Include="..\c3dToolKit\c3dSprite.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dToolKit.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dUniformPassor.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dValueCache.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dVector.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\principles.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\wantList.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dCamera.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dCommonFunc.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dDefaultMeshes.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dDefaultPassUniformCallback.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dDefaultPrograms.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dDefine.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dGLMath.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dIDTriangle.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dIndexVBO3d.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dLightSource.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dLog.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dMaterial.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dMath.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dMatrix.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dMatrixStackInfoGetor.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dMesh.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dNode.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dProgram.h">
+      <Filter>c3dToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c3dToolKit\c3dScene.h">
+      <Filter>c3dToolKit</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E8EDADB3-66F1-4C0E-8D5E-8F9CB8286A89}</ProjectGuid>
+    <ProjectGuid>{66859781-EDAD-4C93-B587-8107ACE1BC20}</ProjectGuid>
     <RootNamespace>HelloCppwin32</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -66,7 +66,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\cocos2dx;$(ProjectDir)..\..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\Classes;$(ProjectDir)..\..\..\..\extensions\GUI\CCControlExtension;$(ProjectDir)..\..\..\..\extensions;$(ProjectDir)..\..\..\..\CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\cocos2dx;$(ProjectDir)..\..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\Classes;$(ProjectDir)..\..\..\..\extensions\GUI\CCControlExtension;$(ProjectDir)..\..\..\..\extensions;$(ProjectDir)..\..\..\..\CocosDenshion\include;..\c3dToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -94,7 +94,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\cocos2dx;$(ProjectDir)..\..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\Classes;$(ProjectDir)..\..\..\..\extensions\GUI\CCControlExtension;$(ProjectDir)..\..\..\..\extensions;$(ProjectDir)..\..\..\..\CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\cocos2dx;$(ProjectDir)..\..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\Classes;$(ProjectDir)..\..\..\..\extensions\GUI\CCControlExtension;$(ProjectDir)..\..\..\..\extensions;$(ProjectDir)..\..\..\..\CocosDenshion\include;..\c3dToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -120,25 +120,64 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\c3dToolKit\c3dCamera.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dCommonFunc.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dDefaultMeshes.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dDefaultPassUniformCallback.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dDefaultPrograms.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dDefine.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dGLMath.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dIDTriangle.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dIndexVBO3d.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dLightSource.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dLog.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMaterial.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMath.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMatrix.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMatrixStackInfoGetor.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMesh.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dNode.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dProgram.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dScene.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dSprite.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dUniformPassor.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dValueCache.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dVector.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
-    <ClCompile Include="..\Classes\indexVBO3d.cpp" />
-    <ClCompile Include="..\Classes\myDef.cpp" />
-    <ClCompile Include="..\Classes\myFunc.cpp" />
-    <ClCompile Include="..\Classes\obj3D.cpp" />
-    <ClCompile Include="..\Classes\scene2DLayer.cpp" />
     <ClCompile Include="..\Classes\scene3DLayer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\c3dToolKit\c3dCamera.h" />
+    <ClInclude Include="..\c3dToolKit\c3dCommonFunc.h" />
+    <ClInclude Include="..\c3dToolKit\c3dDefaultMeshes.h" />
+    <ClInclude Include="..\c3dToolKit\c3dDefaultPassUniformCallback.h" />
+    <ClInclude Include="..\c3dToolKit\c3dDefaultPrograms.h" />
+    <ClInclude Include="..\c3dToolKit\c3dDefine.h" />
+    <ClInclude Include="..\c3dToolKit\c3dGLMath.h" />
+    <ClInclude Include="..\c3dToolKit\c3dIDTriangle.h" />
+    <ClInclude Include="..\c3dToolKit\c3dIndexVBO3d.h" />
+    <ClInclude Include="..\c3dToolKit\c3dLightSource.h" />
+    <ClInclude Include="..\c3dToolKit\c3dLog.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMaterial.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMath.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMatrix.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMatrixStackInfoGetor.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMesh.h" />
+    <ClInclude Include="..\c3dToolKit\c3dNode.h" />
+    <ClInclude Include="..\c3dToolKit\c3dProgram.h" />
+    <ClInclude Include="..\c3dToolKit\c3dScene.h" />
+    <ClInclude Include="..\c3dToolKit\c3dSprite.h" />
+    <ClInclude Include="..\c3dToolKit\c3dToolKit.h" />
+    <ClInclude Include="..\c3dToolKit\c3dUniformPassor.h" />
+    <ClInclude Include="..\c3dToolKit\c3dValueCache.h" />
+    <ClInclude Include="..\c3dToolKit\c3dVector.h" />
+    <ClInclude Include="..\c3dToolKit\principles.h" />
+    <ClInclude Include="..\c3dToolKit\wantList.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\AppMacros.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
-    <ClInclude Include="..\Classes\indexVBO3d.h" />
-    <ClInclude Include="..\Classes\myDef.h" />
-    <ClInclude Include="..\Classes\myFunc.h" />
-    <ClInclude Include="..\Classes\obj3D.h" />
-    <ClInclude Include="..\Classes\scene2DLayer.h" />
     <ClInclude Include="..\Classes\scene3DLayer.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
