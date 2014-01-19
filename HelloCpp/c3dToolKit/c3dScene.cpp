@@ -13,9 +13,9 @@ bool Cc3dScene::init(){
 }
 void Cc3dScene::transform3D(){
     //different from ordinary Cc3dNode, for Cc3dScene, we mult matrix and locate camrea as well
-    Cc3dNode::transform3D();
-    getCamera3D()->locate();
     getCamera3D()->applyProjection();
+    getCamera3D()->locate();
+    Cc3dNode::transform3D();
     
     
 }
