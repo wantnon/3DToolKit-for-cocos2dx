@@ -33,7 +33,6 @@ public:
         return p;
     }
     bool init();
-    virtual void transform3D();
     virtual void visit();
     virtual bool isSceneNode3D(){return true;}
 
