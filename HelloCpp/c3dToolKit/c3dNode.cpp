@@ -37,8 +37,8 @@ Cc3dMatrix4 Cc3dNode::nodeToWorldTransform3D()
 {
     Cc3dMatrix4 t = this->m_mat;
     for (Cc3dNode *p = (Cc3dNode*)this->getParent(); p != NULL; p = (Cc3dNode*)p->getParent()){
-        if(p->isSceneNode3D())break;//seneNode's matrix do not count in
         t = p->nodeToParentTransform3D()*t;
+        if(p->isSceneNode3D())break;//seneNode's matrix already count in
     }
     return t;
 }
