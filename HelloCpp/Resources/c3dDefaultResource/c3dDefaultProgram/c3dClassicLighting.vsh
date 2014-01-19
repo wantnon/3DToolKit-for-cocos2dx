@@ -19,41 +19,41 @@ uniform vec4 specularLight;
 uniform float shininess;
 
 //varying (pass to fragment shader)
-varying vec4 mainColor;
-varying vec4 secondaryColor;
-varying vec2 texCoordOut;
+varying vec4 v_mainColor;
+varying vec4 v_secondaryColor;
+varying vec2 v_texCoord;
 
 
 
 void main(void) {
     vec4 diffuseML=vec4(vec3(diffuseMaterial)*vec3(diffuseLight),diffuseMaterial.a);
-    vec4 ambientML=vec4(vec3(ambientMaterial)*vec3(ambientLight),0);
-    vec4 specularML=vec4(vec3(specularMaterial)*vec3(specularLight),0);
+    vec4 ambientML=ambientMaterial*ambientLight;
+    vec4 specularML=specularMaterial*specularLight;
     //----get normal in world space
     //if scaling is uniformed, we can use modelMat instead of normalMat
     //if no scaling, we need not normalization
-    vec3 norm_world = normalize(vec3(normalMat*a_normal));
+    vec4 norm_world = vec4(normalize(vec3(normalMat*a_normal)),0.0);
     //----get pos in world space
-    vec3 pos_world = vec3(modelMat*a_position);
+    vec4 pos_world = modelMat*a_position;
     //----lightPos already in world space
     //----calculate diffuse color
-    vec3 posToLight=vec3(normalize(vec3(lightPos_world)-pos_world));
+    vec4 posToLight=vec4(normalize(vec3(lightPos_world-pos_world)),0.0);
     float normDotPosToLight = max(0.0, dot(norm_world, posToLight));
-    vec3 diffuseColor= normDotPosToLight*vec3(diffuseML);
+    vec4 diffuseColor= vec4(normDotPosToLight*vec3(diffuseML),diffuseML.a);
     //----calculate ambient color
-    //vec3(ambientML);
+    vec4 ambientColor=vec4(vec3(ambientML),1.0);
     //----calculate specular color
-    vec3 posToEye=normalize(vec3(eyePos_world)-pos_world);
-    vec3 halfVector=(posToLight+posToEye)*0.5;
+    vec4 posToEye=vec4(normalize(vec3(eyePos_world-pos_world)),0.0);
+    vec4 halfVector=(posToLight+posToEye)*0.5;
     float normDotHalfVector=max(0.0,dot(norm_world, halfVector));
     float pf=normDotHalfVector==0.0?0.0:pow(normDotHalfVector,shininess);
-    vec3 specularColor= pf*vec3(specularML);
+    vec4 specularColor= vec4(pf*vec3(specularML),1.0);
     //----set varying
-    //the final alpha is equal to diffuseML.a(and is equal to diffuse_material.a)
-    mainColor = vec4(vec3(ambientML)+diffuseColor*vec3(a_color),diffuseML.a*a_color.a);
+    //the final alpha is equal to diffuseColor.a
+    v_mainColor = vec4(vec3(ambientColor)+vec3(diffuseColor)*vec3(a_color),diffuseColor.a*a_color.a);
     float secondaryColorAlpha=pf;
-    secondaryColor=vec4(specularColor,secondaryColorAlpha);
+    v_secondaryColor=vec4(vec3(specularColor),secondaryColorAlpha);
+    v_texCoord = a_texCoord;
     gl_Position = CC_MVPMatrix * a_position;
-    texCoordOut = a_texCoord;
 
 }
