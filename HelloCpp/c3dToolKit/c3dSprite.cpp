@@ -116,7 +116,7 @@ void Cc3dSprite::draw(){
     m_pShaderProgram->use();
     m_pShaderProgram->setUniformsForBuiltins();
     //pass values for my own uniforms
-    m_uniformPassor->excuteCallback(this, m_program);
+    m_uniformPassor->executeCallback(this, m_program);
     //attach texture to texture attach point
     Cc3dIndexVBO3d::bindTexture(0, m_texture->getName());
     //draw

@@ -35,7 +35,7 @@ public:
     static Cc3dUniformPassor*createWithCallback(void (*passUniformCallback)(Cc3dNode*, Cc3dProgram*));
     bool init(){return true;}
     void setCallback(void (*callback)(Cc3dNode*, Cc3dProgram*));
-    void excuteCallback(Cc3dNode*node, Cc3dProgram*program);
+    void executeCallback(Cc3dNode*node, Cc3dProgram*program);
 protected:
     void (*m_callback)(Cc3dNode*, Cc3dProgram*);
 

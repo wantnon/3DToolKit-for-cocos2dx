@@ -16,6 +16,6 @@ Cc3dUniformPassor*Cc3dUniformPassor::createWithCallback(void (*passUniformCallba
 void Cc3dUniformPassor::setCallback(void (*callback)(Cc3dNode*, Cc3dProgram*)){
     m_callback=callback;
 }
-void Cc3dUniformPassor::excuteCallback(Cc3dNode*node, Cc3dProgram*program){
+void Cc3dUniformPassor::executeCallback(Cc3dNode*node, Cc3dProgram*program){
     m_callback(node,program);
 }
