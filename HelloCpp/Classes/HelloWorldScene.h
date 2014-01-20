@@ -33,14 +33,25 @@ public:
     void visit();
     void update(float t);
 public:
+    //3D scene layer
     Cscene3DLayer*m_scene3DLayer;
+    
+    //controlButton and its callback
     CCControlButton* m_controlButton_swithProjMode;
     void switchProjMode(CCObject *senderz, CCControlEvent controlEvent);
     CCControlButton* m_controlButton_transform;
     void transform(CCObject *senderz, CCControlEvent controlEvent);
-    bool isScheduleOn;
-    vector<Cc3dMatrix4> initalMatList;//used for restore all sprites transform
+    
+    //label show current projection mode
     CCLabelTTF* m_pLabel;
+    
+    //store initial transform matrixs of 3D sprites in scene3DLayer (used for restore)
+    vector<Cc3dMatrix4> initalMatList;
+    
+    //flag to mark whether schedule update is running
+    bool isScheduleOn;
+    
+    
 
 };
 

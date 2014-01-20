@@ -46,11 +46,12 @@ public:
     float m_B;//angle vertical
     void updateEyePos();
     
-    CCPoint m_mosPos;
-    CCPoint m_mosPosf;
+    CCPoint m_mosPos;//trace mouse position
+    CCPoint m_mosPosf;//mouse position of previous frame
     
-    Cc3dScene*m_scene;
-    vector<Cc3dSprite*> m_spriteList;
+    Cc3dScene*m_scene;//3D scene root node
+    
+    vector<Cc3dSprite*> m_spriteList;//list of 3D sprite
 
     
     
