@@ -13,6 +13,9 @@ bool Cc3dScene::init(){
 }
 
 void Cc3dScene::visit(){
+    //store depthTest state
+    GLboolean isDoDepthTestOld;
+    glGetBooleanv(GL_DEPTH_TEST,&isDoDepthTestOld);
     //push matrix
     kmGLMatrixMode(KM_GL_PROJECTION);
     kmGLPushMatrix();
@@ -34,4 +37,9 @@ void Cc3dScene::visit(){
     kmGLPopMatrix();
     kmGLMatrixMode(KM_GL_MODELVIEW);
     kmGLPopMatrix();
+    //resotre depthTest state
+    CCDirector::sharedDirector()->setDepthTest(isDoDepthTestOld);
+    
+    
+    
 }

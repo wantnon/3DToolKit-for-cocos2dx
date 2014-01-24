@@ -38,6 +38,8 @@ public:
         m_lightSource=NULL;
         m_material=NULL;
         m_isDoDepthTest=true;
+        m_blendFunc.src=C3D_BLEND_SRC;
+        m_blendFunc.dst=C3D_BLEND_DST;
     }
 	virtual ~Cc3dSprite(){
         if(m_texture)m_texture->release();
@@ -71,6 +73,8 @@ public:
     Cc3dMaterial*getMaterial()const{return m_material;}
     bool getIsDoDepthTest()const;
     void setIsDoDepthTest(bool isDoDepthTest);
+    void setBlendFunc(ccBlendFunc blendFunc){m_blendFunc = blendFunc;}
+    ccBlendFunc getBlendFunc(){return m_blendFunc;}
 protected:
     CCTexture2D* m_texture;
     Cc3dMaterial* m_material;
@@ -80,6 +84,8 @@ protected:
     Cc3dUniformPassor* m_uniformPassor;
     Cc3dLightSource* m_lightSource;
     bool m_isDoDepthTest;
+    ccBlendFunc m_blendFunc;
+    
     
 };
 

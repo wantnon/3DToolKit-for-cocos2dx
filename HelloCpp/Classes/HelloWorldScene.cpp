@@ -129,8 +129,6 @@ bool HelloWorld::init()
     return true;
 }
 void HelloWorld::visit(){
-    //the below line may cause controlButton no no response. why???
-    ////CCDirector::sharedDirector()->setProjection(kCCDirectorProjection2D);
     
     //call parent visit
     CCLayer::visit();

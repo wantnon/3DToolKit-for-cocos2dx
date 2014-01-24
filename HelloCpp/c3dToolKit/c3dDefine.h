@@ -43,4 +43,12 @@ enum Ec3dProjectionMode{
     ec3dOrthographicMode = 0,
     ec3dPerspectiveMode,
 };
+
+
+
+//default blend function of opengl
+//note, it is different from default blend function in cocos2d-x(see CC_BLEND_SRC, CC_BLEND_DST in cocos2d-x source code)
+#define C3D_BLEND_SRC GL_ONE
+#define C3D_BLEND_DST GL_ZERO
+
 #endif /* defined(__HelloCpp__c3dDefine__) */

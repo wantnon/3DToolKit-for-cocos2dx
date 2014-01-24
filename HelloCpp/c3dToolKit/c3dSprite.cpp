@@ -103,13 +103,16 @@ void Cc3dSprite::submitMeshIndex(GLenum usage){
 void Cc3dSprite::draw(){
     assert(m_mesh&&m_texture&&m_indexVBO
            &&m_program&&m_uniformPassor&&m_lightSource&&m_camera);
-    //store isDoDepthTest
-    GLboolean isDoDepthTestOld;
-    glGetBooleanv(GL_DEPTH_TEST,&isDoDepthTestOld);
-    //set depthTest
-    if(m_isDoDepthTest!=isDoDepthTestOld){
+    
+    //apply state
+    //for performance sake, we only apply state, not restore
+    {
+        //set depthTest
         CCDirector::sharedDirector()->setDepthTest(m_isDoDepthTest);
+        //set blend function
+        ccGLBlendFunc(m_blendFunc.src, m_blendFunc.dst);
     }
+    
     //enable server state (i don't know what this means :( )
     ccGLEnable(m_eGLServerState);
     //pass values for cocos2d-x build-in uniforms
@@ -123,8 +126,6 @@ void Cc3dSprite::draw(){
     m_indexVBO->setPointers();
     m_indexVBO->draw(GL_TRIANGLES);
     Cc3dIndexVBO3d::bindTexture(0, 0);
-    //restore isDoDepthTest
-    CCDirector::sharedDirector()->setDepthTest(isDoDepthTestOld);
 }
 
 bool Cc3dSprite::getIsDoDepthTest()const {
