@@ -66,7 +66,7 @@ vector<float> Cc3dMatrix4::convertToVector()const{
     vector<float> vec(m_array,m_array+16);
     return vec;
 }
-Cc3dMatrix4 Cc3dMatrix4::operator*(const Cc3dMatrix4&mat){
+Cc3dMatrix4 Cc3dMatrix4::operator*(const Cc3dMatrix4&mat)const{
     const float *a=this->getArray();
     const float *b=mat.getArray();
     float r[16];//result
@@ -91,7 +91,7 @@ Cc3dMatrix4 Cc3dMatrix4::operator*(const Cc3dMatrix4&mat){
     r[15]=b[12]*a[3]+b[13]*a[7]+b[14]*a[11]+b[15]*a[15];
     return Cc3dMatrix4(r);
 }
-Cc3dVector4 Cc3dMatrix4::operator*(const Cc3dVector4&v){
+Cc3dVector4 Cc3dMatrix4::operator*(const Cc3dVector4&v)const{
     const float *m=this->getArray();
     const float *vin=v.getArray();
     float vout[4];

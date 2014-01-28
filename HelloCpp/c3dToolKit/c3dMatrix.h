@@ -40,8 +40,8 @@ public:
     void setAt(int index,float value);
     int getArrayLen()const{return 16;}
     vector<float> convertToVector()const;
-    Cc3dMatrix4 operator*(const Cc3dMatrix4&mat);
-    Cc3dVector4 operator*(const Cc3dVector4&v);
+    Cc3dMatrix4 operator*(const Cc3dMatrix4&mat)const;
+    Cc3dVector4 operator*(const Cc3dVector4&v)const;
     void print();
 private:
     void initMembers();
