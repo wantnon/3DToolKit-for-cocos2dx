@@ -23,9 +23,9 @@ public:
     }
     virtual~Cc3dRange(){}
     bool init(float xmin,float xmax,float ymin,float ymax,float zmin,float zmax){
-        assert(xmax>xmin);
-        assert(ymax>ymin);
-        assert(zmax>zmin);
+        assert(xmax>=xmin);
+        assert(ymax>=ymin);
+        assert(zmax>=zmin);
         m_xmin=xmin;
         m_xmax=xmax;
         m_ymin=ymin;
