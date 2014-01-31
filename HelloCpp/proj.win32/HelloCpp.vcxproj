@@ -138,6 +138,7 @@
     <ClCompile Include="..\c3dToolKit\c3dMesh.cpp" />
     <ClCompile Include="..\c3dToolKit\c3dNode.cpp" />
     <ClCompile Include="..\c3dToolKit\c3dProgram.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dRange.cpp" />
     <ClCompile Include="..\c3dToolKit\c3dScene.cpp" />
     <ClCompile Include="..\c3dToolKit\c3dSprite.cpp" />
     <ClCompile Include="..\c3dToolKit\c3dUniformPassor.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="..\c3dToolKit\c3dMesh.h" />
     <ClInclude Include="..\c3dToolKit\c3dNode.h" />
     <ClInclude Include="..\c3dToolKit\c3dProgram.h" />
+    <ClInclude Include="..\c3dToolKit\c3dRange.h" />
     <ClInclude Include="..\c3dToolKit\c3dScene.h" />
     <ClInclude Include="..\c3dToolKit\c3dSprite.h" />
     <ClInclude Include="..\c3dToolKit\c3dToolKit.h" />
