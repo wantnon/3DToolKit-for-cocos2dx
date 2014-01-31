@@ -236,6 +236,7 @@
 		1839B5AD1802B681005EA308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B51547F06B00633F88 /* AVFoundation.framework */; };
 		1839B5AE1802B68D005EA308 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B31547F06B00633F88 /* AudioToolbox.framework */; };
 		1839B5AF1802B6CA005EA308 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B11547F06B00633F88 /* OpenAL.framework */; };
+		183EA197189B35FC0065BE3B /* c3dRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 183EA195189B35FC0065BE3B /* c3dRange.cpp */; };
 		187153151881563500062B5B /* c3dCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152E41881563500062B5B /* c3dCamera.cpp */; };
 		187153161881563500062B5B /* c3dCommonFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152E61881563500062B5B /* c3dCommonFunc.cpp */; };
 		187153171881563500062B5B /* c3dDefaultMeshes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 187152E81881563500062B5B /* c3dDefaultMeshes.cpp */; };
@@ -772,6 +773,8 @@
 		1839B4F118029AC8005EA308 /* spine-cocos2dx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "spine-cocos2dx.h"; sourceTree = "<group>"; };
 		1839B4F218029AC8005EA308 /* spine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spine.h; sourceTree = "<group>"; };
 		1839B5A51802B1B1005EA308 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
+		183EA195189B35FC0065BE3B /* c3dRange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dRange.cpp; sourceTree = "<group>"; };
+		183EA196189B35FC0065BE3B /* c3dRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dRange.h; sourceTree = "<group>"; };
 		187152E41881563500062B5B /* c3dCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCamera.cpp; sourceTree = "<group>"; };
 		187152E51881563500062B5B /* c3dCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCamera.h; sourceTree = "<group>"; };
 		187152E61881563500062B5B /* c3dCommonFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCommonFunc.cpp; sourceTree = "<group>"; };
@@ -1879,6 +1882,15 @@
 			path = spine;
 			sourceTree = "<group>";
 		};
+		183EA194189B35E30065BE3B /* c3dRange */ = {
+			isa = PBXGroup;
+			children = (
+				183EA195189B35FC0065BE3B /* c3dRange.cpp */,
+				183EA196189B35FC0065BE3B /* c3dRange.h */,
+			);
+			name = c3dRange;
+			sourceTree = "<group>";
+		};
 		1871532C1881568B00062B5B /* c3dCamera */ = {
 			isa = PBXGroup;
 			children = (
@@ -2172,6 +2184,7 @@
 		570B6D69187D424F009A58BE /* c3dToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				183EA194189B35E30065BE3B /* c3dRange */,
 				1871532C1881568B00062B5B /* c3dCamera */,
 				1871532E188156B100062B5B /* c3dCommonFunc */,
 				1871532F188156C400062B5B /* c3dDefaultMeshes */,
@@ -2475,6 +2488,7 @@
 				1839B52618029AC8005EA308 /* CCComAudio.cpp in Sources */,
 				1839B52718029AC8005EA308 /* CCComController.cpp in Sources */,
 				1839B52818029AC8005EA308 /* CCComRender.cpp in Sources */,
+				183EA197189B35FC0065BE3B /* c3dRange.cpp in Sources */,
 				1839B52918029AC8005EA308 /* CCInputDelegate.cpp in Sources */,
 				1839B52A18029AC8005EA308 /* UIRootWidget.cpp in Sources */,
 				1839B52B18029AC8005EA308 /* UIWidget.cpp in Sources */,

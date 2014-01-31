@@ -8,19 +8,25 @@
 
 #include "c3dCamera.h"
 
-Cc3dVector4 Cc3dCamera::getEyePos(){
+Cc3dVector4 Cc3dCamera::getEyePos()const{
+    //getEyeXYZ is not const, but i want getEyePos to be const
+    //so i convert this from const to nonconst
     float eyex,eyey,eyez;
-    this->getEyeXYZ(&eyex, &eyey, &eyez);
+    ((Cc3dCamera*)this)->getEyeXYZ(&eyex, &eyey, &eyez);
     return Cc3dVector4(eyex,eyey,eyez,1);
 }
-Cc3dVector4 Cc3dCamera::getCenter(){
+Cc3dVector4 Cc3dCamera::getCenter()const{
+    //getCenterXYZ is not const, but i want getCenter to be const
+    //so i convert this from const to nonconst
     float centerX,centerY,centerZ;
-    this->getCenterXYZ(&centerX, &centerY, &centerZ);
+    ((Cc3dCamera*)this)->getCenterXYZ(&centerX, &centerY, &centerZ);
     return Cc3dVector4(centerX,centerY,centerZ,1);
 }
-Cc3dVector4 Cc3dCamera::getUp(){
+Cc3dVector4 Cc3dCamera::getUp()const{
+    //getUpXYZ is not const, but i want getUp to be const
+    //so i convert this from const to nonconst
     float upX,upY,upZ;
-    this->getUpXYZ(&upX, &upY, &upZ);
+    ((Cc3dCamera*)this)->getUpXYZ(&upX, &upY, &upZ);
     return Cc3dVector4(upX,upY,upZ,0);
 }
 void Cc3dCamera::setEyePos(const Cc3dVector4&eyePos){
@@ -74,7 +80,7 @@ Cc3dMatrix4 Cc3dCamera::calculateProjectionMat(){
             projectionMat=::calculatePerspectiveProjectionMatrix(m_fovy, m_aspect, m_zNear, m_zFar);
             break;
         case ec3dOrthographicMode:
-            projectionMat=::calculateOrthoProjectionMatrix(m_rect.getMinX(), m_rect.getMaxX(), m_rect.getMinY(), m_rect.getMaxY(), m_near, m_far);
+            projectionMat=::calculateOrthoProjectionMatrix(m_range.getMinX(), m_range.getMaxX(), m_range.getMinY(), m_range.getMaxY(), m_range.getMinZ(), m_range.getMaxZ());
             break;
         default:
             assert(false);
@@ -95,7 +101,7 @@ void Cc3dCamera::applyProjection()
     kmGLMatrixMode(KM_GL_MODELVIEW);
     
 };
-void Cc3dCamera::printProjectionMode(){
+void Cc3dCamera::printProjectionMode()const{
     if(m_projectionMode==ec3dPerspectiveMode){
         C3DLOG("projectionMode: perspectiveMode");
     }else if(m_projectionMode==ec3dOrthographicMode){

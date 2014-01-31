@@ -19,6 +19,7 @@ using namespace cocos2d;
 #include "c3dCommonFunc.h"
 #include "c3dValueCache.h"
 #include "c3dMatrixStackInfoGetor.h"
+#include "c3dRange.h"
 class Cc3dCamera:public CCCamera
 {
 public:
@@ -31,9 +32,9 @@ public:
         
         const float w=11;
         const float h=w*winSize.height/winSize.width;
-        m_rect.setRect(-w/2, -h/2, w,h);
-        m_near=-1024;//yeah, better to use negative value
-        m_far=1024;
+        m_range.init(-w/2, -w/2+w, -h/2, -h/2+h,
+                     -1024,//yeah, better to use negative value
+                     1024);
         m_projectionMode=ec3dPerspectiveMode;
 
     }
@@ -45,9 +46,9 @@ public:
         return p;
     }
 
-    Cc3dVector4 getEyePos();
-    Cc3dVector4 getCenter();
-    Cc3dVector4 getUp();
+    Cc3dVector4 getEyePos()const;
+    Cc3dVector4 getCenter()const;
+    Cc3dVector4 getUp()const;
     void setEyePos(const Cc3dVector4&eyePos);
     void setCenter(const Cc3dVector4&center);
     void setUp(const Cc3dVector4&up);
@@ -55,19 +56,19 @@ public:
     float getAspect()const {return m_aspect;}
     float getzNear()const {return m_zNear;}
     float getzFar()const {return m_zFar;}
-    CCRect getRect()const {return m_rect;}
     void setFovy(float fovy){m_fovy=fovy;}
     void setAspect(float aspect){m_aspect=aspect;}
     void setzNear(float zNear){m_zNear=zNear;}
     void setzFar(float zFar){m_zFar=zFar;}
-    void setRect(CCRect&rect){m_rect=rect;}
+    Cc3dRange getRange()const {return m_range;}
+    void setRange(const Cc3dRange&range){m_range=range;}
     Cc3dMatrix4 calculateViewMat();
     Cc3dMatrix4 calculateViewMatInverse();
     Cc3dMatrix4 calculateProjectionMat();
     Ec3dProjectionMode getProjectionMode(){return m_projectionMode;}
     void setProjectionMode(Ec3dProjectionMode projectionMode){m_projectionMode=projectionMode;}
     void applyProjection();
-    void printProjectionMode();
+    void printProjectionMode()const;
 protected:
     //projection mode type
     Ec3dProjectionMode m_projectionMode;
@@ -77,9 +78,7 @@ protected:
     float m_zNear;
     float m_zFar;
     //Ortho projection mode params
-    CCRect m_rect;//it is camera space "window rect",
-    float m_near;
-    float m_far;
+    Cc3dRange m_range;//in the camera space
 protected:
     //cache
     //view matrix may change frequently, so i apply cache for it.
