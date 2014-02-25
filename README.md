@@ -13,9 +13,8 @@ features currently available:
 4, extended shader program and uniform callback.  
    
 currently, iOS and Win32 project are available.  
-目前iOS和win32工程可用。  
   
-文档(document)：https://github.com/wantnon2/3DToolKit-for-cocos2dx/wiki  
+document：https://github.com/wantnon2/3DToolKit-for-cocos2dx/wiki  
   
 ![screenshot](https://raw.github.com/wantnon2/3DToolKit-for-cocos2dx/master/screenshots/test1.png)  
   
