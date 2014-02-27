@@ -14,6 +14,9 @@ features currently available:
    
 currently, iOS and Win32 project are available.  
   
+How to Configure: https://github.com/wantnon2/3DToolKit-for-cocos2dx/wiki/How-to-Configure  
+配置方法: https://github.com/wantnon2/3DToolKit-for-cocos2dx/wiki/配置方法  
+  
 document：https://github.com/wantnon2/3DToolKit-for-cocos2dx/wiki  
   
 ![screenshot](https://raw.github.com/wantnon2/3DToolKit-for-cocos2dx/master/screenshots/test1.png)  
