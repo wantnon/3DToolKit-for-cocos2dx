@@ -21,4 +21,6 @@ document：https://github.com/wantnon2/3DToolKit-for-cocos2dx/wiki
   
 ![screenshot](https://raw.github.com/wantnon2/3DToolKit-for-cocos2dx/master/screenshots/test1.png)  
   
+qq group: 338565878   
+  
 blog: http://user.qzone.qq.com/350479720/blog/1389256448  
