@@ -24,7 +24,6 @@ varying vec4 v_secondaryColor;
 varying vec2 v_texCoord;
 
 
-
 void main(void) {
     vec4 diffuseML=vec4(vec3(diffuseMaterial)*vec3(diffuseLight),diffuseMaterial.a);
     vec4 ambientML=ambientMaterial*ambientLight;
