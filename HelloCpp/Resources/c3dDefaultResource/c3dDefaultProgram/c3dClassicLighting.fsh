@@ -10,7 +10,6 @@ varying  vec4 v_secondaryColor;
 varying  vec2 v_texCoord;
 #endif
 
-
 //sampler uniform
 uniform sampler2D CC_Texutre0;
 
