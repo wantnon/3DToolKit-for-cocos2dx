@@ -19,7 +19,7 @@ How to Configure: http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx/wik
   
 document：http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx/wikis  
   
-![screenshot](https://raw.github.com/wantnon2/3DToolKit-for-cocos2dx/master/screenshots/test1.png)  
+![screenshot](http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx/raw/master/screenshots/test1.png)  
   
 qq group: 338565878   
   
