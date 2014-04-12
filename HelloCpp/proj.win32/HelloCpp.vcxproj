@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{66859781-EDAD-4C93-B587-8107ACE1BC20}</ProjectGuid>
+    <RootNamespace>HelloCppwin32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\cocos2dx;$(ProjectDir)..\..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\Classes;$(ProjectDir)..\..\..\..\extensions\GUI\CCControlExtension;$(ProjectDir)..\..\..\..\extensions;$(ProjectDir)..\..\..\..\CocosDenshion\include;..\c3dToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;libcocos2d.lib;libExtensions.lib;libCocosDenshion.lib;libBox2d.lib;libcurl_imp.lib;websockets.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\cocos2dx;$(ProjectDir)..\..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\Classes;$(ProjectDir)..\..\..\..\extensions\GUI\CCControlExtension;$(ProjectDir)..\..\..\..\extensions;$(ProjectDir)..\..\..\..\CocosDenshion\include;..\c3dToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;libcocos2d.lib;libExtensions.lib;libCocosDenshion.lib;libBox2d.lib;libcurl_imp.lib;websockets.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\c3dToolKit\c3dCamera.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dCommonFunc.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dDefaultMeshes.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dDefaultPassUniformCallback.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dDefaultPrograms.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dDefine.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dGLMath.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dIDTriangle.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dIndexVBO3d.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dLightSource.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dLog.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMaterial.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMath.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMatrix.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMatrixStackInfoGetor.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dMesh.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dNode.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dProgram.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dRange.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dScene.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dSprite.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dUniformPassor.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dValueCache.cpp" />
+    <ClCompile Include="..\c3dToolKit\c3dVector.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\scene3DLayer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\c3dToolKit\c3dCamera.h" />
+    <ClInclude Include="..\c3dToolKit\c3dCommonFunc.h" />
+    <ClInclude Include="..\c3dToolKit\c3dDefaultMeshes.h" />
+    <ClInclude Include="..\c3dToolKit\c3dDefaultPassUniformCallback.h" />
+    <ClInclude Include="..\c3dToolKit\c3dDefaultPrograms.h" />
+    <ClInclude Include="..\c3dToolKit\c3dDefine.h" />
+    <ClInclude Include="..\c3dToolKit\c3dGLMath.h" />
+    <ClInclude Include="..\c3dToolKit\c3dIDTriangle.h" />
+    <ClInclude Include="..\c3dToolKit\c3dIndexVBO3d.h" />
+    <ClInclude Include="..\c3dToolKit\c3dLightSource.h" />
+    <ClInclude Include="..\c3dToolKit\c3dLog.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMaterial.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMath.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMatrix.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMatrixStackInfoGetor.h" />
+    <ClInclude Include="..\c3dToolKit\c3dMesh.h" />
+    <ClInclude Include="..\c3dToolKit\c3dNode.h" />
+    <ClInclude Include="..\c3dToolKit\c3dProgram.h" />
+    <ClInclude Include="..\c3dToolKit\c3dRange.h" />
+    <ClInclude Include="..\c3dToolKit\c3dScene.h" />
+    <ClInclude Include="..\c3dToolKit\c3dSprite.h" />
+    <ClInclude Include="..\c3dToolKit\c3dToolKit.h" />
+    <ClInclude Include="..\c3dToolKit\c3dUniformPassor.h" />
+    <ClInclude Include="..\c3dToolKit\c3dValueCache.h" />
+    <ClInclude Include="..\c3dToolKit\c3dVector.h" />
+    <ClInclude Include="..\c3dToolKit\principles.h" />
+    <ClInclude Include="..\c3dToolKit\wantList.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\AppMacros.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\scene3DLayer.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

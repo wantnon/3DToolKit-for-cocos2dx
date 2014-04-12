@@ -1,0 +1,11 @@
+
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+Release
+Debug
+ipch
+*.sdf
+*.opensdf 
+#about .opensdf, see: http://stackoverflow.com/questions/5088398/using-git-for-vs2010-project-cant-add-file-opensdf
+#if we close vs2010 before commit, then the .opensdf will not show in sourceTree, everything will be ok.
