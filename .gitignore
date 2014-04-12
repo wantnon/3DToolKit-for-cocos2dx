@@ -4,6 +4,8 @@ Thumbs.db
 #Ignore files build by Visual Studio
 Release
 Debug
+Debug.win32
+Release.win32
 ipch
 *.sdf
 *.opensdf 
