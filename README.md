@@ -1,5 +1,26 @@
 3D ToolKit for cocos2dx
 ==========
-because the git speed of github.com is too slow in China. i decided to migrate this project to git.oschina.net, and this page will not be updated anymore. so please visit: http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx    
+by yang chao (wantnon), 2014-1-9  
 
-由于国内从github获得代码速度太慢，已将项目迁移到git.oschina.net，此页不再更新。请访问：http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx  
+3D ToolKit for cocos2dx is a simple 3D extension for cocos2d-x, provide an easy way to create 3D graph in cocos2dx environment.  
+  
+the ToolKit based on cocos2d-x 2.2.
+   
+features currently available:  
+1, vector and matrix operations.  
+2, extended 3D camera. (support perspective and orthographic projection mode)  
+3, 3D Sprite. (support space transformation, change mesh, and shader)   
+4, extended shader program and uniform callback.  
+   
+currently, iOS and Win32 project are available.  
+  
+How to Configure: http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx/wikis/How-to-Configure  
+配置方法: http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx/wikis/%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95  
+  
+document：http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx/wikis  
+  
+![screenshot](http://git.oschina.net/wantnon2/the-3DToolKit-for-cocos2dx/raw/master/screenshots/test1.png)  
+  
+qq group: 338565878   
+  
+blog: http://user.qzone.qq.com/350479720/blog/1389256448
