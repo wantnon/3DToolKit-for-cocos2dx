@@ -4,7 +4,7 @@ by yang chao (wantnon), 2014-1-9
 
 3D ToolKit for cocos2dx is a simple 3D extension for cocos2d-x, provide an easy way to create 3D graph in cocos2dx environment.  
   
-the ToolKit based on cocos2d-x 2.2.0(note: must be 2.2.0, not 2.2.x!).
+the ToolKit based on cocos2d-x 2.2.0.
    
 features currently available:  
 1, vector and matrix operations.  
