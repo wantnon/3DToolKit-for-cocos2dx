@@ -33,7 +33,14 @@ public:
         return p;
     }
     bool init();
-    static void enableAttribArrays();
+    static void enableAttribArray_position(bool isEnable);
+	static void enableAttribArray_texCoord(bool isEnable);
+	static void enableAttribArray_normal(bool isEnable);
+	static void enableAttribArray_color(bool isEnable);
+	static bool isEnabledAttribArray_position();
+	static bool isEnabledAttribArray_texCoord();
+	static bool isEnabledAttribArray_normal();
+	static bool isEnabledAttribArray_color();
     static void bindTexture(GLuint textureUnit, GLuint textureId);
 	void submitPosition(const float posArray[],const int posArrayLen,GLenum usage);
 	void submitTexCoord(const float texCoordArray[],const int texCoordArrayLen,GLenum usage);

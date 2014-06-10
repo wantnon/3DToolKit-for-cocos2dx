@@ -30,7 +30,6 @@ public:
     virtual ~HelloWorld(){
     
     }
-    void visit();
     void update(float t);
 public:
     //3D scene layer
