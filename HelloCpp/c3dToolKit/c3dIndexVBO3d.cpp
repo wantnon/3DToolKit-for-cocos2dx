@@ -32,22 +32,22 @@ void Cc3dIndexVBO3d::enableAttribArray_color(bool isEnable){
 
 bool Cc3dIndexVBO3d::isEnabledAttribArray_position(){
 	GLint isEnabled;
-	glGetVertexAttribIiv(kCCVertexAttrib_Position,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
+	glGetVertexAttribiv(kCCVertexAttrib_Position,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
 	return (bool)isEnabled;
 }
 bool Cc3dIndexVBO3d::isEnabledAttribArray_texCoord(){
 	GLint isEnabled;
-	glGetVertexAttribIiv(kCCVertexAttrib_TexCoords,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
+	glGetVertexAttribiv(kCCVertexAttrib_TexCoords,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
 	return (bool)isEnabled;
 }
 bool Cc3dIndexVBO3d::isEnabledAttribArray_normal(){
 	GLint isEnabled;
-	glGetVertexAttribIiv(kCCVertexAttrib_Normals,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
+	glGetVertexAttribiv(kCCVertexAttrib_Normals,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
 	return (bool)isEnabled;
 }
 bool Cc3dIndexVBO3d::isEnabledAttribArray_color(){
 	GLint isEnabled;
-	glGetVertexAttribIiv(kCCVertexAttrib_Color,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
+	glGetVertexAttribiv(kCCVertexAttrib_Color,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
 	return (bool)isEnabled;
 }
 void Cc3dIndexVBO3d::genBuffers(){

@@ -282,6 +282,7 @@
 		570B6D60187D217D009A58BE /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 570B6D5F187D217D009A58BE /* logo2.png */; };
 		5710B8BB187E4A9600FA066B /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710B8B9187E4A9600FA066B /* CloseNormal.png */; };
 		5710B8BC187E4A9600FA066B /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 5710B8BA187E4A9600FA066B /* CloseSelected.png */; };
+		5764980E194728AD00451A43 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 5764980D194728AD00451A43 /* HelloWorld.png */; };
 		57FF89241829DD24001B5248 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FF89231829DD24001B5248 /* logo.png */; };
 		57FF89271829ECB1001B5248 /* scene3DLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57FF89251829ECB1001B5248 /* scene3DLayer.cpp */; };
 		BF1373EF128A898400D9F789 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492D4B1289302400A09262 /* OpenGLES.framework */; };
@@ -847,6 +848,7 @@
 		570B6D5F187D217D009A58BE /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		5710B8B9187E4A9600FA066B /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
 		5710B8BA187E4A9600FA066B /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
+		5764980D194728AD00451A43 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		57FF89231829DD24001B5248 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		57FF89251829ECB1001B5248 /* scene3DLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scene3DLayer.cpp; sourceTree = "<group>"; };
 		57FF89261829ECB1001B5248 /* scene3DLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scene3DLayer.h; sourceTree = "<group>"; };
@@ -2124,6 +2126,7 @@
 				570B6D5D187D035B009A58BE /* white.png */,
 				57FF89231829DD24001B5248 /* logo.png */,
 				570B6D5F187D217D009A58BE /* logo2.png */,
+				5764980D194728AD00451A43 /* HelloWorld.png */,
 				189B0C0B18169DFE003CDFEE /* button.png */,
 				5710B8B9187E4A9600FA066B /* CloseNormal.png */,
 				5710B8BA187E4A9600FA066B /* CloseSelected.png */,
@@ -2306,6 +2309,7 @@
 				1839B54718029AC8005EA308 /* json_valueiterator.inl in Resources */,
 				1839B54918029AC8005EA308 /* sconscript in Resources */,
 				5710B8BB187E4A9600FA066B /* CloseNormal.png in Resources */,
+				5764980E194728AD00451A43 /* HelloWorld.png in Resources */,
 				5710B8BC187E4A9600FA066B /* CloseSelected.png in Resources */,
 				570B6D60187D217D009A58BE /* logo2.png in Resources */,
 				18B41E9E1802FEAA007B8CDD /* Default-568h@2x.png in Resources */,
