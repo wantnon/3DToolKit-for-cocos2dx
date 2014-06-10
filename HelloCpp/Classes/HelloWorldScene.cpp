@@ -119,7 +119,7 @@ bool HelloWorld::init()
     this->addChild(m_pLabel, 1);
 
     
- /*   // add "HelloWorld" splash screen"
+   /* // add "HelloWorld" splash screen"
     CCSprite* pSprite = CCSprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
@@ -130,12 +130,7 @@ bool HelloWorld::init()
 	*/
     return true;
 }
-/*
-void HelloWorld::visit(){
-    
-    //call parent visit
-    CCLayer::visit();
-}*/
+
 void HelloWorld::switchProjMode(CCObject *senderz, cocos2d::extension::CCControlEvent controlEvent){
     Cc3dCamera*camera=this->m_scene3DLayer->m_scene->getCamera3D();
     switch(camera->getProjectionMode())
