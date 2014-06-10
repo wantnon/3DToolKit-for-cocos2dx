@@ -3,11 +3,52 @@ bool Cc3dIndexVBO3d::init(){
     genBuffers();
     return true;
 }
-void Cc3dIndexVBO3d::enableAttribArrays(){
-    glEnableVertexAttribArray(kCCVertexAttrib_Position);
-    glEnableVertexAttribArray(kCCVertexAttrib_TexCoords);
-    glEnableVertexAttribArray(kCCVertexAttrib_Normals);
-    glEnableVertexAttribArray(kCCVertexAttrib_Color);
+
+void Cc3dIndexVBO3d::enableAttribArray_position(bool isEnable){
+	if(isEnable)
+		glEnableVertexAttribArray(kCCVertexAttrib_Position);
+	else
+		glDisableVertexAttribArray(kCCVertexAttrib_Position);
+}
+void Cc3dIndexVBO3d::enableAttribArray_texCoord(bool isEnable){
+	if(isEnable)
+		glEnableVertexAttribArray(kCCVertexAttrib_TexCoords);
+	else
+		glDisableVertexAttribArray(kCCVertexAttrib_TexCoords);
+}
+void Cc3dIndexVBO3d::enableAttribArray_normal(bool isEnable){
+	if(isEnable)
+		glEnableVertexAttribArray(kCCVertexAttrib_Normals);
+	else
+		glDisableVertexAttribArray(kCCVertexAttrib_Normals);
+}
+void Cc3dIndexVBO3d::enableAttribArray_color(bool isEnable){
+	if(isEnable)
+		glEnableVertexAttribArray(kCCVertexAttrib_Color);
+	else
+		glDisableVertexAttribArray(kCCVertexAttrib_Color);
+}
+
+
+bool Cc3dIndexVBO3d::isEnabledAttribArray_position(){
+	GLint isEnabled;
+	glGetVertexAttribIiv(kCCVertexAttrib_Position,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
+	return (bool)isEnabled;
+}
+bool Cc3dIndexVBO3d::isEnabledAttribArray_texCoord(){
+	GLint isEnabled;
+	glGetVertexAttribIiv(kCCVertexAttrib_TexCoords,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
+	return (bool)isEnabled;
+}
+bool Cc3dIndexVBO3d::isEnabledAttribArray_normal(){
+	GLint isEnabled;
+	glGetVertexAttribIiv(kCCVertexAttrib_Normals,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
+	return (bool)isEnabled;
+}
+bool Cc3dIndexVBO3d::isEnabledAttribArray_color(){
+	GLint isEnabled;
+	glGetVertexAttribIiv(kCCVertexAttrib_Color,GL_VERTEX_ATTRIB_ARRAY_ENABLED,&isEnabled);
+	return (bool)isEnabled;
 }
 void Cc3dIndexVBO3d::genBuffers(){
     if(m_posBuffer==0)glGenBuffers(1, &m_posBuffer);

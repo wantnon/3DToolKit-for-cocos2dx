@@ -66,7 +66,7 @@ bool HelloWorld::init()
     m_scene3DLayer->init();
     m_scene3DLayer->setAnchorPoint(ccp(0,0));
     m_scene3DLayer->setPosition(ccp(0,0));
-    addChild(m_scene3DLayer);
+    addChild(m_scene3DLayer,0);
     
     //demo name
     {
@@ -95,6 +95,7 @@ bool HelloWorld::init()
         controlButton->addTargetWithActionForControlEvents(this, (SEL_CCControlHandler)(&HelloWorld::switchProjMode), CCControlEventTouchDown);
         this->addChild(controlButton);
         m_controlButton_swithProjMode=controlButton;
+
     }
     
     //controlButton_transform
@@ -109,6 +110,7 @@ bool HelloWorld::init()
         controlButton->addTargetWithActionForControlEvents(this, (SEL_CCControlHandler)(&HelloWorld::transform), CCControlEventTouchDown);
         this->addChild(controlButton);
         m_controlButton_transform=controlButton;
+
     }
     //projection mode label
     m_pLabel=CCLabelTTF::create("proj mode: Perspective", "Arial", 35);
@@ -117,22 +119,23 @@ bool HelloWorld::init()
     this->addChild(m_pLabel, 1);
 
     
-    // add "HelloWorld" splash screen"
-/*    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
+ /*   // add "HelloWorld" splash screen"
+    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
     pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
-    */
+    this->addChild(pSprite,-1);
+	*/
     return true;
 }
+/*
 void HelloWorld::visit(){
     
     //call parent visit
     CCLayer::visit();
-}
+}*/
 void HelloWorld::switchProjMode(CCObject *senderz, cocos2d::extension::CCControlEvent controlEvent){
     Cc3dCamera*camera=this->m_scene3DLayer->m_scene->getCamera3D();
     switch(camera->getProjectionMode())

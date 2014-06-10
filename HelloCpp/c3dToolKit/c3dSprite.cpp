@@ -32,8 +32,6 @@ bool Cc3dSprite::init(){
     //indexVBO
     Cc3dIndexVBO3d*indexVBO=Cc3dIndexVBO3d::create();
     setIndexVBO(indexVBO);
-    //enable array attribute
-    Cc3dIndexVBO3d::enableAttribArrays();
     return true;
 }
 void Cc3dSprite::setTexture(CCTexture2D*texture){
@@ -103,7 +101,15 @@ void Cc3dSprite::submitMeshIndex(GLenum usage){
 void Cc3dSprite::draw(){
     assert(m_mesh&&m_texture&&m_indexVBO
            &&m_program&&m_uniformPassor&&m_lightSource&&m_camera);
-    
+	//enable array attribute
+	bool isPostionAttribEnabled=Cc3dIndexVBO3d::isEnabledAttribArray_position();
+	bool isTexCoordAttribEnabled=Cc3dIndexVBO3d::isEnabledAttribArray_texCoord();
+	bool isNormalAttribEnabled=Cc3dIndexVBO3d::isEnabledAttribArray_normal();
+	bool isColorAttribEnabled=Cc3dIndexVBO3d::isEnabledAttribArray_color();
+    Cc3dIndexVBO3d::enableAttribArray_position(true);
+	Cc3dIndexVBO3d::enableAttribArray_texCoord(true);
+	Cc3dIndexVBO3d::enableAttribArray_normal(true);
+	Cc3dIndexVBO3d::enableAttribArray_color(true);
     //apply state
     //for performance sake, we only apply state, not restore
     {
@@ -126,6 +132,11 @@ void Cc3dSprite::draw(){
     m_indexVBO->setPointers();
     m_indexVBO->draw(GL_TRIANGLES);
     Cc3dIndexVBO3d::bindTexture(0, 0);
+	//recover array attribute state
+	Cc3dIndexVBO3d::enableAttribArray_position(isPostionAttribEnabled);
+	Cc3dIndexVBO3d::enableAttribArray_texCoord(isTexCoordAttribEnabled);
+	Cc3dIndexVBO3d::enableAttribArray_normal(isNormalAttribEnabled);
+	Cc3dIndexVBO3d::enableAttribArray_color(isColorAttribEnabled);
 }
 
 bool Cc3dSprite::getIsDoDepthTest()const {

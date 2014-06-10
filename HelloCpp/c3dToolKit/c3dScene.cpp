@@ -7,12 +7,14 @@
 //
 
 #include "c3dScene.h"
+#include "c3dIndexVBO3d.h"
 bool Cc3dScene::init(){
     Cc3dNode::init();
     return true;
 }
 
 void Cc3dScene::visit(){
+	
     //store depthTest state
     GLboolean isDoDepthTestOld;
     glGetBooleanv(GL_DEPTH_TEST,&isDoDepthTestOld);
@@ -29,6 +31,7 @@ void Cc3dScene::visit(){
         kmGLLoadIdentity();
         //apply view matrix
         getCamera3D()->locate();
+	
         //call Cc3dNode's visit
         Cc3dNode::visit();
     }
@@ -39,6 +42,8 @@ void Cc3dScene::visit(){
     kmGLPopMatrix();
     //resotre depthTest state
     CCDirector::sharedDirector()->setDepthTest(isDoDepthTestOld);
+	//disable array attribute
+//	Cc3dIndexVBO3d::disableAttribArrays();
     
     
     
