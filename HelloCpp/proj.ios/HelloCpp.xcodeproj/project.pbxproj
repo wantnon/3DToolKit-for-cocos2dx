@@ -271,7 +271,6 @@
 		18F6F8B319DC22B8008D11D8 /* c3dRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88D19DC22B8008D11D8 /* c3dRange.cpp */; };
 		18F6F8B419DC22B8008D11D8 /* c3dRoot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88F19DC22B8008D11D8 /* c3dRoot.cpp */; };
 		18F6F8B519DC22B8008D11D8 /* c3dSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F89119DC22B8008D11D8 /* c3dSprite.cpp */; };
-		18F6F8B719DC22B8008D11D8 /* c3dValueCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F89619DC22B8008D11D8 /* c3dValueCache.cpp */; };
 		18F6F8B819DC22B8008D11D8 /* c3dVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F89819DC22B8008D11D8 /* c3dVector.cpp */; };
 		18F6F8BA19DC2387008D11D8 /* toolKitRes in Resources */ = {isa = PBXBuildFile; fileRef = 18F6F8B919DC2387008D11D8 /* toolKitRes */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -829,8 +828,6 @@
 		18F6F89019DC22B8008D11D8 /* c3dRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dRoot.h; sourceTree = "<group>"; };
 		18F6F89119DC22B8008D11D8 /* c3dSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dSprite.cpp; sourceTree = "<group>"; };
 		18F6F89219DC22B8008D11D8 /* c3dSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dSprite.h; sourceTree = "<group>"; };
-		18F6F89619DC22B8008D11D8 /* c3dValueCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dValueCache.cpp; sourceTree = "<group>"; };
-		18F6F89719DC22B8008D11D8 /* c3dValueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dValueCache.h; sourceTree = "<group>"; };
 		18F6F89819DC22B8008D11D8 /* c3dVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dVector.cpp; sourceTree = "<group>"; };
 		18F6F89919DC22B8008D11D8 /* c3dVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dVector.h; sourceTree = "<group>"; };
 		18F6F89A19DC22B8008D11D8 /* principles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = principles.h; sourceTree = "<group>"; };
@@ -1977,8 +1974,6 @@
 				18F6F89019DC22B8008D11D8 /* c3dRoot.h */,
 				18F6F89119DC22B8008D11D8 /* c3dSprite.cpp */,
 				18F6F89219DC22B8008D11D8 /* c3dSprite.h */,
-				18F6F89619DC22B8008D11D8 /* c3dValueCache.cpp */,
-				18F6F89719DC22B8008D11D8 /* c3dValueCache.h */,
 				18F6F89819DC22B8008D11D8 /* c3dVector.cpp */,
 				18F6F89919DC22B8008D11D8 /* c3dVector.h */,
 			);
@@ -2304,7 +2299,6 @@
 				1839B52B18029AC8005EA308 /* UIWidget.cpp in Sources */,
 				18F6F8A319DC22B8008D11D8 /* c3dDefaultMeshes.cpp in Sources */,
 				1839B52C18029AC8005EA308 /* Layout.cpp in Sources */,
-				18F6F8B719DC22B8008D11D8 /* c3dValueCache.cpp in Sources */,
 				1839B52D18029AC8005EA308 /* LayoutParameter.cpp in Sources */,
 				1839B52E18029AC8005EA308 /* UILayoutDefine.cpp in Sources */,
 				1839B52F18029AC8005EA308 /* CocosGUI.cpp in Sources */,

@@ -31,20 +31,20 @@ Cc3dVector4 Cc3dCamera::getUp()const{
 }
 void Cc3dCamera::setEyePos(const Cc3dVector4&eyePos){
     this->setEyeXYZ(eyePos.x(), eyePos.y(), eyePos.z());
-    m_viewMatCache.setIsDirty(true);
-    m_viewMatInverseCache.setIsDirty(true);
+    m_isViewMatDirty=true;
+    m_isViewMatInverseDirty=true;
     
 }
 void Cc3dCamera::setCenter(const Cc3dVector4&center){
     this->setCenterXYZ(center.x(), center.y(), center.z());
-    m_viewMatCache.setIsDirty(true);
-    m_viewMatInverseCache.setIsDirty(true);
+    m_isViewMatDirty=true;
+    m_isViewMatInverseDirty=true;
     
 }
 void Cc3dCamera::setUp(const Cc3dVector4&up){
     this->setUpXYZ(up.x(), up.y(), up.z());
-    m_viewMatCache.setIsDirty(true);
-    m_viewMatInverseCache.setIsDirty(true);
+    m_isViewMatDirty=true;
+    m_isViewMatInverseDirty=true;
 }
 
 Cc3dMatrix4 Cc3dCamera::calculateViewMat(){
@@ -52,24 +52,24 @@ Cc3dMatrix4 Cc3dCamera::calculateViewMat(){
     //because m_lookupMatrix may be dirty (m_lookupMatrix got updated only when locate is called)
     //so we calculate view matrix ourselves.
     Cc3dMatrix4 ret;
-    if(m_viewMatCache.getIsDirty()){//dirty
+    if(m_isViewMatDirty){//dirty
         //calculate and cache
         ret=::calculateViewMatrix(getEyePos(), getCenter(), getUp());
-        m_viewMatCache.cacheValue(ret);
+        m_viewMatCache=ret;
     }else{//not dirty
         //get from cache
-        ret=m_viewMatCache.getValue();
+        ret=m_viewMatCache;
     }
     return ret;
     
 };
 Cc3dMatrix4 Cc3dCamera::calculateViewMatInverse(){
     Cc3dMatrix4 ret;
-    if(m_viewMatInverseCache.getIsDirty()){
+    if(m_isViewMatInverseDirty){
         ret=::calculateViewMatrixInverse(getEyePos(), getCenter(), getUp());
-        m_viewMatInverseCache.cacheValue(ret);
+        m_viewMatInverseCache=ret;
     }else{
-        ret=m_viewMatInverseCache.getValue();
+        ret=m_viewMatInverseCache;
     }
     return ret;
 }

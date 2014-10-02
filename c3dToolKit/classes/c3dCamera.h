@@ -17,7 +17,6 @@ using namespace cocos2d;
 #include "c3dMatrix.h"
 #include "c3dGLMath.h"
 #include "c3dCommonFunc.h"
-#include "c3dValueCache.h"
 #include "c3dMatrixStackInfoGetor.h"
 #include "c3dRange.h"
 class Cc3dCamera:public CCCamera
@@ -36,6 +35,8 @@ public:
                      -1024,//yeah, better to use negative value
                      1024);
         m_projectionMode=ec3dPerspectiveMode;
+        m_isViewMatDirty=false;
+        m_isViewMatInverseDirty=false;
 
     }
     virtual ~Cc3dCamera(){
@@ -77,11 +78,12 @@ protected:
     //Ortho projection mode params
     Cc3dRange m_range;//in the camera space
 protected:
-    //cache
-    //view matrix may change frequently, so i apply cache for it.
-    //but projection matrix not generally not frequently change, so i didn't apply cache for it.
-    TCvalueCache<Cc3dMatrix4> m_viewMatCache;
-    TCvalueCache<Cc3dMatrix4> m_viewMatInverseCache;
+    //cache viewMat
+    Cc3dMatrix4 m_viewMatCache;
+    bool m_isViewMatDirty;
+    Cc3dMatrix4 m_viewMatInverseCache;
+    bool m_isViewMatInverseDirty;
+    
     
     
 
