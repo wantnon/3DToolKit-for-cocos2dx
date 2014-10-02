@@ -2,11 +2,10 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
-#include "cocos-ext.h"
 
-#include "scene3DLayer.h"
 using namespace cocos2d;
-using namespace cocos2d::extension;
+
+#include "testLayer.h"
 class HelloWorld : public cocos2d::CCLayer
 {
 public:
@@ -23,32 +22,17 @@ public:
     CREATE_FUNC(HelloWorld);
 public:
     HelloWorld(){
-        m_scene3DLayer=NULL;
-        isScheduleOn=false;
-        m_pLabel=NULL;
+            m_testLayer=NULL;
+   
     }
     virtual ~HelloWorld(){
     
     }
     void update(float t);
 public:
-    //3D scene layer
-    Cscene3DLayer*m_scene3DLayer;
+    CtestLayer*m_testLayer;
     
-    //controlButton and its callback
-    CCControlButton* m_controlButton_swithProjMode;
-    void switchProjMode(CCObject *senderz, CCControlEvent controlEvent);
-    CCControlButton* m_controlButton_transform;
-    void transform(CCObject *senderz, CCControlEvent controlEvent);
     
-    //label show current projection mode
-    CCLabelTTF* m_pLabel;
-    
-    //store initial transform matrixs of 3D sprites in scene3DLayer (used for restore)
-    vector<Cc3dMatrix4> initalMatList;
-    
-    //flag to mark whether schedule update is running
-    bool isScheduleOn;
     
     
 
