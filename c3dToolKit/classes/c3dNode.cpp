@@ -11,6 +11,8 @@
 Cc3dNode::~Cc3dNode(){
     if(m_camera)m_camera->release();
     if(m_lightSource)m_lightSource->release();
+    if(m_program)m_program->release();
+    
 }
 bool Cc3dNode::init(){
     //camera
@@ -20,14 +22,7 @@ bool Cc3dNode::init(){
     setCamera3D(camera);
     return true;
 };
-void Cc3dNode::setCamera3D(Cc3dCamera*camera){
-    assert(camera);
-    setRCObject(m_camera, camera);
-}
-void Cc3dNode::setLightSource(Cc3dLightSource*lightSource){
-    assert(lightSource);
-    setRCObject(m_lightSource, lightSource);
-}
+
 Cc3dVector4 Cc3dNode::getPosition3D()const {
     Cc3dVector4 position(m_mat.getAt(12),m_mat.getAt(13),m_mat.getAt(14),1);
     return position;
@@ -147,11 +142,30 @@ void Cc3dNode::scaleRelativeToParent3D(float kx,float ky,float kz){
     Cc3dMatrix4 SMat=calculateScaleMatrix(kx, ky, kz);
     m_mat=SMat*m_mat;
 }
+void Cc3dNode::setCamera3D(Cc3dCamera*camera){
+    assert(camera);
+    setRCObject(m_camera, camera);
+}
+
+void Cc3dNode::setProgram(Cc3dProgram*program){
+    assert(program);
+    setRCObject(m_program, program);
+    CCNode::setShaderProgram(m_program);
+    
+}
+void Cc3dNode::setPassUnifoCallback(c3dPassUnifoCallbackPtr passUnifoCallback){
+    m_passUnifoCallback=passUnifoCallback;
+}
+void Cc3dNode::setLightSource(Cc3dLightSource*lightSource){
+    assert(lightSource);
+    setRCObject(m_lightSource,lightSource);
+}
 
 //for 3d drawing, fake zOrder is also useful,
 //because some times we need to control the drawing order, then we can use it.
 void Cc3dNode::visit()
 {
+    //cout<<"visit node:"<<m_nodeName<<endl;
     // quick return if not visible. children won't be drawn.
     if (!m_bVisible)
     {

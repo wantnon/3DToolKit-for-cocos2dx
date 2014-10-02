@@ -19,6 +19,10 @@ using namespace cocos2d;
 #include "c3dCommonFunc.h"
 #include "c3dGLMath.h"
 #include "c3dCamera.h"
+#include "c3dDefaultPassUniformCallback.h"
+#include "c3dProgram.h"
+class Cc3dNode;
+typedef void(*c3dPassUnifoCallbackPtr)(Cc3dNode*, Cc3dProgram*);
 class Cc3dLightSource;
 class Cc3dNode:public CCNode
 {
@@ -27,6 +31,9 @@ public:
         m_mat=unitMat();
         m_camera=NULL;
         m_lightSource=NULL;
+        m_program=NULL;
+        m_passUnifoCallback=NULL;
+ 
     }
     virtual~Cc3dNode();
     static Cc3dNode*create();
@@ -60,15 +67,22 @@ public:
     virtual void scaleRelativeToParent3D(float kx,float ky,float kz);
     Cc3dCamera* getCamera3D(){return m_camera;}
     void setCamera3D(Cc3dCamera*camera);
-    //light
+    //light, passUnifoCallback, program
     Cc3dLightSource*getLightSource(){return m_lightSource;}
     void setLightSource(Cc3dLightSource*lightSource);
+    void setPassUnifoCallback(c3dPassUnifoCallbackPtr passUnifoCallback);
+    void setProgram(Cc3dProgram*program);
+    void setNodeName(string name){m_nodeName=name;}
+    string getNodeName()const{return m_nodeName;}
 protected:
     virtual void transform3D();
 protected:
     Cc3dMatrix4 m_mat;//node to parent transform matrix
     Cc3dCamera*m_camera;
     Cc3dLightSource* m_lightSource;
+    Cc3dProgram* m_program;
+    c3dPassUnifoCallbackPtr m_passUnifoCallback;
+    string m_nodeName;
     
 };
 #endif /* defined(__HelloCpp__c3dNode__) */

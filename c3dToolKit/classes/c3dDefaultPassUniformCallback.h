@@ -11,10 +11,10 @@
 
 #include <iostream>
 using namespace std;
-//#include "c3dSprite.h"
-#include "c3dNode.h"
+
 #include "c3dProgram.h"
 #include "c3dMatrixStackInfoGetor.h"
+class Cc3dNode;
 void passUnifoCallback_texOnly(Cc3dNode*node,Cc3dProgram*program);
 void passUnifoCallback_classicLighting(Cc3dNode*node,Cc3dProgram*program);
 

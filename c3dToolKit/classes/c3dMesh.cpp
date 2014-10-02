@@ -1,46 +1,153 @@
-//
-//  c3dMesh.cpp
-//  HelloCpp
-//
-//  Created by Yang Chao (wantnon) on 14-1-2.
-//
-//
+
 
 #include "c3dMesh.h"
-void Cc3dMesh::initIDtriList(const short indexArray[],int indexArrayLen){
-    assert(indexArrayLen%3==0);
-    m_IDtriList.clear();
-    for(int i=0;i<indexArrayLen;i+=3){
-        Cc3dIDTriangle IDtri(indexArray[i],indexArray[i+1],indexArray[i+2]);
-        m_IDtriList.push_back(IDtri);
+
+Cc3dSubMesh*Cc3dMesh::getSubMeshByIndex(int index){
+    assert(index>=0&&index<(int)m_subMeshList.size());
+    return m_subMeshList[index];
+}
+
+void Cc3dMesh::setIsDoDepthTest(bool isDoDepthTest){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->setIsDoDepthTest(isDoDepthTest);
     }
 }
-void Cc3dMesh::initPositionList(const float positionArray[],int positionArrayLen){
-    m_positionList.clear();
-    for(int i=0;i<positionArrayLen;i+=4){
-        Cc3dVector4 pos(positionArray[i],positionArray[i+1],positionArray[i+2],positionArray[i+3]);
-        m_positionList.push_back(pos);
-    }
-}
-void Cc3dMesh::initTexCoordList(const float texCoordArray[],int texCoordArrayLen){
-    m_texCoordList.clear();
-    for(int i=0;i<texCoordArrayLen;i+=2){
-        Cc3dVector2 texCoord(texCoordArray[i],texCoordArray[i+1]);
-        m_texCoordList.push_back(texCoord);
-    }
-}
-void Cc3dMesh::initNormalList(const float normalArray[],int normalArrayLen){
-    m_normalList.clear();
-    for(int i=0;i<normalArrayLen;i+=4){
-        Cc3dVector4 normal(normalArray[i],normalArray[i+1],normalArray[i+2],normalArray[i+3]);
-        m_normalList.push_back(normal);
+
+void Cc3dMesh::setCamera3D(Cc3dCamera*camera3D){
+    
+    this->Cc3dNode::setCamera3D(camera3D);
+    
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->setCamera3D(camera3D);
     }
     
 }
-void Cc3dMesh::initColorList(const float colorArray[],int colorArrayLen){
-    m_colorList.clear();
-    for(int i=0;i<colorArrayLen;i+=4){
-        Cc3dVector4 color(colorArray[i],colorArray[i+1],colorArray[i+2],colorArray[i+3]);
-        m_colorList.push_back(color);
+void Cc3dMesh::setProgram(Cc3dProgram *program){
+    assert(program);
+//    this->Cc3dNode::setProgram(program);
+    
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->setProgram(program);
     }
+}
+void Cc3dMesh::setPassUnifoCallback(c3dPassUnifoCallbackPtr callback){
+    assert(callback);
+  //  this->Cc3dNode::setPassUnifoCallback(callback);
+    
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->setPassUnifoCallback(callback);
+    }
+    
+}
+void Cc3dMesh::setLightSource(Cc3dLightSource*light){
+    
+  //  this->Cc3dNode::setLightSource(light);
+    
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->setLightSource(light);
+    }
+}
+
+void Cc3dMesh::setIsVisible(bool value){
+    ////this->Cc3dNode::setVisible(value);//there is no visible property in CCNode
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->setVisible(value);
+    }
+}
+void Cc3dMesh::setDiffuse(float r,float g,float b,float a){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->getMaterial()->setDiffuse(Cc3dVector4(r, g, b,a));
+    }
+}
+void Cc3dMesh::setTexture(CCTexture2D*texture){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->setTexture(texture);
+    }
+}
+void Cc3dMesh::setMaterial(Cc3dMaterial*material){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->setMaterial(material);
+    }
+}
+void Cc3dMesh::setAmbient(float r,float g,float b,float a){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->getMaterial()->setAmbient(Cc3dVector4(r, g, b,a));
+    }
+    
+}
+void Cc3dMesh::setSpecular(float r,float g,float b,float a){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->getMaterial()->setSpecular(Cc3dVector4(r, g, b, a));
+    }
+    
+}
+void Cc3dMesh::setShininess(float shininess){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh==NULL)continue;
+        psubMesh->getMaterial()->setShininess(shininess);
+    }
+}
+void Cc3dMesh::submit(GLenum usage)
+{
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh)psubMesh->submitMesh(usage);
+    }
+}
+void Cc3dMesh::submitVertex(GLenum usage){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh)psubMesh->submitMeshPosition(usage);
+    }
+}
+void Cc3dMesh::submitIndex(GLenum usage){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh)psubMesh->submitMeshIndex(usage);
+    }
+}
+void Cc3dMesh::addSubMesh(Cc3dSubMesh*submesh){
+    assert(submesh);
+    m_subMeshList.push_back(submesh);
+    //submesh->setName("?");
+    this->addChild(submesh);
+    
 }

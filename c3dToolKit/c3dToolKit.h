@@ -11,7 +11,7 @@
 
 #include "c3dNode.h"
 #include "c3dRoot.h"
-#include "c3dSprite.h"
+#include "c3dMesh.h"
 #include "c3dDefaultMeshes.h"
 #include "c3dDefaultPassUniformCallback.h"
 #include "c3dLightSource.h"

@@ -7,15 +7,16 @@
 //
 
 #include "c3dDefaultPassUniformCallback.h"
-#include "c3dSprite.h"
+#include "c3dSubMesh.h"
 #include "c3dLightSource.h"
+#include "c3dNode.h"
 void passUnifoCallback_texOnly(Cc3dNode*node,Cc3dProgram*program){
     assert(program->getName()=="toolKitRes/shader/c3dTexOnly");
     //do nothing
 }
 void passUnifoCallback_classicLighting(Cc3dNode*node,Cc3dProgram*program){
     assert(program->getName()=="toolKitRes/shader/c3dClassicLighting");
-    Cc3dSprite*sprite=(Cc3dSprite*)node;
+    Cc3dSubMesh*sprite=(Cc3dSubMesh*)node;
     //----prepare uniform values
     //calculate model mat
     Cc3dMatrix4 modelMat;
