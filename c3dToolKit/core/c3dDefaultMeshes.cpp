@@ -7,10 +7,10 @@
 //
 
 #include "c3dDefaultMeshes.h"
-Cc3dSubMesh* c3dCreateConeMesh(float r,float h,int nSlice,int nStack,bool isHaveBottom){
+Cc3dMesh* c3dCreateConeMesh(float r,float h,int nSlice,int nStack,bool isHaveBottom){
     return c3dCreateConeMesh(r, h, nSlice, nStack, isHaveBottom, cc3dv4(1, 1, 1, 1), cc3dv4(1, 1, 1, 1));
 }
-Cc3dSubMesh* c3dCreateConeMesh(float r,float h,int nSlice,int nStack,bool isHaveBottom,const Cc3dVector4&headColor,const Cc3dVector4&bottomColor)
+Cc3dMesh* c3dCreateConeMesh(float r,float h,int nSlice,int nStack,bool isHaveBottom,const Cc3dVector4&headColor,const Cc3dVector4&bottomColor)
 //why cone need nStack ? because even a plane need subdivision to achieve better specular effect
 {
     float dA=360.0/nSlice;
@@ -112,11 +112,15 @@ Cc3dSubMesh* c3dCreateConeMesh(float r,float h,int nSlice,int nStack,bool isHave
     subMesh->autorelease();
     subMesh->init();
     subMesh->setSubMeshData(subMeshData);
-    return subMesh;
+    Cc3dMesh* mesh=new Cc3dMesh();
+    mesh->autorelease();
+    mesh->init();
+    mesh->addSubMesh(subMesh);
+    return mesh;
 
 
 }
-Cc3dSubMesh* c3dCreateBallMesh(float r,int nSlice,int nStack,const Cc3dVector4&northPoleColor,const Cc3dVector4&southPoleColor)
+Cc3dMesh* c3dCreateBallMesh(float r,int nSlice,int nStack,const Cc3dVector4&northPoleColor,const Cc3dVector4&southPoleColor)
 {
     float dA=360.0/nSlice;
     float dB=180.0/nStack;
@@ -173,13 +177,17 @@ Cc3dSubMesh* c3dCreateBallMesh(float r,int nSlice,int nStack,const Cc3dVector4&n
     subMesh->autorelease();
     subMesh->init();
     subMesh->setSubMeshData(subMeshData);
-    return subMesh;
+    Cc3dMesh* mesh=new Cc3dMesh();
+    mesh->autorelease();
+    mesh->init();
+    mesh->addSubMesh(subMesh);
+    return mesh;
     
 }
-Cc3dSubMesh* c3dCreateBallMesh(float r,int nSlice,int nStack){
+Cc3dMesh* c3dCreateBallMesh(float r,int nSlice,int nStack){
     return c3dCreateBallMesh(r, nSlice, nStack, cc3dv4(1, 1, 1, 1), cc3dv4(1, 1, 1, 1));
 }
-Cc3dSubMesh* c3dCreateBoxMesh(float r,//distance between center and face
+Cc3dMesh* c3dCreateBoxMesh(float r,//distance between center and face
                            const Cc3dVector4&upFrontLeftVertexColor,const Cc3dVector4&upFrontRightVertexColor,const Cc3dVector4&upBackLeftVertexColor,const Cc3dVector4&upBackRightVertexColor,
                            const Cc3dVector4&dnFrontLeftVertexColor,const Cc3dVector4&dnFrontRightVertexColor,const Cc3dVector4&dnBackLeftVertexColor,const Cc3dVector4&dnBackRightVertexColor)
 //return an autoreleased object
@@ -253,9 +261,13 @@ Cc3dSubMesh* c3dCreateBoxMesh(float r,//distance between center and face
     subMesh->autorelease();
     subMesh->init();
     subMesh->setSubMeshData(subMeshData);
-    return subMesh;
+    Cc3dMesh* mesh=new Cc3dMesh();
+    mesh->autorelease();
+    mesh->init();
+    mesh->addSubMesh(subMesh);
+    return mesh;
 }
-Cc3dSubMesh* c3dCreateBoxMesh(float r){
+Cc3dMesh* c3dCreateBoxMesh(float r){
     return c3dCreateBoxMesh(r,
                             cc3dv4(1, 1, 1, 1),cc3dv4(1, 1, 1, 1),cc3dv4(1, 1, 1, 1),cc3dv4(1, 1, 1, 1),
                             cc3dv4(1, 1, 1, 1),cc3dv4(1, 1, 1, 1),cc3dv4(1, 1, 1, 1),cc3dv4(1, 1, 1, 1));

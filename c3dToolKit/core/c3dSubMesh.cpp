@@ -59,34 +59,34 @@ void Cc3dSubMesh::setIndexVBO(Cc3dIndexVBO3d*indexVBO){
     assert(indexVBO);
     setRCObject(m_indexVBO, indexVBO);
 }
-void Cc3dSubMesh::submitMesh(GLenum usage){
-    submitMeshPosition(usage);
-    submitMeshNormal(usage);
-    submitMeshColor(usage);
-    submitMeshTexCoord(usage);
-    submitMeshIndex(usage);
+void Cc3dSubMesh::submit(GLenum usage){
+    submitPosition(usage);
+    submitNormal(usage);
+    submitColor(usage);
+    submitTexCoord(usage);
+    submitIndex(usage);
 }
-void Cc3dSubMesh::submitMeshPosition(GLenum usage){
+void Cc3dSubMesh::submitPosition(GLenum usage){
     assert(m_subMeshData);
     assert(m_indexVBO);
     m_indexVBO->submitPosition(m_subMeshData->getPositionArray(),m_subMeshData->getPositionArrayLen(),usage);
 }
-void Cc3dSubMesh::submitMeshNormal(GLenum usage){
+void Cc3dSubMesh::submitNormal(GLenum usage){
     assert(m_subMeshData);
     assert(m_indexVBO);
     m_indexVBO->submitNormal(m_subMeshData->getNormalArray(),m_subMeshData->getNormalArrayLen(),usage);
 }
-void Cc3dSubMesh::submitMeshColor(GLenum usage){
+void Cc3dSubMesh::submitColor(GLenum usage){
     assert(m_subMeshData);
     assert(m_indexVBO);
     m_indexVBO->submitColor(m_subMeshData->getColorArray(),m_subMeshData->getColorArrayLen(),usage);
 }
-void Cc3dSubMesh::submitMeshTexCoord(GLenum usage){
+void Cc3dSubMesh::submitTexCoord(GLenum usage){
     assert(m_subMeshData);
     assert(m_indexVBO);
     m_indexVBO->submitTexCoord(m_subMeshData->getTexCoordArray(),m_subMeshData->getTexCoordArrayLen(),usage);
 }
-void Cc3dSubMesh::submitMeshIndex(GLenum usage){
+void Cc3dSubMesh::submitIndex(GLenum usage){
     assert(m_subMeshData);
     assert(m_indexVBO);
     m_indexVBO->submitIndex(m_subMeshData->getIndexArray(),m_subMeshData->getIndexArrayLen(),usage);

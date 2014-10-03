@@ -1,0 +1,5 @@
+texFilePath fbxLoader_static_resource/appleSkin.png
+ambient 0.588235 0.588235 0.588235 1.000000
+diffuse 0.588235 0.588235 0.588235 1.000000
+specular 0.900000 0.900000 0.900000 1.000000
+shininess 12.996038

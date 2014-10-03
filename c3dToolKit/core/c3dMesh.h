@@ -35,13 +35,15 @@ public:
     void setProgram(Cc3dProgram *program);
     void setPassUnifoCallback(c3dPassUnifoCallbackPtr callback);
     void setLightSource(Cc3dLightSource*light);
-    void setIsVisible(bool value);
     void setDiffuse(float r,float g,float b,float a);
     void setAmbient(float r,float g,float b,float a);
     void setSpecular(float r,float g,float b,float a);
     void setShininess(float shininess);
     void submit(GLenum usage);
-    void submitVertex(GLenum usage);
+    void submitPosition(GLenum usage);
+    void submitNormal(GLenum usage);
+    void submitColor(GLenum usage);
+    void submitTexCoord(GLenum usage);
     void submitIndex(GLenum usage);
     void addSubMesh(Cc3dSubMesh*submesh);
 

@@ -52,12 +52,12 @@ public:
     void setSubMeshData(Cc3dSubMeshData*subMeshData);
     void setIndexVBO(Cc3dIndexVBO3d*indexVBO);
     
-    void submitMesh(GLenum usage);
-    void submitMeshPosition(GLenum usage);
-    void submitMeshNormal(GLenum usage);
-    void submitMeshColor(GLenum usage);
-    void submitMeshTexCoord(GLenum usage);
-    void submitMeshIndex(GLenum usage);
+    void submit(GLenum usage);
+    void submitPosition(GLenum usage);
+    void submitNormal(GLenum usage);
+    void submitColor(GLenum usage);
+    void submitTexCoord(GLenum usage);
+    void submitIndex(GLenum usage);
 	void draw();
 
     Cc3dMaterial*getMaterial(){return m_material;}

@@ -68,7 +68,7 @@ public:
     //3d root
     Cc3dRoot*m_root3d;//3D root node
     //3d sprites
-    vector<Cc3dSprite*> m_sprite3dList;//list of 3D sprite
+    vector<Cc3dActor*> m_sprite3dList;//list of 3D sprite
     vector<Cc3dMatrix4> initalMatList;//initial transform matrixs of 3D sprites
 
     

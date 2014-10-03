@@ -250,30 +250,33 @@
 		18B41EA21802FEAA007B8CDD /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B41E9B1802FEAA007B8CDD /* Icon-72.png */; };
 		18B41EA31802FEAA007B8CDD /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B41E9C1802FEAA007B8CDD /* Icon-114.png */; };
 		18B41EA41802FEAA007B8CDD /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B41E9D1802FEAA007B8CDD /* Icon-144.png */; };
-		18F6F8A119DC22B8008D11D8 /* c3dCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F86919DC22B7008D11D8 /* c3dCamera.cpp */; };
-		18F6F8A219DC22B8008D11D8 /* c3dCommonFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F86B19DC22B7008D11D8 /* c3dCommonFunc.cpp */; };
-		18F6F8A319DC22B8008D11D8 /* c3dDefaultMeshes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F86D19DC22B7008D11D8 /* c3dDefaultMeshes.cpp */; };
-		18F6F8A419DC22B8008D11D8 /* c3dDefaultPassUniformCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F86F19DC22B8008D11D8 /* c3dDefaultPassUniformCallback.cpp */; };
-		18F6F8A519DC22B8008D11D8 /* c3dDefaultPrograms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F87119DC22B8008D11D8 /* c3dDefaultPrograms.cpp */; };
-		18F6F8A619DC22B8008D11D8 /* c3dDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F87319DC22B8008D11D8 /* c3dDefine.cpp */; };
-		18F6F8A719DC22B8008D11D8 /* c3dGLMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F87519DC22B8008D11D8 /* c3dGLMath.cpp */; };
-		18F6F8A819DC22B8008D11D8 /* c3dIDTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F87719DC22B8008D11D8 /* c3dIDTriangle.cpp */; };
-		18F6F8A919DC22B8008D11D8 /* c3dIndexVBO3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F87919DC22B8008D11D8 /* c3dIndexVBO3d.cpp */; };
-		18F6F8AA19DC22B8008D11D8 /* c3dLightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F87B19DC22B8008D11D8 /* c3dLightSource.cpp */; };
-		18F6F8AB19DC22B8008D11D8 /* c3dLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F87D19DC22B8008D11D8 /* c3dLog.cpp */; };
-		18F6F8AC19DC22B8008D11D8 /* c3dMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F87F19DC22B8008D11D8 /* c3dMaterial.cpp */; };
-		18F6F8AD19DC22B8008D11D8 /* c3dMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88119DC22B8008D11D8 /* c3dMath.cpp */; };
-		18F6F8AE19DC22B8008D11D8 /* c3dMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88319DC22B8008D11D8 /* c3dMatrix.cpp */; };
-		18F6F8AF19DC22B8008D11D8 /* c3dMatrixStackInfoGetor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88519DC22B8008D11D8 /* c3dMatrixStackInfoGetor.cpp */; };
-		18F6F8B019DC22B8008D11D8 /* c3dSubMeshData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88719DC22B8008D11D8 /* c3dSubMeshData.cpp */; };
-		18F6F8B119DC22B8008D11D8 /* c3dNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88919DC22B8008D11D8 /* c3dNode.cpp */; };
-		18F6F8B219DC22B8008D11D8 /* c3dProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88B19DC22B8008D11D8 /* c3dProgram.cpp */; };
-		18F6F8B319DC22B8008D11D8 /* c3dRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88D19DC22B8008D11D8 /* c3dRange.cpp */; };
-		18F6F8B419DC22B8008D11D8 /* c3dRoot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F88F19DC22B8008D11D8 /* c3dRoot.cpp */; };
-		18F6F8B519DC22B8008D11D8 /* c3dSubMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F89119DC22B8008D11D8 /* c3dSubMesh.cpp */; };
-		18F6F8B819DC22B8008D11D8 /* c3dVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F89819DC22B8008D11D8 /* c3dVector.cpp */; };
 		18F6F8BA19DC2387008D11D8 /* toolKitRes in Resources */ = {isa = PBXBuildFile; fileRef = 18F6F8B919DC2387008D11D8 /* toolKitRes */; };
-		18F6F8D119DD7E38008D11D8 /* c3dMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8CF19DD7E38008D11D8 /* c3dMesh.cpp */; };
+		18F6F91019DE5FCB008D11D8 /* c3dActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8DE19DE5FCB008D11D8 /* c3dActor.cpp */; };
+		18F6F91119DE5FCB008D11D8 /* c3dCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8E019DE5FCB008D11D8 /* c3dCamera.cpp */; };
+		18F6F91219DE5FCB008D11D8 /* c3dCommonFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8E219DE5FCB008D11D8 /* c3dCommonFunc.cpp */; };
+		18F6F91319DE5FCB008D11D8 /* c3dDefaultMeshes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8E419DE5FCB008D11D8 /* c3dDefaultMeshes.cpp */; };
+		18F6F91419DE5FCB008D11D8 /* c3dDefaultPassUniformCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8E619DE5FCB008D11D8 /* c3dDefaultPassUniformCallback.cpp */; };
+		18F6F91519DE5FCB008D11D8 /* c3dDefaultPrograms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8E819DE5FCB008D11D8 /* c3dDefaultPrograms.cpp */; };
+		18F6F91619DE5FCB008D11D8 /* c3dDefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8EA19DE5FCB008D11D8 /* c3dDefine.cpp */; };
+		18F6F91719DE5FCB008D11D8 /* c3dGLMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8EC19DE5FCB008D11D8 /* c3dGLMath.cpp */; };
+		18F6F91819DE5FCB008D11D8 /* c3dIDTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8EE19DE5FCB008D11D8 /* c3dIDTriangle.cpp */; };
+		18F6F91919DE5FCB008D11D8 /* c3dIndexVBO3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8F019DE5FCB008D11D8 /* c3dIndexVBO3d.cpp */; };
+		18F6F91A19DE5FCB008D11D8 /* c3dLightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8F219DE5FCB008D11D8 /* c3dLightSource.cpp */; };
+		18F6F91B19DE5FCB008D11D8 /* c3dLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8F419DE5FCB008D11D8 /* c3dLog.cpp */; };
+		18F6F91C19DE5FCB008D11D8 /* c3dMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8F619DE5FCB008D11D8 /* c3dMaterial.cpp */; };
+		18F6F91D19DE5FCB008D11D8 /* c3dMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8F819DE5FCB008D11D8 /* c3dMath.cpp */; };
+		18F6F91E19DE5FCB008D11D8 /* c3dMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8FA19DE5FCB008D11D8 /* c3dMatrix.cpp */; };
+		18F6F91F19DE5FCB008D11D8 /* c3dMatrixStackInfoGetor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8FC19DE5FCB008D11D8 /* c3dMatrixStackInfoGetor.cpp */; };
+		18F6F92019DE5FCB008D11D8 /* c3dMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F8FE19DE5FCB008D11D8 /* c3dMesh.cpp */; };
+		18F6F92119DE5FCB008D11D8 /* c3dModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F90019DE5FCB008D11D8 /* c3dModel.cpp */; };
+		18F6F92219DE5FCB008D11D8 /* c3dNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F90219DE5FCB008D11D8 /* c3dNode.cpp */; };
+		18F6F92319DE5FCB008D11D8 /* c3dProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F90419DE5FCB008D11D8 /* c3dProgram.cpp */; };
+		18F6F92419DE5FCB008D11D8 /* c3dRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F90619DE5FCB008D11D8 /* c3dRange.cpp */; };
+		18F6F92519DE5FCB008D11D8 /* c3dRoot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F90819DE5FCB008D11D8 /* c3dRoot.cpp */; };
+		18F6F92619DE5FCB008D11D8 /* c3dSubMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F90A19DE5FCB008D11D8 /* c3dSubMesh.cpp */; };
+		18F6F92719DE5FCB008D11D8 /* c3dSubMeshData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F90C19DE5FCB008D11D8 /* c3dSubMeshData.cpp */; };
+		18F6F92819DE5FCB008D11D8 /* c3dVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F90E19DE5FCB008D11D8 /* c3dVector.cpp */; };
+		18F6F92F19DE601C008D11D8 /* c3dSimpleModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F6F92D19DE601C008D11D8 /* c3dSimpleModelLoader.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -787,56 +790,62 @@
 		18B41E9B1802FEAA007B8CDD /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = SOURCE_ROOT; };
 		18B41E9C1802FEAA007B8CDD /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = SOURCE_ROOT; };
 		18B41E9D1802FEAA007B8CDD /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = SOURCE_ROOT; };
-		18F6F86919DC22B7008D11D8 /* c3dCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCamera.cpp; sourceTree = "<group>"; };
-		18F6F86A19DC22B7008D11D8 /* c3dCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCamera.h; sourceTree = "<group>"; };
-		18F6F86B19DC22B7008D11D8 /* c3dCommonFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCommonFunc.cpp; sourceTree = "<group>"; };
-		18F6F86C19DC22B7008D11D8 /* c3dCommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCommonFunc.h; sourceTree = "<group>"; };
-		18F6F86D19DC22B7008D11D8 /* c3dDefaultMeshes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultMeshes.cpp; sourceTree = "<group>"; };
-		18F6F86E19DC22B8008D11D8 /* c3dDefaultMeshes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultMeshes.h; sourceTree = "<group>"; };
-		18F6F86F19DC22B8008D11D8 /* c3dDefaultPassUniformCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultPassUniformCallback.cpp; sourceTree = "<group>"; };
-		18F6F87019DC22B8008D11D8 /* c3dDefaultPassUniformCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultPassUniformCallback.h; sourceTree = "<group>"; };
-		18F6F87119DC22B8008D11D8 /* c3dDefaultPrograms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultPrograms.cpp; sourceTree = "<group>"; };
-		18F6F87219DC22B8008D11D8 /* c3dDefaultPrograms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultPrograms.h; sourceTree = "<group>"; };
-		18F6F87319DC22B8008D11D8 /* c3dDefine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefine.cpp; sourceTree = "<group>"; };
-		18F6F87419DC22B8008D11D8 /* c3dDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefine.h; sourceTree = "<group>"; };
-		18F6F87519DC22B8008D11D8 /* c3dGLMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dGLMath.cpp; sourceTree = "<group>"; };
-		18F6F87619DC22B8008D11D8 /* c3dGLMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dGLMath.h; sourceTree = "<group>"; };
-		18F6F87719DC22B8008D11D8 /* c3dIDTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dIDTriangle.cpp; sourceTree = "<group>"; };
-		18F6F87819DC22B8008D11D8 /* c3dIDTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dIDTriangle.h; sourceTree = "<group>"; };
-		18F6F87919DC22B8008D11D8 /* c3dIndexVBO3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dIndexVBO3d.cpp; sourceTree = "<group>"; };
-		18F6F87A19DC22B8008D11D8 /* c3dIndexVBO3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dIndexVBO3d.h; sourceTree = "<group>"; };
-		18F6F87B19DC22B8008D11D8 /* c3dLightSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dLightSource.cpp; sourceTree = "<group>"; };
-		18F6F87C19DC22B8008D11D8 /* c3dLightSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dLightSource.h; sourceTree = "<group>"; };
-		18F6F87D19DC22B8008D11D8 /* c3dLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dLog.cpp; sourceTree = "<group>"; };
-		18F6F87E19DC22B8008D11D8 /* c3dLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dLog.h; sourceTree = "<group>"; };
-		18F6F87F19DC22B8008D11D8 /* c3dMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMaterial.cpp; sourceTree = "<group>"; };
-		18F6F88019DC22B8008D11D8 /* c3dMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMaterial.h; sourceTree = "<group>"; };
-		18F6F88119DC22B8008D11D8 /* c3dMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMath.cpp; sourceTree = "<group>"; };
-		18F6F88219DC22B8008D11D8 /* c3dMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMath.h; sourceTree = "<group>"; };
-		18F6F88319DC22B8008D11D8 /* c3dMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMatrix.cpp; sourceTree = "<group>"; };
-		18F6F88419DC22B8008D11D8 /* c3dMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMatrix.h; sourceTree = "<group>"; };
-		18F6F88519DC22B8008D11D8 /* c3dMatrixStackInfoGetor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMatrixStackInfoGetor.cpp; sourceTree = "<group>"; };
-		18F6F88619DC22B8008D11D8 /* c3dMatrixStackInfoGetor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMatrixStackInfoGetor.h; sourceTree = "<group>"; };
-		18F6F88719DC22B8008D11D8 /* c3dSubMeshData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dSubMeshData.cpp; sourceTree = "<group>"; };
-		18F6F88819DC22B8008D11D8 /* c3dSubMeshData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dSubMeshData.h; sourceTree = "<group>"; };
-		18F6F88919DC22B8008D11D8 /* c3dNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dNode.cpp; sourceTree = "<group>"; };
-		18F6F88A19DC22B8008D11D8 /* c3dNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dNode.h; sourceTree = "<group>"; };
-		18F6F88B19DC22B8008D11D8 /* c3dProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dProgram.cpp; sourceTree = "<group>"; };
-		18F6F88C19DC22B8008D11D8 /* c3dProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dProgram.h; sourceTree = "<group>"; };
-		18F6F88D19DC22B8008D11D8 /* c3dRange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dRange.cpp; sourceTree = "<group>"; };
-		18F6F88E19DC22B8008D11D8 /* c3dRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dRange.h; sourceTree = "<group>"; };
-		18F6F88F19DC22B8008D11D8 /* c3dRoot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dRoot.cpp; sourceTree = "<group>"; };
-		18F6F89019DC22B8008D11D8 /* c3dRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dRoot.h; sourceTree = "<group>"; };
-		18F6F89119DC22B8008D11D8 /* c3dSubMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dSubMesh.cpp; sourceTree = "<group>"; };
-		18F6F89219DC22B8008D11D8 /* c3dSubMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dSubMesh.h; sourceTree = "<group>"; };
-		18F6F89819DC22B8008D11D8 /* c3dVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dVector.cpp; sourceTree = "<group>"; };
-		18F6F89919DC22B8008D11D8 /* c3dVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dVector.h; sourceTree = "<group>"; };
 		18F6F89A19DC22B8008D11D8 /* principles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = principles.h; sourceTree = "<group>"; };
 		18F6F89B19DC22B8008D11D8 /* wantList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wantList.h; sourceTree = "<group>"; };
 		18F6F8B919DC2387008D11D8 /* toolKitRes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = toolKitRes; sourceTree = "<group>"; };
 		18F6F8BC19DCFA91008D11D8 /* c3dToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = c3dToolKit.h; sourceTree = "<group>"; };
-		18F6F8CF19DD7E38008D11D8 /* c3dMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMesh.cpp; sourceTree = "<group>"; };
-		18F6F8D019DD7E38008D11D8 /* c3dMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMesh.h; sourceTree = "<group>"; };
+		18F6F8DE19DE5FCB008D11D8 /* c3dActor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dActor.cpp; sourceTree = "<group>"; };
+		18F6F8DF19DE5FCB008D11D8 /* c3dActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dActor.h; sourceTree = "<group>"; };
+		18F6F8E019DE5FCB008D11D8 /* c3dCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCamera.cpp; sourceTree = "<group>"; };
+		18F6F8E119DE5FCB008D11D8 /* c3dCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCamera.h; sourceTree = "<group>"; };
+		18F6F8E219DE5FCB008D11D8 /* c3dCommonFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dCommonFunc.cpp; sourceTree = "<group>"; };
+		18F6F8E319DE5FCB008D11D8 /* c3dCommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dCommonFunc.h; sourceTree = "<group>"; };
+		18F6F8E419DE5FCB008D11D8 /* c3dDefaultMeshes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultMeshes.cpp; sourceTree = "<group>"; };
+		18F6F8E519DE5FCB008D11D8 /* c3dDefaultMeshes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultMeshes.h; sourceTree = "<group>"; };
+		18F6F8E619DE5FCB008D11D8 /* c3dDefaultPassUniformCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultPassUniformCallback.cpp; sourceTree = "<group>"; };
+		18F6F8E719DE5FCB008D11D8 /* c3dDefaultPassUniformCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultPassUniformCallback.h; sourceTree = "<group>"; };
+		18F6F8E819DE5FCB008D11D8 /* c3dDefaultPrograms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefaultPrograms.cpp; sourceTree = "<group>"; };
+		18F6F8E919DE5FCB008D11D8 /* c3dDefaultPrograms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefaultPrograms.h; sourceTree = "<group>"; };
+		18F6F8EA19DE5FCB008D11D8 /* c3dDefine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dDefine.cpp; sourceTree = "<group>"; };
+		18F6F8EB19DE5FCB008D11D8 /* c3dDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dDefine.h; sourceTree = "<group>"; };
+		18F6F8EC19DE5FCB008D11D8 /* c3dGLMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dGLMath.cpp; sourceTree = "<group>"; };
+		18F6F8ED19DE5FCB008D11D8 /* c3dGLMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dGLMath.h; sourceTree = "<group>"; };
+		18F6F8EE19DE5FCB008D11D8 /* c3dIDTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dIDTriangle.cpp; sourceTree = "<group>"; };
+		18F6F8EF19DE5FCB008D11D8 /* c3dIDTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dIDTriangle.h; sourceTree = "<group>"; };
+		18F6F8F019DE5FCB008D11D8 /* c3dIndexVBO3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dIndexVBO3d.cpp; sourceTree = "<group>"; };
+		18F6F8F119DE5FCB008D11D8 /* c3dIndexVBO3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dIndexVBO3d.h; sourceTree = "<group>"; };
+		18F6F8F219DE5FCB008D11D8 /* c3dLightSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dLightSource.cpp; sourceTree = "<group>"; };
+		18F6F8F319DE5FCB008D11D8 /* c3dLightSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dLightSource.h; sourceTree = "<group>"; };
+		18F6F8F419DE5FCB008D11D8 /* c3dLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dLog.cpp; sourceTree = "<group>"; };
+		18F6F8F519DE5FCB008D11D8 /* c3dLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dLog.h; sourceTree = "<group>"; };
+		18F6F8F619DE5FCB008D11D8 /* c3dMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMaterial.cpp; sourceTree = "<group>"; };
+		18F6F8F719DE5FCB008D11D8 /* c3dMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMaterial.h; sourceTree = "<group>"; };
+		18F6F8F819DE5FCB008D11D8 /* c3dMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMath.cpp; sourceTree = "<group>"; };
+		18F6F8F919DE5FCB008D11D8 /* c3dMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMath.h; sourceTree = "<group>"; };
+		18F6F8FA19DE5FCB008D11D8 /* c3dMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMatrix.cpp; sourceTree = "<group>"; };
+		18F6F8FB19DE5FCB008D11D8 /* c3dMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMatrix.h; sourceTree = "<group>"; };
+		18F6F8FC19DE5FCB008D11D8 /* c3dMatrixStackInfoGetor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMatrixStackInfoGetor.cpp; sourceTree = "<group>"; };
+		18F6F8FD19DE5FCB008D11D8 /* c3dMatrixStackInfoGetor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMatrixStackInfoGetor.h; sourceTree = "<group>"; };
+		18F6F8FE19DE5FCB008D11D8 /* c3dMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dMesh.cpp; sourceTree = "<group>"; };
+		18F6F8FF19DE5FCB008D11D8 /* c3dMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dMesh.h; sourceTree = "<group>"; };
+		18F6F90019DE5FCB008D11D8 /* c3dModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dModel.cpp; sourceTree = "<group>"; };
+		18F6F90119DE5FCB008D11D8 /* c3dModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dModel.h; sourceTree = "<group>"; };
+		18F6F90219DE5FCB008D11D8 /* c3dNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dNode.cpp; sourceTree = "<group>"; };
+		18F6F90319DE5FCB008D11D8 /* c3dNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dNode.h; sourceTree = "<group>"; };
+		18F6F90419DE5FCB008D11D8 /* c3dProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dProgram.cpp; sourceTree = "<group>"; };
+		18F6F90519DE5FCB008D11D8 /* c3dProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dProgram.h; sourceTree = "<group>"; };
+		18F6F90619DE5FCB008D11D8 /* c3dRange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dRange.cpp; sourceTree = "<group>"; };
+		18F6F90719DE5FCB008D11D8 /* c3dRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dRange.h; sourceTree = "<group>"; };
+		18F6F90819DE5FCB008D11D8 /* c3dRoot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dRoot.cpp; sourceTree = "<group>"; };
+		18F6F90919DE5FCB008D11D8 /* c3dRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dRoot.h; sourceTree = "<group>"; };
+		18F6F90A19DE5FCB008D11D8 /* c3dSubMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dSubMesh.cpp; sourceTree = "<group>"; };
+		18F6F90B19DE5FCB008D11D8 /* c3dSubMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dSubMesh.h; sourceTree = "<group>"; };
+		18F6F90C19DE5FCB008D11D8 /* c3dSubMeshData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dSubMeshData.cpp; sourceTree = "<group>"; };
+		18F6F90D19DE5FCB008D11D8 /* c3dSubMeshData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dSubMeshData.h; sourceTree = "<group>"; };
+		18F6F90E19DE5FCB008D11D8 /* c3dVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dVector.cpp; sourceTree = "<group>"; };
+		18F6F90F19DE5FCB008D11D8 /* c3dVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dVector.h; sourceTree = "<group>"; };
+		18F6F92D19DE601C008D11D8 /* c3dSimpleModelLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c3dSimpleModelLoader.cpp; sourceTree = "<group>"; };
+		18F6F92E19DE601C008D11D8 /* c3dSimpleModelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c3dSimpleModelLoader.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* HelloCpp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCpp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1924,7 +1933,8 @@
 			children = (
 				18F6F8BC19DCFA91008D11D8 /* c3dToolKit.h */,
 				18F6F8B919DC2387008D11D8 /* toolKitRes */,
-				18F6F86819DC22B7008D11D8 /* classes */,
+				18F6F8DD19DE5FCB008D11D8 /* core */,
+				18F6F92919DE5FD5008D11D8 /* ext */,
 				18F6F89A19DC22B8008D11D8 /* principles.h */,
 				18F6F89B19DC22B8008D11D8 /* wantList.h */,
 			);
@@ -1932,57 +1942,70 @@
 			path = ../../c3dToolKit;
 			sourceTree = "<group>";
 		};
-		18F6F86819DC22B7008D11D8 /* classes */ = {
+		18F6F8DD19DE5FCB008D11D8 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				18F6F86919DC22B7008D11D8 /* c3dCamera.cpp */,
-				18F6F86A19DC22B7008D11D8 /* c3dCamera.h */,
-				18F6F86B19DC22B7008D11D8 /* c3dCommonFunc.cpp */,
-				18F6F86C19DC22B7008D11D8 /* c3dCommonFunc.h */,
-				18F6F86D19DC22B7008D11D8 /* c3dDefaultMeshes.cpp */,
-				18F6F86E19DC22B8008D11D8 /* c3dDefaultMeshes.h */,
-				18F6F86F19DC22B8008D11D8 /* c3dDefaultPassUniformCallback.cpp */,
-				18F6F87019DC22B8008D11D8 /* c3dDefaultPassUniformCallback.h */,
-				18F6F87119DC22B8008D11D8 /* c3dDefaultPrograms.cpp */,
-				18F6F87219DC22B8008D11D8 /* c3dDefaultPrograms.h */,
-				18F6F87319DC22B8008D11D8 /* c3dDefine.cpp */,
-				18F6F87419DC22B8008D11D8 /* c3dDefine.h */,
-				18F6F87519DC22B8008D11D8 /* c3dGLMath.cpp */,
-				18F6F87619DC22B8008D11D8 /* c3dGLMath.h */,
-				18F6F87719DC22B8008D11D8 /* c3dIDTriangle.cpp */,
-				18F6F87819DC22B8008D11D8 /* c3dIDTriangle.h */,
-				18F6F87919DC22B8008D11D8 /* c3dIndexVBO3d.cpp */,
-				18F6F87A19DC22B8008D11D8 /* c3dIndexVBO3d.h */,
-				18F6F87B19DC22B8008D11D8 /* c3dLightSource.cpp */,
-				18F6F87C19DC22B8008D11D8 /* c3dLightSource.h */,
-				18F6F87D19DC22B8008D11D8 /* c3dLog.cpp */,
-				18F6F87E19DC22B8008D11D8 /* c3dLog.h */,
-				18F6F87F19DC22B8008D11D8 /* c3dMaterial.cpp */,
-				18F6F88019DC22B8008D11D8 /* c3dMaterial.h */,
-				18F6F88119DC22B8008D11D8 /* c3dMath.cpp */,
-				18F6F88219DC22B8008D11D8 /* c3dMath.h */,
-				18F6F88319DC22B8008D11D8 /* c3dMatrix.cpp */,
-				18F6F88419DC22B8008D11D8 /* c3dMatrix.h */,
-				18F6F88519DC22B8008D11D8 /* c3dMatrixStackInfoGetor.cpp */,
-				18F6F88619DC22B8008D11D8 /* c3dMatrixStackInfoGetor.h */,
-				18F6F88719DC22B8008D11D8 /* c3dSubMeshData.cpp */,
-				18F6F88819DC22B8008D11D8 /* c3dSubMeshData.h */,
-				18F6F88919DC22B8008D11D8 /* c3dNode.cpp */,
-				18F6F88A19DC22B8008D11D8 /* c3dNode.h */,
-				18F6F88B19DC22B8008D11D8 /* c3dProgram.cpp */,
-				18F6F88C19DC22B8008D11D8 /* c3dProgram.h */,
-				18F6F88D19DC22B8008D11D8 /* c3dRange.cpp */,
-				18F6F88E19DC22B8008D11D8 /* c3dRange.h */,
-				18F6F88F19DC22B8008D11D8 /* c3dRoot.cpp */,
-				18F6F89019DC22B8008D11D8 /* c3dRoot.h */,
-				18F6F89119DC22B8008D11D8 /* c3dSubMesh.cpp */,
-				18F6F89219DC22B8008D11D8 /* c3dSubMesh.h */,
-				18F6F8CF19DD7E38008D11D8 /* c3dMesh.cpp */,
-				18F6F8D019DD7E38008D11D8 /* c3dMesh.h */,
-				18F6F89819DC22B8008D11D8 /* c3dVector.cpp */,
-				18F6F89919DC22B8008D11D8 /* c3dVector.h */,
+				18F6F8DE19DE5FCB008D11D8 /* c3dActor.cpp */,
+				18F6F8DF19DE5FCB008D11D8 /* c3dActor.h */,
+				18F6F8E019DE5FCB008D11D8 /* c3dCamera.cpp */,
+				18F6F8E119DE5FCB008D11D8 /* c3dCamera.h */,
+				18F6F8E219DE5FCB008D11D8 /* c3dCommonFunc.cpp */,
+				18F6F8E319DE5FCB008D11D8 /* c3dCommonFunc.h */,
+				18F6F8E419DE5FCB008D11D8 /* c3dDefaultMeshes.cpp */,
+				18F6F8E519DE5FCB008D11D8 /* c3dDefaultMeshes.h */,
+				18F6F8E619DE5FCB008D11D8 /* c3dDefaultPassUniformCallback.cpp */,
+				18F6F8E719DE5FCB008D11D8 /* c3dDefaultPassUniformCallback.h */,
+				18F6F8E819DE5FCB008D11D8 /* c3dDefaultPrograms.cpp */,
+				18F6F8E919DE5FCB008D11D8 /* c3dDefaultPrograms.h */,
+				18F6F8EA19DE5FCB008D11D8 /* c3dDefine.cpp */,
+				18F6F8EB19DE5FCB008D11D8 /* c3dDefine.h */,
+				18F6F8EC19DE5FCB008D11D8 /* c3dGLMath.cpp */,
+				18F6F8ED19DE5FCB008D11D8 /* c3dGLMath.h */,
+				18F6F8EE19DE5FCB008D11D8 /* c3dIDTriangle.cpp */,
+				18F6F8EF19DE5FCB008D11D8 /* c3dIDTriangle.h */,
+				18F6F8F019DE5FCB008D11D8 /* c3dIndexVBO3d.cpp */,
+				18F6F8F119DE5FCB008D11D8 /* c3dIndexVBO3d.h */,
+				18F6F8F219DE5FCB008D11D8 /* c3dLightSource.cpp */,
+				18F6F8F319DE5FCB008D11D8 /* c3dLightSource.h */,
+				18F6F8F419DE5FCB008D11D8 /* c3dLog.cpp */,
+				18F6F8F519DE5FCB008D11D8 /* c3dLog.h */,
+				18F6F8F619DE5FCB008D11D8 /* c3dMaterial.cpp */,
+				18F6F8F719DE5FCB008D11D8 /* c3dMaterial.h */,
+				18F6F8F819DE5FCB008D11D8 /* c3dMath.cpp */,
+				18F6F8F919DE5FCB008D11D8 /* c3dMath.h */,
+				18F6F8FA19DE5FCB008D11D8 /* c3dMatrix.cpp */,
+				18F6F8FB19DE5FCB008D11D8 /* c3dMatrix.h */,
+				18F6F8FC19DE5FCB008D11D8 /* c3dMatrixStackInfoGetor.cpp */,
+				18F6F8FD19DE5FCB008D11D8 /* c3dMatrixStackInfoGetor.h */,
+				18F6F8FE19DE5FCB008D11D8 /* c3dMesh.cpp */,
+				18F6F8FF19DE5FCB008D11D8 /* c3dMesh.h */,
+				18F6F90019DE5FCB008D11D8 /* c3dModel.cpp */,
+				18F6F90119DE5FCB008D11D8 /* c3dModel.h */,
+				18F6F90219DE5FCB008D11D8 /* c3dNode.cpp */,
+				18F6F90319DE5FCB008D11D8 /* c3dNode.h */,
+				18F6F90419DE5FCB008D11D8 /* c3dProgram.cpp */,
+				18F6F90519DE5FCB008D11D8 /* c3dProgram.h */,
+				18F6F90619DE5FCB008D11D8 /* c3dRange.cpp */,
+				18F6F90719DE5FCB008D11D8 /* c3dRange.h */,
+				18F6F90819DE5FCB008D11D8 /* c3dRoot.cpp */,
+				18F6F90919DE5FCB008D11D8 /* c3dRoot.h */,
+				18F6F90A19DE5FCB008D11D8 /* c3dSubMesh.cpp */,
+				18F6F90B19DE5FCB008D11D8 /* c3dSubMesh.h */,
+				18F6F90C19DE5FCB008D11D8 /* c3dSubMeshData.cpp */,
+				18F6F90D19DE5FCB008D11D8 /* c3dSubMeshData.h */,
+				18F6F90E19DE5FCB008D11D8 /* c3dVector.cpp */,
+				18F6F90F19DE5FCB008D11D8 /* c3dVector.h */,
 			);
-			path = classes;
+			path = core;
+			sourceTree = "<group>";
+		};
+		18F6F92919DE5FD5008D11D8 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				18F6F92D19DE601C008D11D8 /* c3dSimpleModelLoader.cpp */,
+				18F6F92E19DE601C008D11D8 /* c3dSimpleModelLoader.h */,
+			);
+			path = ext;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -2145,19 +2168,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				189B0C211816A280003CDFEE /* AppDelegate.cpp in Sources */,
-				18F6F8AB19DC22B8008D11D8 /* c3dLog.cpp in Sources */,
 				189B0C221816A280003CDFEE /* AppDelegate.h in Sources */,
-				18F6F8A919DC22B8008D11D8 /* c3dIndexVBO3d.cpp in Sources */,
 				189B0C231816A280003CDFEE /* AppMacros.h in Sources */,
 				189B0C241816A280003CDFEE /* HelloWorldScene.cpp in Sources */,
+				18F6F92219DE5FCB008D11D8 /* c3dNode.cpp in Sources */,
 				189B0C251816A280003CDFEE /* HelloWorldScene.h in Sources */,
-				18F6F8B519DC22B8008D11D8 /* c3dSubMesh.cpp in Sources */,
+				18F6F91E19DE5FCB008D11D8 /* c3dMatrix.cpp in Sources */,
 				BF365AA812A103F70050DCF4 /* AppController.mm in Sources */,
+				18F6F92519DE5FCB008D11D8 /* c3dRoot.cpp in Sources */,
 				BF4DE6AD138BB89600CF907D /* RootViewController.mm in Sources */,
+				18F6F92319DE5FCB008D11D8 /* c3dProgram.cpp in Sources */,
 				D4ABB4B313B4395300552E6E /* main.m in Sources */,
 				1839B1A018029A77005EA308 /* b2BroadPhase.cpp in Sources */,
 				1839B1A118029A77005EA308 /* b2CollideCircle.cpp in Sources */,
 				1839B1A218029A77005EA308 /* b2CollideEdge.cpp in Sources */,
+				18F6F92819DE5FCB008D11D8 /* c3dVector.cpp in Sources */,
 				1839B1A318029A77005EA308 /* b2CollidePolygon.cpp in Sources */,
 				1839B1A418029A77005EA308 /* b2Collision.cpp in Sources */,
 				1839B1A518029A77005EA308 /* b2Distance.cpp in Sources */,
@@ -2167,14 +2192,13 @@
 				1839B1A918029A77005EA308 /* b2CircleShape.cpp in Sources */,
 				1839B1AA18029A77005EA308 /* b2EdgeShape.cpp in Sources */,
 				1839B1AB18029A77005EA308 /* b2PolygonShape.cpp in Sources */,
+				18F6F91119DE5FCB008D11D8 /* c3dCamera.cpp in Sources */,
 				1839B1AC18029A77005EA308 /* b2BlockAllocator.cpp in Sources */,
-				18F6F8A519DC22B8008D11D8 /* c3dDefaultPrograms.cpp in Sources */,
 				1839B1AD18029A77005EA308 /* b2Draw.cpp in Sources */,
 				1839B1AE18029A77005EA308 /* b2Math.cpp in Sources */,
 				1839B1AF18029A77005EA308 /* b2Settings.cpp in Sources */,
 				1839B1B018029A77005EA308 /* b2StackAllocator.cpp in Sources */,
 				1839B1B118029A77005EA308 /* b2Timer.cpp in Sources */,
-				18F6F8AA19DC22B8008D11D8 /* c3dLightSource.cpp in Sources */,
 				1839B1B218029A77005EA308 /* b2Body.cpp in Sources */,
 				1839B1B318029A77005EA308 /* b2ContactManager.cpp in Sources */,
 				1839B1B418029A77005EA308 /* b2Fixture.cpp in Sources */,
@@ -2184,10 +2208,8 @@
 				1839B1B818029A77005EA308 /* b2ChainAndCircleContact.cpp in Sources */,
 				1839B1B918029A77005EA308 /* b2ChainAndPolygonContact.cpp in Sources */,
 				1839B1BA18029A77005EA308 /* b2CircleContact.cpp in Sources */,
-				18F6F8B019DC22B8008D11D8 /* c3dSubMeshData.cpp in Sources */,
 				1839B1BB18029A77005EA308 /* b2Contact.cpp in Sources */,
 				1839B1BC18029A77005EA308 /* b2ContactSolver.cpp in Sources */,
-				18F6F8A819DC22B8008D11D8 /* c3dIDTriangle.cpp in Sources */,
 				1839B1BD18029A77005EA308 /* b2EdgeAndCircleContact.cpp in Sources */,
 				1839B1BE18029A77005EA308 /* b2EdgeAndPolygonContact.cpp in Sources */,
 				1839B1BF18029A77005EA308 /* b2PolygonAndCircleContact.cpp in Sources */,
@@ -2196,17 +2218,17 @@
 				1839B1C218029A77005EA308 /* b2FrictionJoint.cpp in Sources */,
 				1839B1C318029A77005EA308 /* b2GearJoint.cpp in Sources */,
 				1839B1C418029A77005EA308 /* b2Joint.cpp in Sources */,
-				18F6F8A419DC22B8008D11D8 /* c3dDefaultPassUniformCallback.cpp in Sources */,
+				18F6F92019DE5FCB008D11D8 /* c3dMesh.cpp in Sources */,
 				1839B1C518029A77005EA308 /* b2MouseJoint.cpp in Sources */,
 				1839B1C618029A77005EA308 /* b2PrismaticJoint.cpp in Sources */,
 				1839B1C718029A77005EA308 /* b2PulleyJoint.cpp in Sources */,
 				1839B1C818029A77005EA308 /* b2RevoluteJoint.cpp in Sources */,
-				18F6F8A619DC22B8008D11D8 /* c3dDefine.cpp in Sources */,
 				1839B1C918029A77005EA308 /* b2RopeJoint.cpp in Sources */,
 				1839B1CA18029A77005EA308 /* b2WeldJoint.cpp in Sources */,
 				1839B1CB18029A77005EA308 /* b2WheelJoint.cpp in Sources */,
 				1839B1E418029A77005EA308 /* b2Rope.cpp in Sources */,
 				1839B25A18029A9C005EA308 /* chipmunk.c in Sources */,
+				18F6F91219DE5FCB008D11D8 /* c3dCommonFunc.cpp in Sources */,
 				1839B25C18029A9C005EA308 /* cpConstraint.c in Sources */,
 				1839B25D18029A9C005EA308 /* cpDampedRotarySpring.c in Sources */,
 				1839B25E18029A9C005EA308 /* cpDampedSpring.c in Sources */,
@@ -2218,25 +2240,29 @@
 				1839B26418029A9C005EA308 /* cpRotaryLimitJoint.c in Sources */,
 				1839B26518029A9C005EA308 /* cpSimpleMotor.c in Sources */,
 				1839B26618029A9C005EA308 /* cpSlideJoint.c in Sources */,
-				18F6F8B219DC22B8008D11D8 /* c3dProgram.cpp in Sources */,
 				1839B26718029A9C005EA308 /* cpArbiter.c in Sources */,
 				1839B26818029A9C005EA308 /* cpArray.c in Sources */,
 				1839B26918029A9C005EA308 /* cpBB.c in Sources */,
 				1839B26A18029A9C005EA308 /* cpBBTree.c in Sources */,
 				1839B26B18029A9C005EA308 /* cpBody.c in Sources */,
 				1839B26C18029A9C005EA308 /* cpCollision.c in Sources */,
+				18F6F92619DE5FCB008D11D8 /* c3dSubMesh.cpp in Sources */,
 				1839B26D18029A9C005EA308 /* cpHashSet.c in Sources */,
 				1839B26E18029A9C005EA308 /* cpPolyShape.c in Sources */,
+				18F6F91819DE5FCB008D11D8 /* c3dIDTriangle.cpp in Sources */,
 				1839B26F18029A9C005EA308 /* cpShape.c in Sources */,
 				1839B27018029A9C005EA308 /* cpSpace.c in Sources */,
 				1839B27118029A9C005EA308 /* cpSpaceComponent.c in Sources */,
 				1839B27218029A9C005EA308 /* cpSpaceHash.c in Sources */,
+				18F6F92419DE5FCB008D11D8 /* c3dRange.cpp in Sources */,
 				1839B27318029A9C005EA308 /* cpSpaceQuery.c in Sources */,
+				18F6F91919DE5FCB008D11D8 /* c3dIndexVBO3d.cpp in Sources */,
 				1839B27418029A9C005EA308 /* cpSpaceStep.c in Sources */,
 				1839B27518029A9C005EA308 /* cpSpatialIndex.c in Sources */,
 				1839B27618029A9C005EA308 /* cpSweep1D.c in Sources */,
 				1839B27718029A9C005EA308 /* cpVect.c in Sources */,
 				1839B32618029AA8005EA308 /* CDAudioManager.m in Sources */,
+				18F6F91619DE5FCB008D11D8 /* c3dDefine.cpp in Sources */,
 				1839B32718029AA8005EA308 /* CDOpenALSupport.m in Sources */,
 				1839B32818029AA8005EA308 /* CocosDenshion.m in Sources */,
 				1839B32918029AA8005EA308 /* SimpleAudioEngine.mm in Sources */,
@@ -2244,7 +2270,6 @@
 				1839B4F518029AC8005EA308 /* CCBAnimationManager.cpp in Sources */,
 				1839B4F618029AC8005EA308 /* CCBFileLoader.cpp in Sources */,
 				1839B4F718029AC8005EA308 /* CCBKeyframe.cpp in Sources */,
-				18F6F8B319DC22B8008D11D8 /* c3dRange.cpp in Sources */,
 				1839B4F818029AC8005EA308 /* CCBReader.cpp in Sources */,
 				1839B4F918029AC8005EA308 /* CCBSequence.cpp in Sources */,
 				1839B4FA18029AC8005EA308 /* CCBSequenceProperty.cpp in Sources */,
@@ -2261,7 +2286,9 @@
 				1839B50418029AC8005EA308 /* CCMenuItemImageLoader.cpp in Sources */,
 				1839B50518029AC8005EA308 /* CCMenuItemLoader.cpp in Sources */,
 				1839B50618029AC8005EA308 /* CCNode+CCBRelativePositioning.cpp in Sources */,
+				18F6F92119DE5FCB008D11D8 /* c3dModel.cpp in Sources */,
 				1839B50718029AC8005EA308 /* CCNodeLoader.cpp in Sources */,
+				18F6F91D19DE5FCB008D11D8 /* c3dMath.cpp in Sources */,
 				1839B50818029AC8005EA308 /* CCNodeLoaderLibrary.cpp in Sources */,
 				1839B50918029AC8005EA308 /* CCParticleSystemQuadLoader.cpp in Sources */,
 				1839B50A18029AC8005EA308 /* CCScale9SpriteLoader.cpp in Sources */,
@@ -2269,18 +2296,14 @@
 				1839B50C18029AC8005EA308 /* CCSpriteLoader.cpp in Sources */,
 				1839B50D18029AC8005EA308 /* CCActionFrame.cpp in Sources */,
 				1839B50E18029AC8005EA308 /* CCActionFrameEasing.cpp in Sources */,
-				18F6F8D119DD7E38008D11D8 /* c3dMesh.cpp in Sources */,
 				1839B50F18029AC8005EA308 /* CCActionManager.cpp in Sources */,
-				18F6F8A719DC22B8008D11D8 /* c3dGLMath.cpp in Sources */,
 				1839B51018029AC8005EA308 /* CCActionNode.cpp in Sources */,
-				18F6F8AC19DC22B8008D11D8 /* c3dMaterial.cpp in Sources */,
 				1839B51118029AC8005EA308 /* CCActionObject.cpp in Sources */,
 				1839B51218029AC8005EA308 /* CCArmatureAnimation.cpp in Sources */,
 				1839B51318029AC8005EA308 /* CCProcessBase.cpp in Sources */,
 				1839B51418029AC8005EA308 /* CCTween.cpp in Sources */,
 				1839B51518029AC8005EA308 /* CCArmature.cpp in Sources */,
 				1839B51618029AC8005EA308 /* CCBone.cpp in Sources */,
-				18F6F8B819DC22B8008D11D8 /* c3dVector.cpp in Sources */,
 				1839B51718029AC8005EA308 /* CCDatas.cpp in Sources */,
 				1839B51818029AC8005EA308 /* CCBatchNode.cpp in Sources */,
 				1839B51918029AC8005EA308 /* CCDecorativeDisplay.cpp in Sources */,
@@ -2299,24 +2322,29 @@
 				1839B52618029AC8005EA308 /* CCComAudio.cpp in Sources */,
 				1839B52718029AC8005EA308 /* CCComController.cpp in Sources */,
 				1839B52818029AC8005EA308 /* CCComRender.cpp in Sources */,
+				18F6F91C19DE5FCB008D11D8 /* c3dMaterial.cpp in Sources */,
 				1839B52918029AC8005EA308 /* CCInputDelegate.cpp in Sources */,
+				18F6F92F19DE601C008D11D8 /* c3dSimpleModelLoader.cpp in Sources */,
+				18F6F91319DE5FCB008D11D8 /* c3dDefaultMeshes.cpp in Sources */,
+				18F6F91519DE5FCB008D11D8 /* c3dDefaultPrograms.cpp in Sources */,
 				1839B52A18029AC8005EA308 /* UIRootWidget.cpp in Sources */,
-				18F6F8A219DC22B8008D11D8 /* c3dCommonFunc.cpp in Sources */,
 				1839B52B18029AC8005EA308 /* UIWidget.cpp in Sources */,
-				18F6F8A319DC22B8008D11D8 /* c3dDefaultMeshes.cpp in Sources */,
 				1839B52C18029AC8005EA308 /* Layout.cpp in Sources */,
 				1839B52D18029AC8005EA308 /* LayoutParameter.cpp in Sources */,
+				18F6F91F19DE5FCB008D11D8 /* c3dMatrixStackInfoGetor.cpp in Sources */,
 				1839B52E18029AC8005EA308 /* UILayoutDefine.cpp in Sources */,
 				1839B52F18029AC8005EA308 /* CocosGUI.cpp in Sources */,
 				1839B53018029AC8005EA308 /* UIHelper.cpp in Sources */,
 				1839B53118029AC8005EA308 /* UIInputManager.cpp in Sources */,
 				1839B53218029AC8005EA308 /* UILayer.cpp in Sources */,
+				18F6F92719DE5FCB008D11D8 /* c3dSubMeshData.cpp in Sources */,
 				1839B53318029AC8005EA308 /* UIDragPanel.cpp in Sources */,
 				1839B53418029AC8005EA308 /* UIListView.cpp in Sources */,
 				1839B53518029AC8005EA308 /* UIPageView.cpp in Sources */,
 				1839B53618029AC8005EA308 /* UIScrollView.cpp in Sources */,
 				1839B53718029AC8005EA308 /* UIButton.cpp in Sources */,
 				1839B53818029AC8005EA308 /* UICheckBox.cpp in Sources */,
+				18F6F91B19DE5FCB008D11D8 /* c3dLog.cpp in Sources */,
 				1839B53918029AC8005EA308 /* UIImageView.cpp in Sources */,
 				1839B53A18029AC8005EA308 /* UILabel.cpp in Sources */,
 				1839B53B18029AC8005EA308 /* UILabelAtlas.cpp in Sources */,
@@ -2332,28 +2360,25 @@
 				1839B54818029AC8005EA308 /* json_writer.cpp in Sources */,
 				1839B54A18029AC8005EA308 /* CCSGUIReader.cpp in Sources */,
 				1839B54B18029AC8005EA308 /* CCSSceneReader.cpp in Sources */,
-				18F6F8B419DC22B8008D11D8 /* c3dRoot.cpp in Sources */,
 				1839B54C18029AC8005EA308 /* CCControl.cpp in Sources */,
 				1839B54D18029AC8005EA308 /* CCControlButton.cpp in Sources */,
 				1839B54E18029AC8005EA308 /* CCControlColourPicker.cpp in Sources */,
 				1839B54F18029AC9005EA308 /* CCControlHuePicker.cpp in Sources */,
 				1839B55018029AC9005EA308 /* CCControlPotentiometer.cpp in Sources */,
+				18F6F91019DE5FCB008D11D8 /* c3dActor.cpp in Sources */,
 				1839B55118029AC9005EA308 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				1839B55218029AC9005EA308 /* CCControlSlider.cpp in Sources */,
 				1839B55318029AC9005EA308 /* CCControlStepper.cpp in Sources */,
 				1839B55418029AC9005EA308 /* CCControlSwitch.cpp in Sources */,
 				1839B55518029AC9005EA308 /* CCControlUtils.cpp in Sources */,
-				18F6F8AD19DC22B8008D11D8 /* c3dMath.cpp in Sources */,
 				1839B55618029AC9005EA308 /* CCInvocation.cpp in Sources */,
 				1839B55718029AC9005EA308 /* CCScale9Sprite.cpp in Sources */,
 				1839B55818029AC9005EA308 /* CCEditBox.cpp in Sources */,
-				18F6F8AE19DC22B8008D11D8 /* c3dMatrix.cpp in Sources */,
 				1839B55918029AC9005EA308 /* CCEditBoxImplAndroid.cpp in Sources */,
 				1839B55A18029AC9005EA308 /* CCEditBoxImplIOS.mm in Sources */,
 				1839B55B18029AC9005EA308 /* CCEditBoxImplMac.mm in Sources */,
 				1839B55C18029AC9005EA308 /* CCEditBoxImplNone.cpp in Sources */,
 				1839B55D18029AC9005EA308 /* CCEditBoxImplTizen.cpp in Sources */,
-				18F6F8A119DC22B8008D11D8 /* c3dCamera.cpp in Sources */,
 				1839B55E18029AC9005EA308 /* CCEditBoxImplWin.cpp in Sources */,
 				1839B55F18029AC9005EA308 /* CCScrollView.cpp in Sources */,
 				1839B56018029AC9005EA308 /* CCSorting.cpp in Sources */,
@@ -2361,17 +2386,18 @@
 				1839B56218029AC9005EA308 /* CCTableViewCell.cpp in Sources */,
 				1839B56518029AC9005EA308 /* HttpClient.cpp in Sources */,
 				1839B56618029AC9005EA308 /* WebSocket.cpp in Sources */,
+				18F6F91A19DE5FCB008D11D8 /* c3dLightSource.cpp in Sources */,
 				1839B56718029AC9005EA308 /* CCPhysicsDebugNode.cpp in Sources */,
 				1839B56818029AC9005EA308 /* CCPhysicsSprite.cpp in Sources */,
 				1839B57F18029AC9005EA308 /* Animation.cpp in Sources */,
 				1839B58018029AC9005EA308 /* AnimationState.cpp in Sources */,
 				1839B58118029AC9005EA308 /* AnimationStateData.cpp in Sources */,
-				18F6F8B119DC22B8008D11D8 /* c3dNode.cpp in Sources */,
 				1839B58218029AC9005EA308 /* Atlas.cpp in Sources */,
 				1839B58318029AC9005EA308 /* AtlasAttachmentLoader.cpp in Sources */,
 				1839B58418029AC9005EA308 /* Attachment.cpp in Sources */,
 				1839B58518029AC9005EA308 /* AttachmentLoader.cpp in Sources */,
 				1839B58618029AC9005EA308 /* Bone.cpp in Sources */,
+				18F6F91719DE5FCB008D11D8 /* c3dGLMath.cpp in Sources */,
 				1839B58718029AC9005EA308 /* BoneData.cpp in Sources */,
 				1839B58818029AC9005EA308 /* CCSkeleton.cpp in Sources */,
 				1839B58918029AC9005EA308 /* CCSkeletonAnimation.cpp in Sources */,
@@ -2384,8 +2410,8 @@
 				1839B59018029AC9005EA308 /* Skin.cpp in Sources */,
 				1839B59118029AC9005EA308 /* Slot.cpp in Sources */,
 				1839B59218029AC9005EA308 /* SlotData.cpp in Sources */,
-				18F6F8AF19DC22B8008D11D8 /* c3dMatrixStackInfoGetor.cpp in Sources */,
 				1839B59318029AC9005EA308 /* spine-cocos2dx.cpp in Sources */,
+				18F6F91419DE5FCB008D11D8 /* c3dDefaultPassUniformCallback.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

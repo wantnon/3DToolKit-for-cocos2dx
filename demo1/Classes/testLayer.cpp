@@ -22,6 +22,7 @@ bool CtestLayer::init(){
     m_root3d=new Cc3dRoot();
     m_root3d->autorelease();
     m_root3d->init();
+    m_root3d->setNodeName("root3d");
     this->addChild(m_root3d);
     
     //camera
@@ -37,11 +38,6 @@ bool CtestLayer::init(){
     m_root3d->addChild(lightSource);
     lightSource->setAmbient(cc3dv4(0.8, 0.8, 0.8, 1));
     lightSource->setPosition3D(cc3dv4(60, 90, 120, 1));
-    //mesh
-    Cc3dMesh*mesh_ball=c3dCreateBallMesh(1, 20, 10, cc3dv4(1, 0.5, 0, 1), cc3dv4(0, 1, 0, 1));
-    Cc3dMesh*mesh_box=c3dCreateBoxMesh(1,cc3dv4(1, 0, 0, 1),cc3dv4(0, 1, 0, 1),cc3dv4(0, 0, 1, 1),cc3dv4(1, 1, 0, 1),
-                                         cc3dv4(0, 0, 1, 1),cc3dv4(1, 1, 0, 1),cc3dv4(1, 0, 0, 1),cc3dv4(0, 1, 0, 1));
-    Cc3dMesh*mesh_cone=c3dCreateConeMesh(1, 2.7, 20, 10, true, cc3dv4(1, 0, 0, 1), cc3dv4(0, 1, 0, 1));
     //program
     Cc3dProgram*program=c3dGetProgram_c3dClassicLighting();
     //material
@@ -54,39 +50,50 @@ bool CtestLayer::init(){
     CCTexture2D*tex_logo=CCTextureCache::sharedTextureCache()->addImage("logo.png");
     CCTexture2D*tex_logo2=CCTextureCache::sharedTextureCache()->addImage("logo2.png");
 
+    //mesh
+    Cc3dMesh*mesh_ball=c3dCreateBallMesh(1, 20, 10, cc3dv4(1, 0.5, 0, 1), cc3dv4(0, 1, 0, 1));
+    mesh_ball->setTexture(tex_logo2);
+    mesh_ball->setMaterial(material);
+    mesh_ball->setNodeName("mesh_ball");
+    Cc3dMesh*mesh_box=c3dCreateBoxMesh(1,cc3dv4(1, 0, 0, 1),cc3dv4(0, 1, 0, 1),cc3dv4(0, 0, 1, 1),cc3dv4(1, 1, 0, 1),
+                                         cc3dv4(0, 0, 1, 1),cc3dv4(1, 1, 0, 1),cc3dv4(1, 0, 0, 1),cc3dv4(0, 1, 0, 1));
+    mesh_box->setTexture(tex_logo);
+    mesh_box->setMaterial(material);
+    mesh_box->setNodeName("mesh_box");
+    Cc3dMesh*mesh_cone=c3dCreateConeMesh(1, 2.7, 20, 10, true, cc3dv4(1, 0, 0, 1), cc3dv4(0, 1, 0, 1));
+    mesh_cone->setTexture(tex_logo);
+    mesh_cone->setMaterial(material);
+    mesh_cone->setNodeName("mesh_cone");
+
+  
     //sprite
     const int spriteCount=3;
     vector<Cc3dMesh*> meshList;
     meshList.push_back(mesh_box);
     meshList.push_back(mesh_cone);
     meshList.push_back(mesh_ball);
-    vector<CCTexture2D*> texList;
-    texList.push_back(tex_logo);
-    texList.push_back(tex_logo);
-    texList.push_back(tex_logo2);
     vector<Cc3dVector4> posList;
     posList.push_back(cc3dv4(-2.5, 0, 0, 1));
     posList.push_back(cc3dv4(0, -1, 0, 1));
     posList.push_back(cc3dv4(2.5, 0, 0, 1));
     for(int i=0;i<spriteCount;i++){
-        Cc3dSprite* sprite3d=new Cc3dSprite();
+        Cc3dActor* sprite3d=new Cc3dActor();
         sprite3d->autorelease();
         sprite3d->init();
         sprite3d->setPosition3D(posList[i]);
-        sprite3d->setMesh(meshList[i]);
-        sprite3d->setTexture(texList[i]);
+        sprite3d->addMesh(meshList[i]);
         sprite3d->setLightSource(lightSource);
         sprite3d->setCamera3D(camera);
         sprite3d->setPassUnifoCallback(passUnifoCallback_classicLighting);
         sprite3d->setProgram(program);
-        sprite3d->setMaterial(material);
+        sprite3d->setNodeName("sprite3d");
         m_root3d->addChild(sprite3d,0);
         m_sprite3dList.push_back(sprite3d);
     }
     //submit sprite3ds
     for(int i=0;i<(int)m_sprite3dList.size();i++){
-        Cc3dSprite*sprite3d=m_sprite3dList[i];
-        sprite3d->submitMesh(GL_STATIC_DRAW);
+        Cc3dActor*sprite3d=m_sprite3dList[i];
+        sprite3d->submit(GL_STATIC_DRAW);
     }
 
     
@@ -183,6 +190,7 @@ void CtestLayer::update(float dt){
     m_sprite3dList[0]->rotate3D(cc3dv4(1, 0, 0, 0), 120*dt);
     m_sprite3dList[2]->rotateRelativeToParent3D(cc3dv4(0, 1, 0, 0), 120*dt);
     m_sprite3dList[2]->rotate3D(cc3dv4(0, 1, 0, 0), 240*dt);
+
     
 }
 

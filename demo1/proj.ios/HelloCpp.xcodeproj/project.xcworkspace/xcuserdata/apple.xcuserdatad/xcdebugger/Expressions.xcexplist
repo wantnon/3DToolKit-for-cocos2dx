@@ -3,16 +3,16 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "Cscene3DLayer::init():scene3DLayer.cpp">
-      </ContextState>
-      <ContextState
-         contextName = "Cc3dNode::convertToWorldSpace3D(Cc3dVector4 const&amp;):c3dNode.h">
-      </ContextState>
-      <ContextState
          contextName = "Cc3dNode::nodeToWorldTransform3D():c3dNode.h">
       </ContextState>
       <ContextState
-         contextName = "cocos2d::CCCamera::locate():CCCamera.cpp">
+         contextName = "prod(Cc3dMatrix4 const&amp;, Cc3dVector4 const&amp;):c3dMath.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Cc3dSubMesh::draw():c3dSubMesh.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Cscene3DLayer::init():scene3DLayer.cpp">
       </ContextState>
       <ContextState
          contextName = "cocos2d::CCNode::transform():CCNode.cpp">
@@ -23,7 +23,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "prod(Cc3dMatrix4 const&amp;, Cc3dVector4 const&amp;):c3dMath.cpp">
+         contextName = "cocos2d::CCCamera::locate():CCCamera.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "passUnifoCallback_classicLighting(Cc3dNode*, Cc3dProgram*):c3dDefaultPassUniformCallback.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "modelMat">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Cc3dNode::convertToWorldSpace3D(Cc3dVector4 const&amp;):c3dNode.h">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

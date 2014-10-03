@@ -68,14 +68,14 @@ bool HelloWorld::init()
     
     //demo name
     {
-        CCLabelTTF* pLabel = CCLabelTTF::create("3D ToolKit for cocos2d-x - Test 1", "Arial", 45);
+        CCLabelTTF* pLabel = CCLabelTTF::create("3D ToolKit for cocos2d-x - Test 2", "Arial", 45);
         pLabel->setPosition(ccp(origin.x + visibleSize.width/2,
                                 origin.y + visibleSize.height - pLabel->getContentSize().height));
         this->addChild(pLabel, 1);
     }
     // author info
     {
-        CCLabelTTF* pLabel = CCLabelTTF::create("by Yang Chao (wantnon) 2014-1-5", "Arial", 25);
+        CCLabelTTF* pLabel = CCLabelTTF::create("by Yang Chao (wantnon) 2014-10-3", "Arial", 25);
         pLabel->setPosition(ccp(origin.x + visibleSize.width/2,
                                 origin.y + visibleSize.height - pLabel->getContentSize().height-60));
         this->addChild(pLabel, 1);

@@ -2,7 +2,7 @@
 //  c3dMatrix.h
 //  HelloCpp
 //
-//  Created by yang chao (wantnon) on 14-1-1.
+//  Created by wantnon (yang chao) on 14-1-1.
 //
 //
 
@@ -42,6 +42,8 @@ public:
     vector<float> convertToVector()const;
     Cc3dMatrix4 operator*(const Cc3dMatrix4&mat)const;
     Cc3dVector4 operator*(const Cc3dVector4&v)const;
+	Cc3dMatrix4 operator*(float k)const;
+	Cc3dMatrix4 operator+(const Cc3dMatrix4&mat)const;
     void print();
 private:
     void initMembers();

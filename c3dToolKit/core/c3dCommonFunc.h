@@ -12,6 +12,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+string numberToStr(int n);
 template<class T>
 void setRCObject(T &dstObjPtr,const T &srcObjPtr){//set srcObjPtr to dstObjPtr, srcObj and dstObj are all object with reference counting
     if(srcObjPtr==NULL){

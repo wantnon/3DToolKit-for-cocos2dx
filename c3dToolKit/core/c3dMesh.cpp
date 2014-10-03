@@ -63,15 +63,7 @@ void Cc3dMesh::setLightSource(Cc3dLightSource*light){
     }
 }
 
-void Cc3dMesh::setIsVisible(bool value){
-    ////this->Cc3dNode::setVisible(value);//there is no visible property in CCNode
-    int nSubMesh=(int)m_subMeshList.size();
-    for(int i=0;i<nSubMesh;i++){
-        Cc3dSubMesh*psubMesh=m_subMeshList[i];
-        if(psubMesh==NULL)continue;
-        psubMesh->setVisible(value);
-    }
-}
+
 void Cc3dMesh::setDiffuse(float r,float g,float b,float a){
     int nSubMesh=(int)m_subMeshList.size();
     for(int i=0;i<nSubMesh;i++){
@@ -127,21 +119,42 @@ void Cc3dMesh::submit(GLenum usage)
     int nSubMesh=(int)m_subMeshList.size();
     for(int i=0;i<nSubMesh;i++){
         Cc3dSubMesh*psubMesh=m_subMeshList[i];
-        if(psubMesh)psubMesh->submitMesh(usage);
+        if(psubMesh)psubMesh->submit(usage);
     }
 }
-void Cc3dMesh::submitVertex(GLenum usage){
+void Cc3dMesh::submitPosition(GLenum usage){
     int nSubMesh=(int)m_subMeshList.size();
     for(int i=0;i<nSubMesh;i++){
         Cc3dSubMesh*psubMesh=m_subMeshList[i];
-        if(psubMesh)psubMesh->submitMeshPosition(usage);
+        if(psubMesh)psubMesh->submitPosition(usage);
+    }
+}
+void Cc3dMesh::submitNormal(GLenum usage){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh)psubMesh->submitNormal(usage);
+    }
+}
+void Cc3dMesh::submitColor(GLenum usage){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh)psubMesh->submitColor(usage);
+    }
+}
+void Cc3dMesh::submitTexCoord(GLenum usage){
+    int nSubMesh=(int)m_subMeshList.size();
+    for(int i=0;i<nSubMesh;i++){
+        Cc3dSubMesh*psubMesh=m_subMeshList[i];
+        if(psubMesh)psubMesh->submitTexCoord(usage);
     }
 }
 void Cc3dMesh::submitIndex(GLenum usage){
     int nSubMesh=(int)m_subMeshList.size();
     for(int i=0;i<nSubMesh;i++){
         Cc3dSubMesh*psubMesh=m_subMeshList[i];
-        if(psubMesh)psubMesh->submitMeshIndex(usage);
+        if(psubMesh)psubMesh->submitIndex(usage);
     }
 }
 void Cc3dMesh::addSubMesh(Cc3dSubMesh*submesh){

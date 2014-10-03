@@ -2,7 +2,7 @@
 //  c3dMatrix.cpp
 //  HelloCpp
 //
-//  Created by yang chao (wantnon) on 14-1-1.
+//  Created by wantnon (yang chao) on 14-1-1.
 //
 //
 
@@ -66,6 +66,15 @@ vector<float> Cc3dMatrix4::convertToVector()const{
     vector<float> vec(m_array,m_array+16);
     return vec;
 }
+Cc3dMatrix4 Cc3dMatrix4::operator+(const Cc3dMatrix4&mat)const{
+	const float *a=this->getArray();
+    const float *b=mat.getArray();
+    float r[16];//result
+	for(int i=0;i<16;i++){
+		r[i]=a[i]+b[i];
+	}
+	return Cc3dMatrix4(r);
+}
 Cc3dMatrix4 Cc3dMatrix4::operator*(const Cc3dMatrix4&mat)const{
     const float *a=this->getArray();
     const float *b=mat.getArray();
@@ -102,8 +111,17 @@ Cc3dVector4 Cc3dMatrix4::operator*(const Cc3dVector4&v)const{
     return Cc3dVector4(vout);
 }
 
+Cc3dMatrix4 Cc3dMatrix4::operator*(float k)const{
+    const float *m=this->getArray();
+	float r[16];
+	for(int i=0;i<16;i++){
+		r[i]=m[i]*k;
+	}
+    return Cc3dMatrix4(r);
+}
+
 void Cc3dMatrix4::print(){
-    C3DLOG("c3dMatrix: %f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f",
+    c3dLog("c3dMatrix: %f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f",
            m_array[0],m_array[1],m_array[2],m_array[3],
            m_array[4],m_array[5],m_array[6],m_array[7],
            m_array[8],m_array[9],m_array[10],m_array[11],
