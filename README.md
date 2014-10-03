@@ -2,6 +2,10 @@
 ==========
 by yang chao (wantnon), 2014-1-9  
 
+----   
+note: 3DToolKit has updated to 3DToolKit2:http://git.oschina.net/wantnon2/the-3DToolKit-2-for-cocos2dx    
+----   
+
 3D ToolKit for cocos2dx is a simple 3D extension for cocos2d-x, provide an easy way to create 3D graph in cocos2dx environment.  
   
 the ToolKit based on cocos2d-x 2.2.0.
